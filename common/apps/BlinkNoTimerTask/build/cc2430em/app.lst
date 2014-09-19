@@ -1,0 +1,3027 @@
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 1   
+
+
+C51 COMPILER V8.09, COMPILATION OF MODULE APP
+OBJECT MODULE PLACED IN .\app.obj
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.exe app.c LARGE PRINT(.\app.lst) OBJECT(.\app.obj) SYMBOLS
+
+line level    source
+
+   1          
+   2          #define MANGLED_NESC_APP_C
+   3          #define nx_struct struct
+   4          #define nx_union union
+   5          #define dbg(mode, format) ((void)0)
+   6          #define dbg_clear(mode, format) ((void)0)
+   7          #define dbg_active(mode) 0
+   8          //# 151 "/usr/lib/gcc/i686-pc-cygwin/3.4.4/include/stddef.h" 3
+   9          typedef int ptrdiff_t;
+  10          //#line 213
+  11          typedef unsigned int size_t;
+  12          //#line 325
+  13          typedef short unsigned int wchar_t;
+  14          //# 8 "/usr/lib/ncc/deputy_nodeputy.h"
+  15          /*struct __nesc_attr_nonnull {
+  16          }  ;*/
+  17          //#line 9
+  18          /*struct __nesc_attr_bnd {
+  19          //#line 9
+  20            void *lo, *hi;
+  21          }  ;*/
+  22          //#line 10
+  23          /*struct __nesc_attr_bnd_nok {
+  24          //#line 10
+  25            void *lo, *hi;
+  26          }  ;*/
+  27          //#line 11
+  28          /*struct __nesc_attr_count {
+  29          //#line 11
+  30            int n;
+  31          }  ;*/
+  32          //#line 12
+  33          /*struct __nesc_attr_count_nok {
+  34          //#line 12
+  35            int n;
+  36          }  ;*/
+  37          //#line 13
+  38          /*struct __nesc_attr_one {
+  39          }  ;*/
+  40          //#line 14
+  41          /*struct __nesc_attr_one_nok {
+  42          }  ;*/
+  43          //#line 15
+  44          /*struct __nesc_attr_dmemset {
+  45          //#line 15
+  46            int a1, a2, a3;
+  47          }  ;*/
+  48          //#line 16
+  49          /*struct __nesc_attr_dmemcpy {
+  50          //#line 16
+  51            int a1, a2, a3;
+  52          }  ;*/
+  53          //#line 17
+  54          /*struct __nesc_attr_nts {
+  55          }  ;*/
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 2   
+
+  56          //# 47 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/keil_stdint.h" 3
+  57          typedef signed char int8_t;
+  58          typedef short int16_t;
+  59          
+  60          
+  61          
+  62          typedef long int32_t;
+  63          
+  64          
+  65          /*typedef long long int int64_t;*/
+  66          
+  67          
+  68          
+  69          
+  70          typedef unsigned char uint8_t;
+  71          typedef unsigned short uint16_t;
+  72          
+  73          
+  74          
+  75          typedef unsigned long uint32_t;
+  76          
+  77          
+  78          /*typedef unsigned long long int uint64_t;*/
+  79          //# 42 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/stdint.h" 3
+  80          typedef signed char int_least8_t;
+  81          typedef short int int_least16_t;
+  82          typedef long int_least32_t;
+  83          
+  84          
+  85          
+  86          
+  87          
+  88          
+  89          
+  90          
+  91          
+  92          typedef unsigned char uint_least8_t;
+  93          typedef unsigned short uint_least16_t;
+  94          typedef unsigned long uint_least32_t;
+  95          //#line 70
+  96          typedef signed char int_fast8_t;
+  97          
+  98          
+  99          
+ 100          
+ 101          
+ 102          typedef int int_fast16_t;
+ 103          typedef int int_fast32_t;
+ 104          
+ 105          
+ 106          
+ 107          
+ 108          
+ 109          typedef unsigned char uint_fast8_t;
+ 110          
+ 111          
+ 112          
+ 113          
+ 114          
+ 115          typedef unsigned int uint_fast16_t;
+ 116          typedef unsigned int uint_fast32_t;
+ 117          //#line 105
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 3   
+
+ 118          typedef int intptr_t;
+ 119          
+ 120          
+ 121          typedef unsigned int uintptr_t;
+ 122          
+ 123          
+ 124          
+ 125          
+ 126          
+ 127          
+ 128          
+ 129          
+ 130          /*__extension__*/ 
+ 131          typedef
+ 132                   float* intmax_t;
+ 133                
+ 134          /*__extension__*/ 
+ 135          typedef 
+ 136                   float* uintmax_t;
+ 137                
+ 138          //# 231 "/usr/include/inttypes.h" 3
+ 139          //#line 228
+ 140          typedef struct __nesc_unnamed4242 {
+ 141            intmax_t quot;
+ 142            intmax_t rem;
+ 143          } imaxdiv_t;
+ 144          /*YYYYY } imaxdiv_t*///# 385 "/usr/lib/ncc/nesc_nx.h"
+ 145          typedef struct { unsigned char _data[1]; } /*__attribute__((packed))*/ nx_int8_t;typedef int8_t __nesc_nxb
+             -ase_nx_int8_t  ;
+ 146          typedef struct { unsigned char _data[2]; } /*__attribute__((packed))*/ nx_int16_t;typedef int16_t __nesc_n
+             -xbase_nx_int16_t  ;
+ 147          typedef struct { unsigned char _data[4]; } /*__attribute__((packed))*/ nx_int32_t;typedef int32_t __nesc_n
+             -xbase_nx_int32_t  ;
+ 148          typedef struct { unsigned char _data[8]; } /*__attribute__((packed))*/ nx_int64_t;/*typedef int64_t __nesc
+             -_nxbase_nx_int64_t  ;*/
+ 149          typedef struct { unsigned char _data[1]; } /*__attribute__((packed))*/ nx_uint8_t;typedef uint8_t __nesc_n
+             -xbase_nx_uint8_t  ;
+ 150          typedef struct { unsigned char _data[2]; } /*__attribute__((packed))*/ nx_uint16_t;typedef uint16_t __nesc
+             -_nxbase_nx_uint16_t  ;
+ 151          typedef struct { unsigned char _data[4]; } /*__attribute__((packed))*/ nx_uint32_t;typedef uint32_t __nesc
+             -_nxbase_nx_uint32_t  ;
+ 152          typedef struct { unsigned char _data[8]; } /*__attribute__((packed))*/ nx_uint64_t;/*typedef uint64_t __ne
+             -sc_nxbase_nx_uint64_t  ;*/
+ 153          
+ 154          
+ 155          typedef struct { unsigned char _data[1]; } /*__attribute__((packed))*/ nxle_int8_t;typedef int8_t __nesc_n
+             -xbase_nxle_int8_t  ;
+ 156          typedef struct { unsigned char _data[2]; } /*__attribute__((packed))*/ nxle_int16_t;typedef int16_t __nesc
+             -_nxbase_nxle_int16_t  ;
+ 157          typedef struct { unsigned char _data[4]; } /*__attribute__((packed))*/ nxle_int32_t;typedef int32_t __nesc
+             -_nxbase_nxle_int32_t  ;
+ 158          typedef struct { unsigned char _data[8]; } /*__attribute__((packed))*/ nxle_int64_t;/*typedef int64_t __ne
+             -sc_nxbase_nxle_int64_t  ;*/
+ 159          typedef struct { unsigned char _data[1]; } /*__attribute__((packed))*/ nxle_uint8_t;typedef uint8_t __nesc
+             -_nxbase_nxle_uint8_t  ;
+ 160          typedef struct { unsigned char _data[2]; } /*__attribute__((packed))*/ nxle_uint16_t;typedef uint16_t __ne
+             -sc_nxbase_nxle_uint16_t  ;
+ 161          typedef struct { unsigned char _data[4]; } /*__attribute__((packed))*/ nxle_uint32_t;typedef uint32_t __ne
+             -sc_nxbase_nxle_uint32_t  ;
+ 162          typedef struct { unsigned char _data[8]; } /*__attribute__((packed))*/ nxle_uint64_t;/*typedef uint64_t __
+             -nesc_nxbase_nxle_uint64_t  ;*/
+ 163          //# 13 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/string.h"
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 4   
+
+ 164          extern void *memset(void *s, char val, int n);
+ 165          //# 14 "/usr/include/sys/lock.h" 3
+ 166          typedef void *_LOCK_T;
+ 167          //# 14 "/usr/include/sys/_types.h" 3
+ 168          typedef long _off_t;
+ 169          /*__extension__*/ 
+ 170          //#line 15
+ 171          typedef
+ 172                   float* _off64_t;
+ 173                
+ 174          
+ 175          
+ 176          typedef int _ssize_t;
+ 177          //# 354 "/usr/lib/gcc/i686-pc-cygwin/3.4.4/include/stddef.h" 3
+ 178          typedef unsigned int wint_t;
+ 179          //# 35 "/usr/include/sys/_types.h" 3
+ 180          //#line 27
+ 181          typedef struct __nesc_unnamed4243 {
+ 182          
+ 183            int __count;
+ 184            union __nesc_unnamed4244 {
+ 185          
+ 186              wint_t __wch;
+ 187              unsigned char __wchb[4];
+ 188            } __value;
+ 189          /*YYYYY   } __value*/} _mbstate_t;
+ 190          
+ 191          typedef _LOCK_T _flock_t;
+ 192          
+ 193          
+ 194          typedef void *_iconv_t;
+ 195          //# 19 "/usr/include/sys/reent.h" 3
+ 196          typedef unsigned long __ULong;
+ 197          //#line 40
+ 198          struct _Bigint {
+ 199          
+ 200            struct _Bigint *_next;
+ 201            int _k, _maxwds, _sign, _wds;
+ 202            __ULong _x[1];
+ 203          };
+ 204          
+ 205          
+ 206          struct __tm {
+ 207          
+ 208            int __tm_sec;
+ 209            int __tm_min;
+ 210            int __tm_hour;
+ 211            int __tm_mday;
+ 212            int __tm_mon;
+ 213            int __tm_year;
+ 214            int __tm_wday;
+ 215            int __tm_yday;
+ 216            int __tm_isdst;
+ 217          };
+ 218          
+ 219          
+ 220          
+ 221          
+ 222          
+ 223          
+ 224          
+ 225          struct _on_exit_args {
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 5   
+
+ 226            void *_fnargs[32];
+ 227            void *_dso_handle[32];
+ 228          
+ 229            __ULong _fntypes;
+ 230          
+ 231          
+ 232            __ULong _is_cxa;
+ 233          };
+ 234          
+ 235          
+ 236          
+ 237          
+ 238          
+ 239          
+ 240          
+ 241          
+ 242          
+ 243          struct _atexit {
+ 244            struct _atexit *_next;
+ 245            int _ind;
+ 246          
+ 247            void (*_fns[32])(void );
+ 248            struct _on_exit_args _on_exit_args;
+ 249          };
+ 250          
+ 251          
+ 252          
+ 253          
+ 254          
+ 255          
+ 256          
+ 257          
+ 258          
+ 259          struct __sbuf {
+ 260            unsigned char *_base;
+ 261            int _size;
+ 262          };
+ 263          
+ 264          
+ 265          
+ 266          
+ 267          
+ 268          
+ 269          typedef long _fpos_t;
+ 270          
+ 271          
+ 272          
+ 273          typedef _off64_t _fpos64_t;
+ 274          //#line 166
+ 275          struct __sFILE {
+ 276            unsigned char *_p;
+ 277            int _r;
+ 278            int _w;
+ 279            short _flags;
+ 280            short _file;
+ 281            struct __sbuf _bf;
+ 282            int _lbfsize;
+ 283          
+ 284          
+ 285          
+ 286          
+ 287          
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 6   
+
+ 288          
+ 289            char *_cookie;
+ 290          
+ 291            _ssize_t (*_read)();
+ 292            _ssize_t (*_write)();
+ 293          
+ 294            _fpos_t (*_seek)();
+ 295            int (*_close)();
+ 296          
+ 297          
+ 298            struct __sbuf _ub;
+ 299            unsigned char *_up;
+ 300            int _ur;
+ 301          
+ 302          
+ 303            unsigned char _ubuf[3];
+ 304            unsigned char _nbuf[1];
+ 305          
+ 306          
+ 307            struct __sbuf _lb;
+ 308          
+ 309          
+ 310            int _blksize;
+ 311            int _offset;
+ 312          
+ 313          
+ 314            struct _reent *__data;
+ 315          
+ 316          
+ 317          
+ 318            _flock_t _lock;
+ 319          };
+ 320          
+ 321          
+ 322          
+ 323          struct __sFILE64 {
+ 324            unsigned char *_p;
+ 325            int _r;
+ 326            int _w;
+ 327            short _flags;
+ 328            short _file;
+ 329            struct __sbuf _bf;
+ 330            int _lbfsize;
+ 331          
+ 332            struct _reent *__data;
+ 333          
+ 334          
+ 335            char *_cookie;
+ 336          
+ 337            _ssize_t (*_read)();
+ 338            _ssize_t (*_write)();
+ 339          
+ 340            _fpos_t (*_seek)();
+ 341            int (*_close)();
+ 342          
+ 343          
+ 344            struct __sbuf _ub;
+ 345            unsigned char *_up;
+ 346            int _ur;
+ 347          
+ 348          
+ 349            unsigned char _ubuf[3];
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 7   
+
+ 350            unsigned char _nbuf[1];
+ 351          
+ 352          
+ 353            struct __sbuf _lb;
+ 354          
+ 355          
+ 356            int _blksize;
+ 357            int _flags2;
+ 358          
+ 359            _off64_t _offset;
+ 360            _fpos64_t (*_seek64)();
+ 361          
+ 362          
+ 363            _flock_t _lock;
+ 364          };
+ 365          
+ 366          typedef struct __sFILE64 __FILE;
+ 367          
+ 368          
+ 369          
+ 370          
+ 371          struct _glue {
+ 372          
+ 373            struct _glue *_next;
+ 374            int _niobs;
+ 375            __FILE *_iobs;
+ 376          };
+ 377          //#line 290
+ 378          struct _rand48 {
+ 379            unsigned short _seed[3];
+ 380            unsigned short _mult[3];
+ 381            unsigned short _add;
+ 382          };
+ 383          //#line 565
+ 384          struct _reent {
+ 385          
+ 386            int _errno;
+ 387          
+ 388          
+ 389          
+ 390          
+ 391            __FILE *_stdin, *_stdout, *_stderr;
+ 392          
+ 393            int _inc;
+ 394            char _emergency[25];
+ 395          
+ 396            int _current_category;
+ 397            char *_current_locale;
+ 398          
+ 399            int __sdidinit;
+ 400          
+ 401            void (*__cleanup)();
+ 402          
+ 403          
+ 404            struct _Bigint *_result;
+ 405            int _result_k;
+ 406            struct _Bigint *_p5s;
+ 407            struct _Bigint **_freelist;
+ 408          
+ 409          
+ 410            int _cvtlen;
+ 411            char *_cvtbuf;
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 8   
+
+ 412          
+ 413            union __nesc_unnamed4245 {
+ 414          
+ 415              struct __nesc_unnamed4246 {
+ 416          
+ 417                unsigned int _unused_rand;
+ 418                char *_strtok_last;
+ 419                char _asctime_buf[26];
+ 420                struct __tm _localtime_buf;
+ 421                int _gamma_signgam;
+ 422                /*__extension__*/ 
+ 423                   float* _rand_next;
+ 424                
+ 425                struct _rand48 _r48;
+ 426                _mbstate_t _mblen_state;
+ 427                _mbstate_t _mbtowc_state;
+ 428                _mbstate_t _wctomb_state;
+ 429                char _l64a_buf[8];
+ 430                char _signal_buf[24];
+ 431                int _getdate_err;
+ 432                _mbstate_t _mbrlen_state;
+ 433                _mbstate_t _mbrtowc_state;
+ 434                _mbstate_t _mbsrtowcs_state;
+ 435                _mbstate_t _wcrtomb_state;
+ 436                _mbstate_t _wcsrtombs_state;
+ 437              } _reent;
+ 438          
+ 439          
+ 440          
+ 441              struct __nesc_unnamed4247 {
+ 442          
+ 443          
+ 444                unsigned char *_nextf[30];
+ 445                unsigned int _nmalloc[30];
+ 446              } _unused;
+ 447            } _new;
+ 448          
+ 449          
+ 450            struct _atexit *_atexit;
+ 451            struct _atexit _atexit0;
+ 452          
+ 453          
+ 454            void (**_sig_func)(int arg_0x7f2108a0);
+ 455          
+ 456          
+ 457          
+ 458          
+ 459            struct _glue __sglue;
+ 460            __FILE __sf[3];
+ 461          };
+ 462          //#line 799
+ 463          struct _reent;
+ 464          struct _reent;
+ 465          
+ 466          
+ 467          
+ 468          
+ 469          
+ 470          
+ 471          
+ 472          
+ 473          
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 9   
+
+ 474          struct _reent;
+ 475          //# 32 "/usr/include/stdlib.h" 3
+ 476          //#line 28
+ 477          typedef struct __nesc_unnamed4248 {
+ 478          
+ 479            int quot;
+ 480            int rem;
+ 481          } div_t;
+ 482          /*YYYYY } div_t*/
+ 483          
+ 484          
+ 485          
+ 486          
+ 487          //#line 34
+ 488          typedef struct __nesc_unnamed4249 {
+ 489          
+ 490            long quot;
+ 491            long rem;
+ 492          } ldiv_t;
+ 493          /*YYYYY } ldiv_t*/
+ 494          
+ 495          
+ 496          
+ 497          
+ 498          
+ 499          //#line 41
+ 500          typedef struct __nesc_unnamed4250 {
+ 501          
+ 502          
+ 503                   float* quot;
+ 504                
+ 505          
+ 506                   float* rem;
+ 507                
+ 508          } lldiv_t;
+ 509          /*YYYYY } lldiv_t*///# 24 "/opt/tinyos-2.x-contrib/diku/common/tos/system/tos.h"
+ 510          typedef uint8_t bool  ;
+ 511          enum __nesc_unnamed4251 {
+ 512          //#line 25
+ 513            FALSE = 0, TRUE = 1
+ 514          };
+ 515          
+ 516          
+ 517          
+ 518          
+ 519          
+ 520          
+ 521          
+ 522          
+ 523          
+ 524          typedef nx_int8_t nx_bool;
+ 525          
+ 526          
+ 527          
+ 528          
+ 529          
+ 530          
+ 531          /*struct __nesc_attr_atmostonce {
+ 532          };*/
+ 533          //#line 44
+ 534          /*struct __nesc_attr_atleastonce {
+ 535          };*/
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 10  
+
+ 536          //#line 45
+ 537          /*struct __nesc_attr_exactlyonce {
+ 538          };*/
+ 539          //# 40 "/opt/tinyos-2.x/tos/types/TinyError.h"
+ 540          enum __nesc_unnamed4252 {
+ 541            SUCCESS = 0, 
+ 542            FAIL = 1, 
+ 543            ESIZE = 2, 
+ 544            ECANCEL = 3, 
+ 545            EOFF = 4, 
+ 546            EBUSY = 5, 
+ 547            EINVAL = 6, 
+ 548            ERETRY = 7, 
+ 549            ERESERVE = 8, 
+ 550            EALREADY = 9, 
+ 551            ENOMEM = 10, 
+ 552            ENOACK = 11, 
+ 553            ELAST = 11
+ 554          };
+ 555          
+ 556          typedef uint8_t error_t  ;
+ 557          //# 160 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/io8051.h"
+ 558          sbit EA = 0xAF;
+ 559          //#line 194
+ 560          sbit P1_0 = 0x90;
+ 561          
+ 562          
+ 563          sbit P1_3 = 0x93;
+ 564          //# 67 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/cc2430/ioCC2430.h"
+ 565          enum __nesc_unnamed4253 {
+ 566            CC2430_IEN0_EA = 0x7, 
+ 567            CC2430_IEN0_STIE = 0x5, 
+ 568            CC2430_IEN0_ENCIE = 0x4, 
+ 569            CC2430_IEN0_URX1IE = 0x3, 
+ 570            CC2430_IEN0_URX0IE = 0x2, 
+ 571            CC2430_IEN0_ADCIE = 0x1, 
+ 572            CC2430_IEN0_RFERRIE = 0x0
+ 573          };
+ 574          
+ 575          
+ 576          
+ 577          
+ 578          
+ 579          enum __nesc_unnamed4254 {
+ 580            CC2430_IEN2_WDTIE = 0x5, 
+ 581            CC2430_IEN2_P1IE = 0x4, 
+ 582            CC2430_IEN2_UTX1IE = 0x3, 
+ 583            CC2430_IEN2_UTX0IE = 0x2, 
+ 584            CC2430_IEN2_P2IE = 0x1, 
+ 585            CC2430_IEN2_RFIE = 0x0
+ 586          };
+ 587          
+ 588          
+ 589          
+ 590          
+ 591          
+ 592          enum __nesc_unnamed4255 {
+ 593            CC2430_IRCON_STIF = 0x7, 
+ 594            CC2430_IRCON_P0IF = 0x5, 
+ 595            CC2430_IRCON_T4IF = 0x4, 
+ 596            CC2430_IRCON_T3IF = 0x3, 
+ 597            CC2430_IRCON_T2IF = 0x2, 
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 11  
+
+ 598            CC2430_IRCON_T1IF = 0x1, 
+ 599            CC2430_IRCON_DMAIF = 0x0
+ 600          };
+ 601          
+ 602          
+ 603          
+ 604          
+ 605          
+ 606          enum __nesc_unnamed4256 {
+ 607            CC2430_IRCON2_WDTIF = 0x4, 
+ 608            CC2430_IRCON2_P1IF = 0x3, 
+ 609            CC2430_IRCON2_UTX1IF = 0x2, 
+ 610            CC2430_IRCON2_UTX0IF = 0x1, 
+ 611            CC2430_IRCON2_P2IF = 0x0
+ 612          };
+ 613          
+ 614          
+ 615          
+ 616          
+ 617          
+ 618          enum __nesc_unnamed4257 {
+ 619            CC2430_RFIM_RREG_PD = 0x7, 
+ 620            CC2430_RFIM_TXDONE = 0x6, 
+ 621            CC2430_RFIM_FIFOP = 0x5, 
+ 622            CC2430_RFIM_SFD = 0x4, 
+ 623            CC2430_RFIM_CCA = 0x3, 
+ 624            CC2430_RFIM_CSP_WT = 0x2, 
+ 625            CC2430_RFIM_CSP_STOP = 0x1, 
+ 626            CC2430_RFIM_CSP_INT = 0x0
+ 627          };
+ 628          
+ 629          
+ 630          
+ 631          
+ 632          
+ 633          enum __nesc_unnamed4258 {
+ 634            CC2430_RFIF_RREG_ON = 0x7, 
+ 635            CC2430_RFIF_TXDONE = 0x6, 
+ 636            CC2430_RFIF_FIFOP = 0x5, 
+ 637            CC2430_RFIF_SFD = 0x4, 
+ 638            CC2430_RFIF_CCA = 0x3, 
+ 639            CC2430_RFIF_CSP_WT = 0x2, 
+ 640            CC2430_RFIF_CSP_STOP = 0x1, 
+ 641            CC2430_RFIF_CSP_INT = 0x0
+ 642          };
+ 643          //#line 256
+ 644          sfr SLEEP = 0xBE;
+ 645          
+ 646          
+ 647          
+ 648          
+ 649          
+ 650          
+ 651          
+ 652          sfr CLKCON = 0xC6;
+ 653          //#line 352
+ 654          sfr P1_DIR = 0xFE;
+ 655          //#line 393
+ 656          //typedef uint16_t uint16_t xdata;
+ 657          //typedef uint8_t uint8_t xdata;
+ 658          
+ 659          //typedef uint16_t uint16_t code;
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 12  
+
+ 660          //typedef uint8_t uint8_t code;
+ 661          //#line 479
+ 662          enum __nesc_unnamed4259 {
+ 663            CC2430_RFPWR_ADI_RADIO_PD = 0x4, 
+ 664            CC2430_RFPWR_RREG_RADIO_PD = 0x3, 
+ 665            CC2430_RFPWR_RREG_DELAY = 0x0, 
+ 666            CC2430_RFPWR_RREG_DELAY_MASK = 0x7
+ 667          };
+ 668          
+ 669          enum __nesc_unnamed4260 {
+ 670            CC2430_RREG_DELAY_0 = 0x0, 
+ 671            CC2430_RREG_DELAY_31 = 0x1, 
+ 672            CC2430_RREG_DELAY_63 = 0x2, 
+ 673            CC2430_RREG_DELAY_125 = 0x3, 
+ 674            CC2430_RREG_DELAY_250 = 0x4, 
+ 675            CC2430_RREG_DELAY_500 = 0x5, 
+ 676            CC2430_RREG_DELAY_1000 = 0x6, 
+ 677            CC2430_RREG_DELAY_2000 = 0x7
+ 678          };
+ 679          
+ 680          enum __nesc_unnamed4261 {
+ 681            CC2430_MDMCTRL0L_AUTOCRC = 0x5, 
+ 682            CC2430_MDMCTRL0L_AUTOACK = 0x4
+ 683          };
+ 684          
+ 685          enum __nesc_unnamed4262 {
+ 686            CC2430_MDMCTRL0H_FRAME_FILT = 0x6, 
+ 687            CC2430_MDMCTRL0H_RESERVED_FRAME_MODE = 0x5, 
+ 688            CC2430_MDMCTRL0H_PAN_COORDINATOR = 0x4, 
+ 689            CC2430_MDMCTRL0H_ADDR_DECODE = 0x3, 
+ 690            CC2430_MDMCTRL0H_CCA_HYST = 0x0
+ 691          };
+ 692          
+ 693          enum __nesc_unnamed4263 {
+ 694            CC2430_RFSTATUS_TX_ACTIVE = 0x4, 
+ 695            CC2430_RFSTATUS_FIFO = 0x3, 
+ 696            CC2430_RFSTATUS_FIFOP = 0x2, 
+ 697            CC2430_RFSTATUS_SFD = 0x1, 
+ 698            CC2430_RFSTATUS_CCA = 0x0
+ 699          };
+ 700          //# 102 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/mcs51hardware.h"
+ 701          typedef uint8_t __nesc_atomic_t;
+ 702          
+ 703          static   /*inline*/   void __nesc_disable_interrupt();
+ 704          static   /*inline*/   void __nesc_enable_interrupt();
+ 705          
+ 706            /*inline*/   __nesc_atomic_t __nesc_atomic_start(void )  ;
+ 707          
+ 708          
+ 709          
+ 710          
+ 711          
+ 712            /*inline*/   void __nesc_atomic_end(__nesc_atomic_t oldSreg)  ;
+ 713          //# 71 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/cc2430/timer/CC2430Timer.h"
+ 714          enum __nesc_unnamed4264 {
+ 715            CC2430_SLEEP_OSC32K_CALDIS = 7, 
+ 716            CC2430_SLEEP_XOSC_STB = 6, 
+ 717            CC2430_SLEEP_HFRC_STB = 5, 
+ 718            CC2430_SLEEP_DIV = 3, 
+ 719            CC2430_SLEEP_OSC_PD = 2, 
+ 720            CC2430_SLEEP_MODE = 0, 
+ 721            CC2430_SLEEP_MODE_MASK = 3
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 13  
+
+ 722          };
+ 723          
+ 724          enum __nesc_unnamed4265 {
+ 725            CC2430_SLEEP_POWERMODE_0 = 0, 
+ 726            CC2430_SLEEP_POWERMODE_1 = 1, 
+ 727            CC2430_SLEEP_POWERMODE_2 = 2, 
+ 728            CC2430_SLEEP_POWERMODE_3 = 3
+ 729          };
+ 730          
+ 731          enum __nesc_unnamed4266 {
+ 732            CC2430_CLKCON_OSC32K = 7, 
+ 733            CC2430_CLKCON_OSC = 6, 
+ 734            CC2430_CLKCON_TICKSPD = 3, 
+ 735            CC2430_CLKCON_CLKSPD = 0, 
+ 736            CC2430_CLKCON_TICKSPD_MASK = 0x38
+ 737          };
+ 738          
+ 739          
+ 740          
+ 741          
+ 742          enum cc2430_tick_spd_t {
+ 743            CC2430_TICKF_DIV_1 = 0x0 << CC2430_CLKCON_TICKSPD, 
+ 744            CC2430_TICKF_DIV_2 = 0x1 << CC2430_CLKCON_TICKSPD, 
+ 745            CC2430_TICKF_DIV_4 = 0x2 << CC2430_CLKCON_TICKSPD, 
+ 746            CC2430_TICKF_DIV_8 = 0x3 << CC2430_CLKCON_TICKSPD, 
+ 747            CC2430_TICKF_DIV_16 = 0x4 << CC2430_CLKCON_TICKSPD, 
+ 748            CC2430_TICKF_DIV_32 = 0x5 << CC2430_CLKCON_TICKSPD, 
+ 749            CC2430_TICKF_DIV_64 = 0x6 << CC2430_CLKCON_TICKSPD, 
+ 750            CC2430_TICKF_DIV_128 = 0x7 << CC2430_CLKCON_TICKSPD
+ 751          };
+ 752          
+ 753          
+ 754          
+ 755          
+ 756          
+ 757          
+ 758          
+ 759          
+ 760          
+ 761          
+ 762          enum __nesc_unnamed4267 {
+ 763            CC2430_T1CTL_CH2IF = 0x7, 
+ 764            CC2430_T1CTL_CH1IF = 0x6, 
+ 765            CC2430_T1CTL_CH0IF = 0x5, 
+ 766            CC2430_T1CTL_OVFIF = 0x4, 
+ 767            CC2430_T1CTL_DIV = 0x2, 
+ 768            CC2430_T1CTL_MODE = 0x0, 
+ 769            CC2430_T1CTL_MODE_MASK = 0x3, 
+ 770            CC2430_T1CTL_DIV_MASK = 0xc, 
+ 771            CC2430_T1CTL_IF_MASK = 0xf0
+ 772          };
+ 773          
+ 774          
+ 775          
+ 776          
+ 777          
+ 778          
+ 779          enum cc2430_timer1_mode_t {
+ 780            CC2430_TIMER1_MODE_OFF = 0x0 << CC2430_T1CTL_MODE, 
+ 781            CC2430_TIMER1_MODE_FREE = 0x1 << CC2430_T1CTL_MODE, 
+ 782            CC2430_TIMER1_MODE_MODULO = 0x2 << CC2430_T1CTL_MODE, 
+ 783            CC2430_TIMER1_MODE_UPDOWN = 0x3 << CC2430_T1CTL_MODE
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 14  
+
+ 784          };
+ 785          
+ 786          
+ 787          
+ 788          
+ 789          
+ 790          
+ 791          enum cc2430_timer1_if_t {
+ 792            CC2430_T1_CH2IF = 1 << CC2430_T1CTL_CH2IF, 
+ 793            CC2430_T1_CH1IF = 1 << CC2430_T1CTL_CH1IF, 
+ 794            CC2430_T1_CH0IF = 1 << CC2430_T1CTL_CH0IF, 
+ 795            CC2430_T1_OVFIF = 1 << CC2430_T1CTL_OVFIF
+ 796          };
+ 797          
+ 798          
+ 799          
+ 800          
+ 801          
+ 802          enum cc2430_timer1_prescaler_t {
+ 803            CC2430_TIMER1_DIV_1 = 0x0 << CC2430_T1CTL_DIV, 
+ 804            CC2430_TIMER1_DIV_8 = 0x1 << CC2430_T1CTL_DIV, 
+ 805            CC2430_TIMER1_DIV_32 = 0x2 << CC2430_T1CTL_DIV, 
+ 806            CC2430_TIMER1_DIV_128 = 0x3 << CC2430_T1CTL_DIV
+ 807          };
+ 808          
+ 809          
+ 810          
+ 811          
+ 812          
+ 813          enum __nesc_unnamed4268 {
+ 814            CC2430_T1CCTLx_CPSEL = 0x7, 
+ 815            CC2430_T1CCTLx_IM = 0x6, 
+ 816            CC2430_T1CCTLx_CMP = 0x3, 
+ 817            CC2430_T1CCTLx_MODE = 0x2, 
+ 818            CC2430_T1CCTLx_CAP = 0x0
+ 819          };
+ 820          
+ 821          
+ 822          
+ 823          
+ 824          
+ 825          
+ 826          
+ 827          
+ 828          
+ 829          
+ 830          enum cc2430_timerMAC_mode_t {
+ 831            CC2430_TIMERMAC_MODE_IDLE = 0x0, 
+ 832            CC2430_TIMERMAC_MODE_RUN = 0x1
+ 833          };
+ 834          
+ 835          
+ 836          
+ 837          
+ 838          
+ 839          enum cc2430_timerMAC_T2CNF_t {
+ 840            CC2430_T2CNF_CMPIF = 0x7, 
+ 841            CC2430_T2CNF_PERIF = 0x6, 
+ 842            CC2430_T2CNF_OFCMPIF = 0x5, 
+ 843            CC2430_T2CNF_CMSEL = 0x3, 
+ 844            CC2430_T2CNF_SYNC = 0x1, 
+ 845            CC2430_T2CNF_RUN = 0x0
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 15  
+
+ 846          };
+ 847          
+ 848          
+ 849          
+ 850          
+ 851          
+ 852          
+ 853          enum cc2430_timerMAC_T2PEROF2_t {
+ 854            CC2430_T2PEROF2_CMPIM = 0x7, 
+ 855            CC2430_T2PEROF2_PERIM = 0x6, 
+ 856            CC2430_T2PEROF2_OFCMPIM = 0x5
+ 857          };
+ 858          
+ 859          enum cc2430_timerMAC_if_t {
+ 860            CC2430_TMAC_CMPIF = 1 << CC2430_T2CNF_CMPIF, 
+ 861            CC2430_TMAC_PERIF = 1 << CC2430_T2CNF_PERIF, 
+ 862            CC2430_TMAC_OFCMPIF = 1 << CC2430_T2CNF_OFCMPIF
+ 863          };
+ 864          
+ 865          enum cc2430_timerMAC_interval_t {
+ 866            CC2430_TIMERWDT_32768 = 0, 
+ 867            CC2430_TIMERWDT_8192 = 1, 
+ 868            CC2430_TIMERWDT_512 = 2, 
+ 869            CC2430_TIMERWDT_64 = 3
+ 870          };
+ 871          //#line 240
+ 872          enum __nesc_unnamed4269 {
+ 873            CC2430_TIMIF_OVFIM = 0x6
+ 874          };
+ 875          
+ 876          enum cc2430_timer34_if_t {
+ 877            CC2430_TIMIF_T4CH1IF = 0x5, 
+ 878            CC2430_TIMIF_T4CH0IF = 0x4, 
+ 879            CC2430_TIMIF_T4OVFIF = 0x3, 
+ 880            CC2430_TIMIF_T3CH1IF = 0x2, 
+ 881            CC2430_TIMIF_T3CH0IF = 0x1, 
+ 882            CC2430_TIMIF_T3OVFIF = 0x0
+ 883          };
+ 884          
+ 885          
+ 886          
+ 887          
+ 888          
+ 889          
+ 890          enum cc2430_timer3_4_mode_t {
+ 891            CC2430_TIMER3_4_MODE_FREE = 0x0, 
+ 892            CC2430_TIMER3_4_MODE_DOWN = 0x1, 
+ 893            CC2430_TIMER3_4_MODE_MODULO = 0x2, 
+ 894            CC2430_TIMER3_4_MODE_UPDOWN = 0x3
+ 895          };
+ 896          
+ 897          
+ 898          
+ 899          
+ 900          
+ 901          enum __nesc_unnamed4270 {
+ 902            CC2430_T34CTL_DIV = 0x5, 
+ 903            CC2430_T34CTL_START = 0x4, 
+ 904            CC2430_T34CTL_OVFIM = 0x3, 
+ 905            CC2430_T34CTL_WDTIF = 0x3, 
+ 906            CC2430_T34CTL_CLR = 0x2, 
+ 907            CC2430_T34CTL_MODE = 0x0, 
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 16  
+
+ 908            CC2430_T34CTL_MODE_MASK = 0x3, 
+ 909            CC2430_T34CTL_DIV_MASK = 0xe0
+ 910          };
+ 911          
+ 912          
+ 913          
+ 914          
+ 915          
+ 916          enum cc2430_timer3_4_prescaler_t {
+ 917            CC2430_TIMER3_4_DIV_1 = 0x0 << CC2430_T34CTL_DIV, 
+ 918            CC2430_TIMER3_4_DIV_2 = 0x1 << CC2430_T34CTL_DIV, 
+ 919            CC2430_TIMER3_4_DIV_4 = 0x2 << CC2430_T34CTL_DIV, 
+ 920            CC2430_TIMER3_4_DIV_8 = 0x3 << CC2430_T34CTL_DIV, 
+ 921            CC2430_TIMER3_4_DIV_16 = 0x4 << CC2430_T34CTL_DIV, 
+ 922            CC2430_TIMER3_4_DIV_32 = 0x5 << CC2430_T34CTL_DIV, 
+ 923            CC2430_TIMER3_4_DIV_64 = 0x6 << CC2430_T34CTL_DIV, 
+ 924            CC2430_TIMER3_4_DIV_128 = 0x7 << CC2430_T34CTL_DIV
+ 925          };
+ 926          
+ 927          
+ 928          
+ 929          
+ 930          
+ 931          
+ 932          
+ 933          
+ 934          
+ 935          
+ 936          enum __nesc_unnamed4271 {
+ 937            CC2430_WDCTL_CLR = 0x4, 
+ 938            CC2430_WDCTL_EN = 0x3, 
+ 939            CC2430_WDCTL_MODE = 0x2, 
+ 940            CC2430_WDCTL_INT = 0x0, 
+ 941            CC2430_WDCTL_INT_MASK = 0x3
+ 942          };
+ 943          
+ 944          enum cc2430_timerWDT_mode_t {
+ 945            CC2430_TIMERWDT_MODE_WDT = 0x0 << CC2430_WDCTL_MODE, 
+ 946            CC2430_TIMERWDT_MODE_TIMER = 0x1 << CC2430_WDCTL_MODE
+ 947          };
+ 948          //# 42 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/Timer.h"
+ 949          typedef uint8_t TMilli;
+ 950          typedef uint8_t T32khz;
+ 951          typedef uint8_t TMicro;
+ 952          //# 32 "/opt/tinyos-2.x/tos/types/Leds.h"
+ 953          enum __nesc_unnamed4272 {
+ 954            LEDS_LED0 = 1 << 0, 
+ 955            LEDS_LED1 = 1 << 1, 
+ 956            LEDS_LED2 = 1 << 2, 
+ 957            LEDS_LED3 = 1 << 3, 
+ 958            LEDS_LED4 = 1 << 4, 
+ 959            LEDS_LED5 = 1 << 5, 
+ 960            LEDS_LED6 = 1 << 6, 
+ 961            LEDS_LED7 = 1 << 7
+ 962          };
+ 963          //# 51 "/opt/tinyos-2.x/tos/interfaces/Init.nc"
+ 964          static error_t PlatformP__Init__init(void );
+ 965          //#line 51
+ 966          static error_t RealMainP__SoftwareInit__default__init(void );
+ 967          //# 56 "/opt/tinyos-2.x/tos/interfaces/TaskBasic.nc"
+ 968          static error_t SchedulerBasicP__TaskBasic__postTask(
+ 969          //# 45 "/opt/tinyos-2.x/tos/system/SchedulerBasicP.nc"
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 17  
+
+ 970          uint8_t arg_0x7ef72230);
+ 971          //# 64 "/opt/tinyos-2.x/tos/interfaces/TaskBasic.nc"
+ 972          static void SchedulerBasicP__TaskBasic__default__runTask(
+ 973          //# 45 "/opt/tinyos-2.x/tos/system/SchedulerBasicP.nc"
+ 974          uint8_t arg_0x7ef72230);
+ 975          //# 46 "/opt/tinyos-2.x/tos/interfaces/Scheduler.nc"
+ 976          static void SchedulerBasicP__Scheduler__init(void );
+ 977          //#line 61
+ 978          static void SchedulerBasicP__Scheduler__taskLoop(void );
+ 979          //#line 54
+ 980          static bool SchedulerBasicP__Scheduler__runNextTask(void );
+ 981          //# 59 "/opt/tinyos-2.x/tos/interfaces/McuSleep.nc"
+ 982          static void McuSleepC__McuSleep__sleep(void );
+ 983          //# 64 "/opt/tinyos-2.x/tos/interfaces/TaskBasic.nc"
+ 984          static void BlinkNoTimerTaskC__delay__runTask(void );
+ 985          //# 49 "/opt/tinyos-2.x/tos/interfaces/Boot.nc"
+ 986          static void BlinkNoTimerTaskC__Boot__booted(void );
+ 987          //# 64 "/opt/tinyos-2.x/tos/interfaces/TaskBasic.nc"
+ 988          static void BlinkNoTimerTaskC__toggle__runTask(void );
+ 989          //# 51 "/opt/tinyos-2.x/tos/interfaces/Init.nc"
+ 990          static error_t LedsP__Init__init(void );
+ 991          //# 56 "/opt/tinyos-2.x/tos/interfaces/Leds.nc"
+ 992          static void LedsP__Leds__led0Toggle(void );
+ 993          
+ 994          
+ 995          
+ 996          
+ 997          static void LedsP__Leds__led1On(void );
+ 998          
+ 999          
+1000          
+1001          
+1002          
+1003          
+1004          
+1005          
+1006          
+1007          
+1008          static void LedsP__Leds__led1Toggle(void );
+1009          //#line 89
+1010          static void LedsP__Leds__led2Toggle(void );
+1011          //#line 45
+1012          static void LedsP__Leds__led0On(void );
+1013          //#line 78
+1014          static void LedsP__Leds__led2On(void );
+1015          //# 31 "/opt/tinyos-2.x/tos/interfaces/GeneralIO.nc"
+1016          static void HplMcs51GeneralIOC__P13__toggle(void );
+1017          
+1018          
+1019          
+1020          static void HplMcs51GeneralIOC__P13__makeOutput(void );
+1021          //#line 29
+1022          static void HplMcs51GeneralIOC__P13__set(void );
+1023          static void HplMcs51GeneralIOC__P13__clr(void );
+1024          static void HplMcs51GeneralIOC__P10__toggle(void );
+1025          
+1026          
+1027          
+1028          static void HplMcs51GeneralIOC__P10__makeOutput(void );
+1029          //#line 29
+1030          static void HplMcs51GeneralIOC__P10__set(void );
+1031          static void HplMcs51GeneralIOC__P10__clr(void );
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 18  
+
+1032          static void /*PlatformLedsC.Led0_rev*/ReverseGPIOP__0__Out__toggle(void );
+1033          
+1034          
+1035          
+1036          static void /*PlatformLedsC.Led0_rev*/ReverseGPIOP__0__Out__makeOutput(void );
+1037          //#line 29
+1038          static void /*PlatformLedsC.Led0_rev*/ReverseGPIOP__0__Out__set(void );
+1039          static void /*PlatformLedsC.Led0_rev*/ReverseGPIOP__0__Out__clr(void );
+1040          static void /*PlatformLedsC.Led2_rev*/ReverseGPIOP__1__Out__toggle(void );
+1041          
+1042          
+1043          
+1044          static void /*PlatformLedsC.Led2_rev*/ReverseGPIOP__1__Out__makeOutput(void );
+1045          //#line 29
+1046          static void /*PlatformLedsC.Led2_rev*/ReverseGPIOP__1__Out__set(void );
+1047          static void /*PlatformLedsC.Led2_rev*/ReverseGPIOP__1__Out__clr(void );
+1048          static void /*PlatformLedsC.NoPinC*/NoPinC__0__GeneralIO__toggle(void );
+1049          
+1050          
+1051          
+1052          static void /*PlatformLedsC.NoPinC*/NoPinC__0__GeneralIO__makeOutput(void );
+1053          //#line 29
+1054          static void /*PlatformLedsC.NoPinC*/NoPinC__0__GeneralIO__set(void );
+1055          static void /*PlatformLedsC.NoPinC*/NoPinC__0__GeneralIO__clr(void );
+1056          //# 51 "/opt/tinyos-2.x/tos/interfaces/Init.nc"
+1057          static error_t PlatformP__LedsInit__init(void );
+1058          //# 48 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/platforms/cc2430em/PlatformP.nc"
+1059          static  /*inline*/  error_t PlatformP__Init__init(void );
+1060          //# 51 "/opt/tinyos-2.x/tos/interfaces/Init.nc"
+1061          static error_t RealMainP__SoftwareInit__init(void );
+1062          //# 49 "/opt/tinyos-2.x/tos/interfaces/Boot.nc"
+1063          static void RealMainP__Boot__booted(void );
+1064          //# 51 "/opt/tinyos-2.x/tos/interfaces/Init.nc"
+1065          static error_t RealMainP__PlatformInit__init(void );
+1066          //# 46 "/opt/tinyos-2.x/tos/interfaces/Scheduler.nc"
+1067          static void RealMainP__Scheduler__init(void );
+1068          //#line 61
+1069          static void RealMainP__Scheduler__taskLoop(void );
+1070          //#line 54
+1071          static bool RealMainP__Scheduler__runNextTask(void );
+1072          //# 52 "/opt/tinyos-2.x/tos/system/RealMainP.nc"
+1073          int main(void )   ;
+1074          //#line 94
+1075          static  /*inline*/  error_t RealMainP__SoftwareInit__default__init(void );
+1076          //# 64 "/opt/tinyos-2.x/tos/interfaces/TaskBasic.nc"
+1077          static void SchedulerBasicP__TaskBasic__runTask(
+1078          //# 45 "/opt/tinyos-2.x/tos/system/SchedulerBasicP.nc"
+1079          uint8_t arg_0x7ef72230);
+1080          //# 59 "/opt/tinyos-2.x/tos/interfaces/McuSleep.nc"
+1081          static void SchedulerBasicP__McuSleep__sleep(void );
+1082          //# 50 "/opt/tinyos-2.x/tos/system/SchedulerBasicP.nc"
+1083          enum SchedulerBasicP____nesc_unnamed4273 {
+1084          
+1085            SchedulerBasicP__NUM_TASKS = 2U, 
+1086            SchedulerBasicP__NO_TASK = 255
+1087          };
+1088          
+1089          uint8_t SchedulerBasicP__m_head;
+1090          uint8_t SchedulerBasicP__m_tail;
+1091          uint8_t SchedulerBasicP__m_next[SchedulerBasicP__NUM_TASKS];
+1092          
+1093          
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 19  
+
+1094          
+1095          
+1096          
+1097          
+1098          
+1099          
+1100          static   /*inline*/   uint8_t SchedulerBasicP__popTask(void );
+1101          //#line 86
+1102          static  /*inline*/  bool SchedulerBasicP__isWaiting(uint8_t id);
+1103          
+1104          
+1105          
+1106          
+1107          static  /*inline*/  bool SchedulerBasicP__pushTask(uint8_t id);
+1108          //#line 113
+1109          static  /*inline*/  void SchedulerBasicP__Scheduler__init(void );
+1110          
+1111          
+1112          
+1113          
+1114          
+1115          
+1116          
+1117          
+1118          
+1119          static bool SchedulerBasicP__Scheduler__runNextTask(void );
+1120          //#line 138
+1121          static  /*inline*/  void SchedulerBasicP__Scheduler__taskLoop(void );
+1122          //#line 159
+1123          static error_t SchedulerBasicP__TaskBasic__postTask(uint8_t id);
+1124          
+1125          
+1126          
+1127          
+1128          static  /*inline*/  void SchedulerBasicP__TaskBasic__default__runTask(uint8_t id);
+1129          //# 51 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/cc2430/McuSleepC.nc"
+1130          static  /*inline*/  void McuSleepC__McuSleep__sleep(void );
+1131          //# 56 "/opt/tinyos-2.x/tos/interfaces/TaskBasic.nc"
+1132          static error_t BlinkNoTimerTaskC__delay__postTask(void );
+1133          //#line 56
+1134          static error_t BlinkNoTimerTaskC__toggle__postTask(void );
+1135          //# 56 "/opt/tinyos-2.x/tos/interfaces/Leds.nc"
+1136          static void BlinkNoTimerTaskC__Leds__led0Toggle(void );
+1137          
+1138          
+1139          
+1140          
+1141          static void BlinkNoTimerTaskC__Leds__led1On(void );
+1142          
+1143          
+1144          
+1145          
+1146          
+1147          
+1148          
+1149          
+1150          
+1151          
+1152          static void BlinkNoTimerTaskC__Leds__led1Toggle(void );
+1153          //#line 89
+1154          static void BlinkNoTimerTaskC__Leds__led2Toggle(void );
+1155          //#line 45
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 20  
+
+1156          static void BlinkNoTimerTaskC__Leds__led0On(void );
+1157          //#line 78
+1158          static void BlinkNoTimerTaskC__Leds__led2On(void );
+1159          //# 48 "BlinkNoTimerTaskC.nc"
+1160          enum BlinkNoTimerTaskC____nesc_unnamed4274 {
+1161          //#line 48
+1162            BlinkNoTimerTaskC__toggle = 0U
+1163          };
+1164          //#line 48
+1165          typedef int BlinkNoTimerTaskC____nesc_sillytask_toggle[];
+1166          enum BlinkNoTimerTaskC____nesc_unnamed4275 {
+1167          //#line 49
+1168            BlinkNoTimerTaskC__delay = 1U
+1169          };
+1170          //#line 49
+1171          typedef int BlinkNoTimerTaskC____nesc_sillytask_delay[BlinkNoTimerTaskC__delay];
+1172          
+1173          static  /*inline*/  void BlinkNoTimerTaskC__Boot__booted(void );
+1174          
+1175          
+1176          
+1177          
+1178          
+1179          
+1180          
+1181          static void BlinkNoTimerTaskC__delay__runTask(void );
+1182          
+1183          
+1184          
+1185          
+1186          
+1187          
+1188          
+1189          
+1190          
+1191          static  /*inline*/  void BlinkNoTimerTaskC__toggle__runTask(void );
+1192          //# 31 "/opt/tinyos-2.x/tos/interfaces/GeneralIO.nc"
+1193          static void LedsP__Led0__toggle(void );
+1194          
+1195          
+1196          
+1197          static void LedsP__Led0__makeOutput(void );
+1198          //#line 29
+1199          static void LedsP__Led0__set(void );
+1200          static void LedsP__Led0__clr(void );
+1201          static void LedsP__Led1__toggle(void );
+1202          
+1203          
+1204          
+1205          static void LedsP__Led1__makeOutput(void );
+1206          //#line 29
+1207          static void LedsP__Led1__set(void );
+1208          static void LedsP__Led1__clr(void );
+1209          static void LedsP__Led2__toggle(void );
+1210          
+1211          
+1212          
+1213          static void LedsP__Led2__makeOutput(void );
+1214          //#line 29
+1215          static void LedsP__Led2__set(void );
+1216          static void LedsP__Led2__clr(void );
+1217          //# 45 "/opt/tinyos-2.x/tos/system/LedsP.nc"
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 21  
+
+1218          static  /*inline*/  error_t LedsP__Init__init(void );
+1219          //#line 63
+1220          static  /*inline*/  void LedsP__Leds__led0On(void );
+1221          
+1222          
+1223          
+1224          
+1225          
+1226          
+1227          
+1228          
+1229          
+1230          static  /*inline*/  void LedsP__Leds__led0Toggle(void );
+1231          
+1232          
+1233          
+1234          
+1235          static  /*inline*/  void LedsP__Leds__led1On(void );
+1236          
+1237          
+1238          
+1239          
+1240          
+1241          
+1242          
+1243          
+1244          
+1245          static  /*inline*/  void LedsP__Leds__led1Toggle(void );
+1246          
+1247          
+1248          
+1249          
+1250          static  /*inline*/  void LedsP__Leds__led2On(void );
+1251          
+1252          
+1253          
+1254          
+1255          
+1256          
+1257          
+1258          
+1259          
+1260          static  /*inline*/  void LedsP__Leds__led2Toggle(void );
+1261          //# 92 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
+1262          static   /*inline*/   void HplMcs51GeneralIOC__P10__set(void );
+1263          //#line 92
+1264          static   /*inline*/   void HplMcs51GeneralIOC__P10__clr(void );
+1265          //#line 92
+1266          static  /*inline*/  void HplMcs51GeneralIOC__P10__toggle(void );
+1267          //#line 92
+1268          static   /*inline*/   void HplMcs51GeneralIOC__P10__makeOutput(void );
+1269          
+1270          
+1271          static   /*inline*/   void HplMcs51GeneralIOC__P13__set(void );
+1272          //#line 95
+1273          static   /*inline*/   void HplMcs51GeneralIOC__P13__clr(void );
+1274          //#line 95
+1275          static  /*inline*/  void HplMcs51GeneralIOC__P13__toggle(void );
+1276          //#line 95
+1277          static   /*inline*/   void HplMcs51GeneralIOC__P13__makeOutput(void );
+1278          //# 31 "/opt/tinyos-2.x/tos/interfaces/GeneralIO.nc"
+1279          static void /*PlatformLedsC.Led0_rev*/ReverseGPIOP__0__In__toggle(void );
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 22  
+
+1280          
+1281          
+1282          
+1283          static void /*PlatformLedsC.Led0_rev*/ReverseGPIOP__0__In__makeOutput(void );
+1284          //#line 29
+1285          static void /*PlatformLedsC.Led0_rev*/ReverseGPIOP__0__In__set(void );
+1286          static void /*PlatformLedsC.Led0_rev*/ReverseGPIOP__0__In__clr(void );
+1287          //# 59 "/opt/tinyos-2.x-contrib/diku/common/lib/ReverseGPIOP.nc"
+1288          static   /*inline*/   void /*PlatformLedsC.Led0_rev*/ReverseGPIOP__0__Out__set(void );
+1289          //#line 59
+1290          static   /*inline*/   void /*PlatformLedsC.Led0_rev*/ReverseGPIOP__0__Out__clr(void );
+1291          //#line 59
+1292          static  /*inline*/  void /*PlatformLedsC.Led0_rev*/ReverseGPIOP__0__Out__toggle(void );
+1293          //#line 59
+1294          static   /*inline*/   void /*PlatformLedsC.Led0_rev*/ReverseGPIOP__0__Out__makeOutput(void );
+1295          //# 31 "/opt/tinyos-2.x/tos/interfaces/GeneralIO.nc"
+1296          static void /*PlatformLedsC.Led2_rev*/ReverseGPIOP__1__In__toggle(void );
+1297          
+1298          
+1299          
+1300          static void /*PlatformLedsC.Led2_rev*/ReverseGPIOP__1__In__makeOutput(void );
+1301          //#line 29
+1302          static void /*PlatformLedsC.Led2_rev*/ReverseGPIOP__1__In__set(void );
+1303          static void /*PlatformLedsC.Led2_rev*/ReverseGPIOP__1__In__clr(void );
+1304          //# 59 "/opt/tinyos-2.x-contrib/diku/common/lib/ReverseGPIOP.nc"
+1305          static   /*inline*/   void /*PlatformLedsC.Led2_rev*/ReverseGPIOP__1__Out__set(void );
+1306          //#line 59
+1307          static   /*inline*/   void /*PlatformLedsC.Led2_rev*/ReverseGPIOP__1__Out__clr(void );
+1308          //#line 59
+1309          static  /*inline*/  void /*PlatformLedsC.Led2_rev*/ReverseGPIOP__1__Out__toggle(void );
+1310          //#line 59
+1311          static   /*inline*/   void /*PlatformLedsC.Led2_rev*/ReverseGPIOP__1__Out__makeOutput(void );
+1312          //# 23 "/opt/tinyos-2.x/tos/system/NoPinC.nc"
+1313          static  /*inline*/  void /*PlatformLedsC.NoPinC*/NoPinC__0__GeneralIO__set(void );
+1314          static  /*inline*/  void /*PlatformLedsC.NoPinC*/NoPinC__0__GeneralIO__clr(void );
+1315          static  /*inline*/  void /*PlatformLedsC.NoPinC*/NoPinC__0__GeneralIO__toggle(void );
+1316          
+1317          static  /*inline*/  void /*PlatformLedsC.NoPinC*/NoPinC__0__GeneralIO__makeOutput(void );
+1318          //# 107 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/mcs51hardware.h"
+1319            /*inline*/    __nesc_atomic_t __nesc_atomic_start(void )
+1320          //#line 107
+1321          {
+1322   1        __nesc_atomic_t tmp = EA;
+1323   1      
+1324   1      //#line 109
+1325   1        EA = 0;
+1326   1        return tmp;
+1327   1      }
+1328          
+1329            /*inline*/    void __nesc_atomic_end(__nesc_atomic_t oldSreg)
+1330          //#line 113
+1331          {
+1332   1        EA = oldSreg;
+1333   1      }
+1334          
+1335          //# 113 "/opt/tinyos-2.x/tos/system/SchedulerBasicP.nc"
+1336          static  /*inline*/  void SchedulerBasicP__Scheduler__init(void )
+1337          {
+1338   1        /* atomic removed: atomic calls only */
+1339   1        {
+1340   2          memset((void *)SchedulerBasicP__m_next, SchedulerBasicP__NO_TASK, sizeof SchedulerBasicP__m_next);
+1341   2          SchedulerBasicP__m_head = SchedulerBasicP__NO_TASK;
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 23  
+
+1342   2          SchedulerBasicP__m_tail = SchedulerBasicP__NO_TASK;
+1343   2        }
+1344   1      }
+1345          
+1346          //# 46 "/opt/tinyos-2.x/tos/interfaces/Scheduler.nc"
+1347           /*inline*/  static void RealMainP__Scheduler__init(void ){
+1348   1      //#line 46
+1349   1        SchedulerBasicP__Scheduler__init();
+1350   1      //#line 46
+1351   1      }
+1352          //#line 46
+1353          //# 95 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
+1354          static   /*inline*/   void HplMcs51GeneralIOC__P13__clr(void )
+1355          //#line 95
+1356          {
+1357   1      //#line 95
+1358   1        P1_3 = 0;
+1359   1      }
+1360          
+1361          //# 30 "/opt/tinyos-2.x/tos/interfaces/GeneralIO.nc"
+1362           /*inline*/  static void /*PlatformLedsC.Led2_rev*/ReverseGPIOP__1__In__clr(void ){
+1363   1      //#line 30
+1364   1        HplMcs51GeneralIOC__P13__clr();
+1365   1      //#line 30
+1366   1      }
+1367          //#line 30
+1368          //# 59 "/opt/tinyos-2.x-contrib/diku/common/lib/ReverseGPIOP.nc"
+1369          static   /*inline*/   void /*PlatformLedsC.Led2_rev*/ReverseGPIOP__1__Out__set(void )
+1370          //#line 59
+1371          {
+1372   1      //#line 59
+1373   1        /*PlatformLedsC.Led2_rev*/ReverseGPIOP__1__In__clr();
+1374   1      }
+1375          
+1376          //# 29 "/opt/tinyos-2.x/tos/interfaces/GeneralIO.nc"
+1377           /*inline*/  static void LedsP__Led2__set(void ){
+1378   1      //#line 29
+1379   1        /*PlatformLedsC.Led2_rev*/ReverseGPIOP__1__Out__set();
+1380   1      //#line 29
+1381   1      }
+1382          //#line 29
+1383          //# 23 "/opt/tinyos-2.x/tos/system/NoPinC.nc"
+1384          static  /*inline*/  void /*PlatformLedsC.NoPinC*/NoPinC__0__GeneralIO__set(void )
+1385          //#line 23
+1386          {
+1387   1      }
+1388          
+1389          //# 29 "/opt/tinyos-2.x/tos/interfaces/GeneralIO.nc"
+1390           /*inline*/  static void LedsP__Led1__set(void ){
+1391   1      //#line 29
+1392   1        /*PlatformLedsC.NoPinC*/NoPinC__0__GeneralIO__set();
+1393   1      //#line 29
+1394   1      }
+1395          //#line 29
+1396          //# 92 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
+1397          static   /*inline*/   void HplMcs51GeneralIOC__P10__clr(void )
+1398          //#line 92
+1399          {
+1400   1      //#line 92
+1401   1        P1_0 = 0;
+1402   1      }
+1403          
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 24  
+
+1404          //# 30 "/opt/tinyos-2.x/tos/interfaces/GeneralIO.nc"
+1405           /*inline*/  static void /*PlatformLedsC.Led0_rev*/ReverseGPIOP__0__In__clr(void ){
+1406   1      //#line 30
+1407   1        HplMcs51GeneralIOC__P10__clr();
+1408   1      //#line 30
+1409   1      }
+1410          //#line 30
+1411          //# 59 "/opt/tinyos-2.x-contrib/diku/common/lib/ReverseGPIOP.nc"
+1412          static   /*inline*/   void /*PlatformLedsC.Led0_rev*/ReverseGPIOP__0__Out__set(void )
+1413          //#line 59
+1414          {
+1415   1      //#line 59
+1416   1        /*PlatformLedsC.Led0_rev*/ReverseGPIOP__0__In__clr();
+1417   1      }
+1418          
+1419          //# 29 "/opt/tinyos-2.x/tos/interfaces/GeneralIO.nc"
+1420           /*inline*/  static void LedsP__Led0__set(void ){
+1421   1      //#line 29
+1422   1        /*PlatformLedsC.Led0_rev*/ReverseGPIOP__0__Out__set();
+1423   1      //#line 29
+1424   1      }
+1425          //#line 29
+1426          //# 95 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
+1427          static   /*inline*/   void HplMcs51GeneralIOC__P13__makeOutput(void )
+1428          //#line 95
+1429          {
+1430   1      //#line 95
+1431   1        P1_DIR |= 1 << 3;
+1432   1      }
+1433          
+1434          //# 35 "/opt/tinyos-2.x/tos/interfaces/GeneralIO.nc"
+1435           /*inline*/  static void /*PlatformLedsC.Led2_rev*/ReverseGPIOP__1__In__makeOutput(void ){
+1436   1      //#line 35
+1437   1        HplMcs51GeneralIOC__P13__makeOutput();
+1438   1      //#line 35
+1439   1      }
+1440          //#line 35
+1441          //# 59 "/opt/tinyos-2.x-contrib/diku/common/lib/ReverseGPIOP.nc"
+1442          static   /*inline*/   void /*PlatformLedsC.Led2_rev*/ReverseGPIOP__1__Out__makeOutput(void )
+1443          //#line 59
+1444          {
+1445   1      //#line 59
+1446   1        /*PlatformLedsC.Led2_rev*/ReverseGPIOP__1__In__makeOutput();
+1447   1      }
+1448          
+1449          //# 35 "/opt/tinyos-2.x/tos/interfaces/GeneralIO.nc"
+1450           /*inline*/  static void LedsP__Led2__makeOutput(void ){
+1451   1      //#line 35
+1452   1        /*PlatformLedsC.Led2_rev*/ReverseGPIOP__1__Out__makeOutput();
+1453   1      //#line 35
+1454   1      }
+1455          //#line 35
+1456          //# 27 "/opt/tinyos-2.x/tos/system/NoPinC.nc"
+1457          static  /*inline*/  void /*PlatformLedsC.NoPinC*/NoPinC__0__GeneralIO__makeOutput(void )
+1458          //#line 27
+1459          {
+1460   1      }
+1461          
+1462          //# 35 "/opt/tinyos-2.x/tos/interfaces/GeneralIO.nc"
+1463           /*inline*/  static void LedsP__Led1__makeOutput(void ){
+1464   1      //#line 35
+1465   1        /*PlatformLedsC.NoPinC*/NoPinC__0__GeneralIO__makeOutput();
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 25  
+
+1466   1      //#line 35
+1467   1      }
+1468          //#line 35
+1469          //# 92 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
+1470          static   /*inline*/   void HplMcs51GeneralIOC__P10__makeOutput(void )
+1471          //#line 92
+1472          {
+1473   1      //#line 92
+1474   1        P1_DIR |= 1 << 0;
+1475   1      }
+1476          
+1477          //# 35 "/opt/tinyos-2.x/tos/interfaces/GeneralIO.nc"
+1478           /*inline*/  static void /*PlatformLedsC.Led0_rev*/ReverseGPIOP__0__In__makeOutput(void ){
+1479   1      //#line 35
+1480   1        HplMcs51GeneralIOC__P10__makeOutput();
+1481   1      //#line 35
+1482   1      }
+1483          //#line 35
+1484          //# 59 "/opt/tinyos-2.x-contrib/diku/common/lib/ReverseGPIOP.nc"
+1485          static   /*inline*/   void /*PlatformLedsC.Led0_rev*/ReverseGPIOP__0__Out__makeOutput(void )
+1486          //#line 59
+1487          {
+1488   1      //#line 59
+1489   1        /*PlatformLedsC.Led0_rev*/ReverseGPIOP__0__In__makeOutput();
+1490   1      }
+1491          
+1492          //# 35 "/opt/tinyos-2.x/tos/interfaces/GeneralIO.nc"
+1493           /*inline*/  static void LedsP__Led0__makeOutput(void ){
+1494   1      //#line 35
+1495   1        /*PlatformLedsC.Led0_rev*/ReverseGPIOP__0__Out__makeOutput();
+1496   1      //#line 35
+1497   1      }
+1498          //#line 35
+1499          //# 45 "/opt/tinyos-2.x/tos/system/LedsP.nc"
+1500          static  /*inline*/  error_t LedsP__Init__init(void )
+1501          //#line 45
+1502          {
+1503   1        /* atomic removed: atomic calls only */
+1504   1      //#line 46
+1505   1        {
+1506   2          ;
+1507   2          LedsP__Led0__makeOutput();
+1508   2          LedsP__Led1__makeOutput();
+1509   2          LedsP__Led2__makeOutput();
+1510   2          LedsP__Led0__set();
+1511   2          LedsP__Led1__set();
+1512   2          LedsP__Led2__set();
+1513   2        }
+1514   1        return SUCCESS;
+1515   1      }
+1516          
+1517          //# 51 "/opt/tinyos-2.x/tos/interfaces/Init.nc"
+1518           /*inline*/  static error_t PlatformP__LedsInit__init(void ){
+1519   1      //#line 51
+1520   1        unsigned char result;
+1521   1      //#line 51
+1522   1      
+1523   1      //#line 51
+1524   1        result = LedsP__Init__init();
+1525   1      //#line 51
+1526   1      
+1527   1      //#line 51
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 26  
+
+1528   1        return result;
+1529   1      //#line 51
+1530   1      }
+1531          //#line 51
+1532          //# 48 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/platforms/cc2430em/PlatformP.nc"
+1533          static  /*inline*/  error_t PlatformP__Init__init(void )
+1534          //#line 48
+1535          {
+1536   1        uint8_t new_clkcon;
+1537   1      
+1538   1      //#line 88
+1539   1        SLEEP = (SLEEP & ~CC2430_SLEEP_MODE_MASK) | CC2430_SLEEP_POWERMODE_0;
+1540   1      
+1541   1      
+1542   1      
+1543   1        SLEEP &= ~(1 << CC2430_SLEEP_OSC_PD);
+1544   1        while (!(SLEEP & (1 << CC2430_SLEEP_XOSC_STB))) ;
+1545   1      
+1546   1        new_clkcon = 0x0;
+1547   1      
+1548   1        new_clkcon = (new_clkcon & ~CC2430_CLKCON_TICKSPD_MASK) | CC2430_TICKF_DIV_1;
+1549   1      
+1550   1      
+1551   1        new_clkcon &= ~(1 << CC2430_CLKCON_OSC32K);
+1552   1      
+1553   1      
+1554   1      
+1555   1      
+1556   1      
+1557   1      
+1558   1        new_clkcon &= ~(1 << CC2430_CLKCON_OSC);
+1559   1      
+1560   1        new_clkcon |= 1 << CC2430_CLKCON_TICKSPD;
+1561   1      
+1562   1        CLKCON = new_clkcon;
+1563   1      //#line 137
+1564   1        PlatformP__LedsInit__init();
+1565   1        return SUCCESS;
+1566   1      }
+1567          
+1568          //# 51 "/opt/tinyos-2.x/tos/interfaces/Init.nc"
+1569           /*inline*/  static error_t RealMainP__PlatformInit__init(void ){
+1570   1      //#line 51
+1571   1        unsigned char result;
+1572   1      //#line 51
+1573   1      
+1574   1      //#line 51
+1575   1        result = PlatformP__Init__init();
+1576   1      //#line 51
+1577   1      
+1578   1      //#line 51
+1579   1        return result;
+1580   1      //#line 51
+1581   1      }
+1582          //#line 51
+1583          //# 54 "/opt/tinyos-2.x/tos/interfaces/Scheduler.nc"
+1584           /*inline*/  static bool RealMainP__Scheduler__runNextTask(void ){
+1585   1      //#line 54
+1586   1        unsigned char result;
+1587   1      //#line 54
+1588   1      
+1589   1      //#line 54
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 27  
+
+1590   1        result = SchedulerBasicP__Scheduler__runNextTask();
+1591   1      //#line 54
+1592   1      
+1593   1      //#line 54
+1594   1        return result;
+1595   1      //#line 54
+1596   1      }
+1597          //#line 54
+1598          //# 56 "/opt/tinyos-2.x/tos/interfaces/TaskBasic.nc"
+1599           /*inline*/  static error_t BlinkNoTimerTaskC__toggle__postTask(void ){
+1600   1      //#line 56
+1601   1        unsigned char result;
+1602   1      //#line 56
+1603   1      
+1604   1      //#line 56
+1605   1        result = SchedulerBasicP__TaskBasic__postTask(BlinkNoTimerTaskC__toggle);
+1606   1      //#line 56
+1607   1      
+1608   1      //#line 56
+1609   1        return result;
+1610   1      //#line 56
+1611   1      }
+1612          //#line 56
+1613          //# 86 "/opt/tinyos-2.x/tos/system/SchedulerBasicP.nc"
+1614          static  /*inline*/  bool SchedulerBasicP__isWaiting(uint8_t id)
+1615          {
+1616   1        return SchedulerBasicP__m_next[id] != SchedulerBasicP__NO_TASK || SchedulerBasicP__m_tail == id;
+1617   1      }
+1618          
+1619          static  /*inline*/  bool SchedulerBasicP__pushTask(uint8_t id)
+1620          {
+1621   1        if (!SchedulerBasicP__isWaiting(id)) 
+1622   1          {
+1623   2            if (SchedulerBasicP__m_head == SchedulerBasicP__NO_TASK) 
+1624   2              {
+1625   3                SchedulerBasicP__m_head = id;
+1626   3                SchedulerBasicP__m_tail = id;
+1627   3              }
+1628   2            else 
+1629   2              {
+1630   3                SchedulerBasicP__m_next[SchedulerBasicP__m_tail] = id;
+1631   3                SchedulerBasicP__m_tail = id;
+1632   3              }
+1633   2            return TRUE;
+1634   2          }
+1635   1        else 
+1636   1          {
+1637   2            return FALSE;
+1638   2          }
+1639   1      }
+1640          
+1641          //# 94 "/opt/tinyos-2.x/tos/system/RealMainP.nc"
+1642          static  /*inline*/  error_t RealMainP__SoftwareInit__default__init(void )
+1643          //#line 94
+1644          {
+1645   1      //#line 94
+1646   1        return SUCCESS;
+1647   1      }
+1648          
+1649          //# 51 "/opt/tinyos-2.x/tos/interfaces/Init.nc"
+1650           /*inline*/  static error_t RealMainP__SoftwareInit__init(void ){
+1651   1      //#line 51
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 28  
+
+1652   1        unsigned char result;
+1653   1      //#line 51
+1654   1      
+1655   1      //#line 51
+1656   1        result = RealMainP__SoftwareInit__default__init();
+1657   1      //#line 51
+1658   1      
+1659   1      //#line 51
+1660   1        return result;
+1661   1      //#line 51
+1662   1      }
+1663          //#line 51
+1664          //# 56 "/opt/tinyos-2.x/tos/interfaces/TaskBasic.nc"
+1665           /*inline*/  static error_t BlinkNoTimerTaskC__delay__postTask(void ){
+1666   1      //#line 56
+1667   1        unsigned char result;
+1668   1      //#line 56
+1669   1      
+1670   1      //#line 56
+1671   1        result = SchedulerBasicP__TaskBasic__postTask(BlinkNoTimerTaskC__delay);
+1672   1      //#line 56
+1673   1      
+1674   1      //#line 56
+1675   1        return result;
+1676   1      //#line 56
+1677   1      }
+1678          //#line 56
+1679          //# 95 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
+1680          static   /*inline*/   void HplMcs51GeneralIOC__P13__set(void )
+1681          //#line 95
+1682          {
+1683   1      //#line 95
+1684   1        P1_3 = 1;
+1685   1      }
+1686          
+1687          //# 29 "/opt/tinyos-2.x/tos/interfaces/GeneralIO.nc"
+1688           /*inline*/  static void /*PlatformLedsC.Led2_rev*/ReverseGPIOP__1__In__set(void ){
+1689   1      //#line 29
+1690   1        HplMcs51GeneralIOC__P13__set();
+1691   1      //#line 29
+1692   1      }
+1693          //#line 29
+1694          //# 59 "/opt/tinyos-2.x-contrib/diku/common/lib/ReverseGPIOP.nc"
+1695          static   /*inline*/   void /*PlatformLedsC.Led2_rev*/ReverseGPIOP__1__Out__clr(void )
+1696          //#line 59
+1697          {
+1698   1      //#line 59
+1699   1        /*PlatformLedsC.Led2_rev*/ReverseGPIOP__1__In__set();
+1700   1      }
+1701          
+1702          //# 30 "/opt/tinyos-2.x/tos/interfaces/GeneralIO.nc"
+1703           /*inline*/  static void LedsP__Led2__clr(void ){
+1704   1      //#line 30
+1705   1        /*PlatformLedsC.Led2_rev*/ReverseGPIOP__1__Out__clr();
+1706   1      //#line 30
+1707   1      }
+1708          //#line 30
+1709          //# 93 "/opt/tinyos-2.x/tos/system/LedsP.nc"
+1710          static  /*inline*/  void LedsP__Leds__led2On(void )
+1711          //#line 93
+1712          {
+1713   1        LedsP__Led2__clr();
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 29  
+
+1714   1        ;
+1715   1      //#line 95
+1716   1        ;
+1717   1      }
+1718          
+1719          //# 78 "/opt/tinyos-2.x/tos/interfaces/Leds.nc"
+1720           /*inline*/  static void BlinkNoTimerTaskC__Leds__led2On(void ){
+1721   1      //#line 78
+1722   1        LedsP__Leds__led2On();
+1723   1      //#line 78
+1724   1      }
+1725          //#line 78
+1726          //# 24 "/opt/tinyos-2.x/tos/system/NoPinC.nc"
+1727          static  /*inline*/  void /*PlatformLedsC.NoPinC*/NoPinC__0__GeneralIO__clr(void )
+1728          //#line 24
+1729          {
+1730   1      }
+1731          
+1732          //# 30 "/opt/tinyos-2.x/tos/interfaces/GeneralIO.nc"
+1733           /*inline*/  static void LedsP__Led1__clr(void ){
+1734   1      //#line 30
+1735   1        /*PlatformLedsC.NoPinC*/NoPinC__0__GeneralIO__clr();
+1736   1      //#line 30
+1737   1      }
+1738          //#line 30
+1739          //# 78 "/opt/tinyos-2.x/tos/system/LedsP.nc"
+1740          static  /*inline*/  void LedsP__Leds__led1On(void )
+1741          //#line 78
+1742          {
+1743   1        LedsP__Led1__clr();
+1744   1        ;
+1745   1      //#line 80
+1746   1        ;
+1747   1      }
+1748          
+1749          //# 61 "/opt/tinyos-2.x/tos/interfaces/Leds.nc"
+1750           /*inline*/  static void BlinkNoTimerTaskC__Leds__led1On(void ){
+1751   1      //#line 61
+1752   1        LedsP__Leds__led1On();
+1753   1      //#line 61
+1754   1      }
+1755          //#line 61
+1756          //# 92 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
+1757          static   /*inline*/   void HplMcs51GeneralIOC__P10__set(void )
+1758          //#line 92
+1759          {
+1760   1      //#line 92
+1761   1        P1_0 = 1;
+1762   1      }
+1763          
+1764          //# 29 "/opt/tinyos-2.x/tos/interfaces/GeneralIO.nc"
+1765           /*inline*/  static void /*PlatformLedsC.Led0_rev*/ReverseGPIOP__0__In__set(void ){
+1766   1      //#line 29
+1767   1        HplMcs51GeneralIOC__P10__set();
+1768   1      //#line 29
+1769   1      }
+1770          //#line 29
+1771          //# 59 "/opt/tinyos-2.x-contrib/diku/common/lib/ReverseGPIOP.nc"
+1772          static   /*inline*/   void /*PlatformLedsC.Led0_rev*/ReverseGPIOP__0__Out__clr(void )
+1773          //#line 59
+1774          {
+1775   1      //#line 59
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 30  
+
+1776   1        /*PlatformLedsC.Led0_rev*/ReverseGPIOP__0__In__set();
+1777   1      }
+1778          
+1779          //# 30 "/opt/tinyos-2.x/tos/interfaces/GeneralIO.nc"
+1780           /*inline*/  static void LedsP__Led0__clr(void ){
+1781   1      //#line 30
+1782   1        /*PlatformLedsC.Led0_rev*/ReverseGPIOP__0__Out__clr();
+1783   1      //#line 30
+1784   1      }
+1785          //#line 30
+1786          //# 63 "/opt/tinyos-2.x/tos/system/LedsP.nc"
+1787          static  /*inline*/  void LedsP__Leds__led0On(void )
+1788          //#line 63
+1789          {
+1790   1        LedsP__Led0__clr();
+1791   1        ;
+1792   1      //#line 65
+1793   1        ;
+1794   1      }
+1795          
+1796          //# 45 "/opt/tinyos-2.x/tos/interfaces/Leds.nc"
+1797           /*inline*/  static void BlinkNoTimerTaskC__Leds__led0On(void ){
+1798   1      //#line 45
+1799   1        LedsP__Leds__led0On();
+1800   1      //#line 45
+1801   1      }
+1802          //#line 45
+1803          //# 51 "BlinkNoTimerTaskC.nc"
+1804          static  /*inline*/  void BlinkNoTimerTaskC__Boot__booted(void )
+1805          //#line 51
+1806          {
+1807   1        BlinkNoTimerTaskC__Leds__led0On();
+1808   1        BlinkNoTimerTaskC__Leds__led1On();
+1809   1        BlinkNoTimerTaskC__Leds__led2On();
+1810   1      
+1811   1        BlinkNoTimerTaskC__delay__postTask();
+1812   1      }
+1813          
+1814          //# 49 "/opt/tinyos-2.x/tos/interfaces/Boot.nc"
+1815           /*inline*/  static void RealMainP__Boot__booted(void ){
+1816   1      //#line 49
+1817   1        BlinkNoTimerTaskC__Boot__booted();
+1818   1      //#line 49
+1819   1      }
+1820          //#line 49
+1821          //# 95 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
+1822          static  /*inline*/  void HplMcs51GeneralIOC__P13__toggle(void )
+1823          //#line 95
+1824          {
+1825   1        /* atomic removed: atomic calls only */
+1826   1      //#line 95
+1827   1        {
+1828   2      //#line 95
+1829   2          P1_3 = ~P1_3;
+1830   2        }
+1831   1      }
+1832          
+1833          //# 31 "/opt/tinyos-2.x/tos/interfaces/GeneralIO.nc"
+1834           /*inline*/  static void /*PlatformLedsC.Led2_rev*/ReverseGPIOP__1__In__toggle(void ){
+1835   1      //#line 31
+1836   1        HplMcs51GeneralIOC__P13__toggle();
+1837   1      //#line 31
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 31  
+
+1838   1      }
+1839          //#line 31
+1840          //# 59 "/opt/tinyos-2.x-contrib/diku/common/lib/ReverseGPIOP.nc"
+1841          static  /*inline*/  void /*PlatformLedsC.Led2_rev*/ReverseGPIOP__1__Out__toggle(void )
+1842          //#line 59
+1843          {
+1844   1      //#line 59
+1845   1        { __nesc_atomic_t __nesc_atomic = __nesc_atomic_start();
+1846   2      //#line 59
+1847   2          {
+1848   3      //#line 59
+1849   3            /*PlatformLedsC.Led2_rev*/ReverseGPIOP__1__In__toggle();
+1850   3          }
+1851   2      //#line 60
+1852   2          __nesc_atomic_end(__nesc_atomic); }
+1853   1      }
+1854          
+1855          //# 31 "/opt/tinyos-2.x/tos/interfaces/GeneralIO.nc"
+1856           /*inline*/  static void LedsP__Led2__toggle(void ){
+1857   1      //#line 31
+1858   1        /*PlatformLedsC.Led2_rev*/ReverseGPIOP__1__Out__toggle();
+1859   1      //#line 31
+1860   1      }
+1861          //#line 31
+1862          //# 103 "/opt/tinyos-2.x/tos/system/LedsP.nc"
+1863          static  /*inline*/  void LedsP__Leds__led2Toggle(void )
+1864          //#line 103
+1865          {
+1866   1        LedsP__Led2__toggle();
+1867   1        ;
+1868   1      //#line 105
+1869   1        ;
+1870   1      }
+1871          
+1872          //# 89 "/opt/tinyos-2.x/tos/interfaces/Leds.nc"
+1873           /*inline*/  static void BlinkNoTimerTaskC__Leds__led2Toggle(void ){
+1874   1      //#line 89
+1875   1        LedsP__Leds__led2Toggle();
+1876   1      //#line 89
+1877   1      }
+1878          //#line 89
+1879          //# 25 "/opt/tinyos-2.x/tos/system/NoPinC.nc"
+1880          static  /*inline*/  void /*PlatformLedsC.NoPinC*/NoPinC__0__GeneralIO__toggle(void )
+1881          //#line 25
+1882          {
+1883   1      }
+1884          
+1885          //# 31 "/opt/tinyos-2.x/tos/interfaces/GeneralIO.nc"
+1886           /*inline*/  static void LedsP__Led1__toggle(void ){
+1887   1      //#line 31
+1888   1        /*PlatformLedsC.NoPinC*/NoPinC__0__GeneralIO__toggle();
+1889   1      //#line 31
+1890   1      }
+1891          //#line 31
+1892          //# 88 "/opt/tinyos-2.x/tos/system/LedsP.nc"
+1893          static  /*inline*/  void LedsP__Leds__led1Toggle(void )
+1894          //#line 88
+1895          {
+1896   1        LedsP__Led1__toggle();
+1897   1        ;
+1898   1      //#line 90
+1899   1        ;
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 32  
+
+1900   1      }
+1901          
+1902          //# 72 "/opt/tinyos-2.x/tos/interfaces/Leds.nc"
+1903           /*inline*/  static void BlinkNoTimerTaskC__Leds__led1Toggle(void ){
+1904   1      //#line 72
+1905   1        LedsP__Leds__led1Toggle();
+1906   1      //#line 72
+1907   1      }
+1908          //#line 72
+1909          //# 92 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
+1910          static  /*inline*/  void HplMcs51GeneralIOC__P10__toggle(void )
+1911          //#line 92
+1912          {
+1913   1        /* atomic removed: atomic calls only */
+1914   1      //#line 92
+1915   1        {
+1916   2      //#line 92
+1917   2          P1_0 = ~P1_0;
+1918   2        }
+1919   1      }
+1920          
+1921          //# 31 "/opt/tinyos-2.x/tos/interfaces/GeneralIO.nc"
+1922           /*inline*/  static void /*PlatformLedsC.Led0_rev*/ReverseGPIOP__0__In__toggle(void ){
+1923   1      //#line 31
+1924   1        HplMcs51GeneralIOC__P10__toggle();
+1925   1      //#line 31
+1926   1      }
+1927          //#line 31
+1928          //# 59 "/opt/tinyos-2.x-contrib/diku/common/lib/ReverseGPIOP.nc"
+1929          static  /*inline*/  void /*PlatformLedsC.Led0_rev*/ReverseGPIOP__0__Out__toggle(void )
+1930          //#line 59
+1931          {
+1932   1      //#line 59
+1933   1        { __nesc_atomic_t __nesc_atomic = __nesc_atomic_start();
+1934   2      //#line 59
+1935   2          {
+1936   3      //#line 59
+1937   3            /*PlatformLedsC.Led0_rev*/ReverseGPIOP__0__In__toggle();
+1938   3          }
+1939   2      //#line 60
+1940   2          __nesc_atomic_end(__nesc_atomic); }
+1941   1      }
+1942          
+1943          //# 31 "/opt/tinyos-2.x/tos/interfaces/GeneralIO.nc"
+1944           /*inline*/  static void LedsP__Led0__toggle(void ){
+1945   1      //#line 31
+1946   1        /*PlatformLedsC.Led0_rev*/ReverseGPIOP__0__Out__toggle();
+1947   1      //#line 31
+1948   1      }
+1949          //#line 31
+1950          //# 73 "/opt/tinyos-2.x/tos/system/LedsP.nc"
+1951          static  /*inline*/  void LedsP__Leds__led0Toggle(void )
+1952          //#line 73
+1953          {
+1954   1        LedsP__Led0__toggle();
+1955   1        ;
+1956   1      //#line 75
+1957   1        ;
+1958   1      }
+1959          
+1960          //# 56 "/opt/tinyos-2.x/tos/interfaces/Leds.nc"
+1961           /*inline*/  static void BlinkNoTimerTaskC__Leds__led0Toggle(void ){
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 33  
+
+1962   1      //#line 56
+1963   1        LedsP__Leds__led0Toggle();
+1964   1      //#line 56
+1965   1      }
+1966          //#line 56
+1967          //# 69 "BlinkNoTimerTaskC.nc"
+1968          static  /*inline*/  void BlinkNoTimerTaskC__toggle__runTask(void )
+1969          //#line 69
+1970          {
+1971   1      
+1972   1        BlinkNoTimerTaskC__Leds__led0Toggle();
+1973   1        BlinkNoTimerTaskC__Leds__led1Toggle();
+1974   1        BlinkNoTimerTaskC__Leds__led2Toggle();
+1975   1      }
+1976          
+1977          //# 164 "/opt/tinyos-2.x/tos/system/SchedulerBasicP.nc"
+1978          static  /*inline*/  void SchedulerBasicP__TaskBasic__default__runTask(uint8_t id)
+1979          {
+1980   1      }
+*** WARNING C280 IN LINE 1978 OF APP.C: 'id': unreferenced local variable
+1981          
+1982          //# 64 "/opt/tinyos-2.x/tos/interfaces/TaskBasic.nc"
+1983           /*inline*/  static void SchedulerBasicP__TaskBasic__runTask(uint8_t arg_0x7ef72230){
+1984   1      //#line 64
+1985   1        switch (arg_0x7ef72230) {
+1986   2      //#line 64
+1987   2          case BlinkNoTimerTaskC__toggle:
+1988   2      //#line 64
+1989   2            BlinkNoTimerTaskC__toggle__runTask();
+1990   2      //#line 64
+1991   2            break;
+1992   2      //#line 64
+1993   2          case BlinkNoTimerTaskC__delay:
+1994   2      //#line 64
+1995   2            BlinkNoTimerTaskC__delay__runTask();
+1996   2      //#line 64
+1997   2            break;
+1998   2      //#line 64
+1999   2          default:
+2000   2      //#line 64
+2001   2            SchedulerBasicP__TaskBasic__default__runTask(arg_0x7ef72230);
+2002   2      //#line 64
+2003   2            break;
+2004   2      //#line 64
+2005   2          }
+2006   1      //#line 64
+2007   1      }
+2008          //#line 64
+2009          //# 104 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/mcs51hardware.h"
+2010          static   /*inline*/   void __nesc_disable_interrupt()
+2011          //#line 104
+2012          {
+2013   1      //#line 104
+2014   1        EA = 0;
+2015   1      }
+2016          
+2017          //#line 105
+2018          static   /*inline*/   void __nesc_enable_interrupt()
+2019          //#line 105
+2020          {
+2021   1      //#line 105
+2022   1        EA = 1;
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 34  
+
+2023   1      }
+2024          
+2025          //# 51 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/cc2430/McuSleepC.nc"
+2026          static  /*inline*/  void McuSleepC__McuSleep__sleep(void )
+2027          //#line 51
+2028          {
+2029   1      
+2030   1        __nesc_enable_interrupt();
+2031   1      
+2032   1      
+2033   1      
+2034   1      
+2035   1      
+2036   1      
+2037   1        SLEEP = (SLEEP & ~CC2430_SLEEP_MODE_MASK) | CC2430_SLEEP_POWERMODE_0;
+2038   1      
+2039   1        __nesc_disable_interrupt();
+2040   1      }
+2041          
+2042          //# 59 "/opt/tinyos-2.x/tos/interfaces/McuSleep.nc"
+2043           /*inline*/  static void SchedulerBasicP__McuSleep__sleep(void ){
+2044   1      //#line 59
+2045   1        McuSleepC__McuSleep__sleep();
+2046   1      //#line 59
+2047   1      }
+2048          //#line 59
+2049          //# 67 "/opt/tinyos-2.x/tos/system/SchedulerBasicP.nc"
+2050          static   /*inline*/   uint8_t SchedulerBasicP__popTask(void )
+2051          {
+2052   1        if (SchedulerBasicP__m_head != SchedulerBasicP__NO_TASK) 
+2053   1          {
+2054   2            uint8_t id = SchedulerBasicP__m_head;
+2055   2      
+2056   2      //#line 72
+2057   2            SchedulerBasicP__m_head = SchedulerBasicP__m_next[SchedulerBasicP__m_head];
+2058   2            if (SchedulerBasicP__m_head == SchedulerBasicP__NO_TASK) 
+2059   2              {
+2060   3                SchedulerBasicP__m_tail = SchedulerBasicP__NO_TASK;
+2061   3              }
+2062   2            SchedulerBasicP__m_next[id] = SchedulerBasicP__NO_TASK;
+2063   2            return id;
+2064   2          }
+2065   1        else 
+2066   1          {
+2067   2            return SchedulerBasicP__NO_TASK;
+2068   2          }
+2069   1      }
+2070          
+2071          //#line 138
+2072          static  /*inline*/  void SchedulerBasicP__Scheduler__taskLoop(void )
+2073          {
+2074   1        for (; ; ) 
+2075   1          {
+2076   2            uint8_t nextTask;
+2077   2      
+2078   2            { __nesc_atomic_t __nesc_atomic = __nesc_atomic_start();
+2079   3              {
+2080   4                while ((nextTask = SchedulerBasicP__popTask()) == SchedulerBasicP__NO_TASK) 
+2081   4                  {
+2082   5                    SchedulerBasicP__McuSleep__sleep();
+2083   5                  }
+2084   4              }
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 35  
+
+2085   3      //#line 150
+2086   3              __nesc_atomic_end(__nesc_atomic); }
+2087   2            SchedulerBasicP__TaskBasic__runTask(nextTask);
+2088   2          }
+2089   1      }
+2090          
+2091          //# 61 "/opt/tinyos-2.x/tos/interfaces/Scheduler.nc"
+2092           /*inline*/  static void RealMainP__Scheduler__taskLoop(void ){
+2093   1      //#line 61
+2094   1        SchedulerBasicP__Scheduler__taskLoop();
+2095   1      //#line 61
+2096   1      }
+2097          //#line 61
+2098          //# 52 "/opt/tinyos-2.x/tos/system/RealMainP.nc"
+2099            int main(void )
+2100          //#line 52
+2101          {
+2102   1        { __nesc_atomic_t __nesc_atomic = __nesc_atomic_start();
+2103   2          {
+2104   3      
+2105   3      
+2106   3      
+2107   3      
+2108   3      
+2109   3            {
+2110   4            }
+2111   3      //#line 60
+2112   3            ;
+2113   3      
+2114   3            RealMainP__Scheduler__init();
+2115   3      
+2116   3      
+2117   3      
+2118   3      
+2119   3      
+2120   3            RealMainP__PlatformInit__init();
+2121   3            while (RealMainP__Scheduler__runNextTask()) ;
+2122   3      
+2123   3      
+2124   3      
+2125   3      
+2126   3      
+2127   3            RealMainP__SoftwareInit__init();
+2128   3            while (RealMainP__Scheduler__runNextTask()) ;
+2129   3          }
+2130   2      //#line 77
+2131   2          __nesc_atomic_end(__nesc_atomic); }
+2132   1      
+2133   1      
+2134   1        __nesc_enable_interrupt();
+2135   1      
+2136   1        RealMainP__Boot__booted();
+2137   1      
+2138   1      
+2139   1        RealMainP__Scheduler__taskLoop();
+2140   1      
+2141   1      
+2142   1      
+2143   1      
+2144   1        return -1;
+2145   1      }
+2146          
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 36  
+
+2147          //# 123 "/opt/tinyos-2.x/tos/system/SchedulerBasicP.nc"
+2148          static bool SchedulerBasicP__Scheduler__runNextTask(void )
+2149          {
+2150   1        uint8_t nextTask;
+2151   1      
+2152   1        /* atomic removed: atomic calls only */
+2153   1      //#line 127
+2154   1        {
+2155   2          nextTask = SchedulerBasicP__popTask();
+2156   2          if (nextTask == SchedulerBasicP__NO_TASK) 
+2157   2            {
+2158   3              {
+2159   4                unsigned char __nesc_temp = 
+2160   4      //#line 131
+2161   4                FALSE;
+2162   4      
+2163   4      //#line 131
+2164   4                return __nesc_temp;
+2165   4              }
+2166   3            }
+2167   2        }
+2168   1      //#line 134
+2169   1        SchedulerBasicP__TaskBasic__runTask(nextTask);
+2170   1        return TRUE;
+2171   1      }
+2172          
+2173          //# 59 "BlinkNoTimerTaskC.nc"
+2174          static void BlinkNoTimerTaskC__delay__runTask(void )
+2175          //#line 59
+2176          {
+2177   1        uint16_t i;
+2178   1      //#line 60
+2179   1        uint16_t j;
+2180   1      
+2181   1        for (i = 0; i < 0x1FFU; i++) {
+2182   2            for (j = 0; j < 0xA0; j++) {
+2183   3              }
+2184   2          }
+2185   1        BlinkNoTimerTaskC__toggle__postTask();
+2186   1        BlinkNoTimerTaskC__delay__postTask();
+2187   1      }
+2188          
+2189          //# 159 "/opt/tinyos-2.x/tos/system/SchedulerBasicP.nc"
+2190          static error_t SchedulerBasicP__TaskBasic__postTask(uint8_t id)
+2191          {
+2192   1        { __nesc_atomic_t __nesc_atomic = __nesc_atomic_start();
+2193   2      //#line 161
+2194   2          {
+2195   3      //#line 161
+2196   3            {
+2197   4              unsigned char __nesc_temp = 
+2198   4      //#line 161
+2199   4              SchedulerBasicP__pushTask(id) ? SUCCESS : EBUSY;
+2200   4      
+2201   4              {
+2202   5      //#line 161
+2203   5                __nesc_atomic_end(__nesc_atomic); 
+2204   5      //#line 161
+2205   5                return __nesc_temp;
+2206   5              }
+2207   4            }
+2208   3          }
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 37  
+
+2209   2      //#line 164
+2210   2          __nesc_atomic_end(__nesc_atomic); }
+2211   1      }
+2212          
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 38  
+
+NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
+====                                    =====   ======  ====    ======  ====
+
+
+uint16_t . . . . . . . . . . . . . . .  TYPEDEF  -----  U_INT    -----  2
+__nesc_nxbase_nx_int32_t . . . . . . .  TYPEDEF  -----  LONG     -----  4
+CC2430_TICKF_DIV_8 . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+_reent . . . . . . . . . . . . . . . .  * TAG *  -----  STRUCT   -----  733
+  _errno . . . . . . . . . . . . . . .  MEMBER   -----  INT      0000H  2
+  _stdin . . . . . . . . . . . . . . .  MEMBER   -----  PTR      0002H  3
+  _stdout. . . . . . . . . . . . . . .  MEMBER   -----  PTR      0005H  3
+  _stderr. . . . . . . . . . . . . . .  MEMBER   -----  PTR      0008H  3
+  _inc . . . . . . . . . . . . . . . .  MEMBER   -----  INT      000BH  2
+  _emergency . . . . . . . . . . . . .  MEMBER   -----  ARRAY    000DH  25
+  _current_category. . . . . . . . . .  MEMBER   -----  INT      0026H  2
+  _current_locale. . . . . . . . . . .  MEMBER   -----  PTR      0028H  3
+  __sdidinit . . . . . . . . . . . . .  MEMBER   -----  INT      002BH  2
+  __cleanup. . . . . . . . . . . . . .  MEMBER   -----  PTR      002DH  3
+  _result. . . . . . . . . . . . . . .  MEMBER   -----  PTR      0030H  3
+  _result_k. . . . . . . . . . . . . .  MEMBER   -----  INT      0033H  2
+  _p5s . . . . . . . . . . . . . . . .  MEMBER   -----  PTR      0035H  3
+  _freelist. . . . . . . . . . . . . .  MEMBER   -----  PTR      0038H  3
+  _cvtlen. . . . . . . . . . . . . . .  MEMBER   -----  INT      003BH  2
+  _cvtbuf. . . . . . . . . . . . . . .  MEMBER   -----  PTR      003DH  3
+  _new . . . . . . . . . . . . . . . .  MEMBER   -----  UNION    0040H  150
+  _atexit. . . . . . . . . . . . . . .  MEMBER   -----  PTR      00D6H  3
+  _atexit0 . . . . . . . . . . . . . .  MEMBER   -----  STRUCT   00D9H  301
+  _sig_func. . . . . . . . . . . . . .  MEMBER   -----  PTR      0206H  3
+  __sglue. . . . . . . . . . . . . . .  MEMBER   -----  STRUCT   0209H  8
+  __sf . . . . . . . . . . . . . . . .  MEMBER   -----  ARRAY    0211H  -----
+BlinkNoTimerTaskC__delay__postTask . .  STATIC   CODE   PROC     0000H  -----
+  result . . . . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0007H  1
+CC2430_RFIF_CCA. . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+error_t. . . . . . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+ESIZE. . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+__nesc_nxbase_nx_int16_t . . . . . . .  TYPEDEF  -----  INT      -----  2
+SchedulerBasicP__popTask . . . . . . .  STATIC   CODE   PROC     0000H  -----
+  id . . . . . . . . . . . . . . . . .  AUTO     XDATA  U_CHAR   0000H  1
+cc2430_timer34_if_t. . . . . . . . . .  * TAG *  -----  ENUM     -----  -----
+BlinkNoTimerTaskC__toggle__runTask . .  STATIC   CODE   PROC     0000H  -----
+CC2430_IRCON2_UTX0IF . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+int_least32_t. . . . . . . . . . . . .  TYPEDEF  -----  LONG     -----  4
+CC2430_IRCON2_UTX1IF . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_IEN0_ENCIE. . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+__nesc_unnamed4250 . . . . . . . . . .  * TAG *  -----  STRUCT   -----  6
+  quot . . . . . . . . . . . . . . . .  MEMBER   -----  PTR      0000H  3
+  rem. . . . . . . . . . . . . . . . .  MEMBER   -----  PTR      0003H  3
+CC2430_TIMER3_4_DIV_32 . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+__nesc_unnamed4260 . . . . . . . . . .  * TAG *  -----  ENUM     -----  -----
+EA . . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      00AFH  1
+__nesc_unnamed4251 . . . . . . . . . .  * TAG *  -----  ENUM     -----  -----
+ldiv_t . . . . . . . . . . . . . . . .  TYPEDEF  -----  STRUCT   -----  8
+  quot . . . . . . . . . . . . . . . .  MEMBER   -----  LONG     0000H  4
+  rem. . . . . . . . . . . . . . . . .  MEMBER   -----  LONG     0004H  4
+__nesc_unnamed4242 . . . . . . . . . .  * TAG *  -----  STRUCT   -----  6
+  quot . . . . . . . . . . . . . . . .  MEMBER   -----  PTR      0000H  3
+  rem. . . . . . . . . . . . . . . . .  MEMBER   -----  PTR      0003H  3
+int_least16_t. . . . . . . . . . . . .  TYPEDEF  -----  INT      -----  2
+__nesc_unnamed4270 . . . . . . . . . .  * TAG *  -----  ENUM     -----  -----
+CC2430_TIMER3_4_MODE_FREE. . . . . . .  E_CONST  -----  U_CHAR   -----  1
+__nesc_unnamed4261 . . . . . . . . . .  * TAG *  -----  ENUM     -----  -----
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 39  
+
+NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
+====                                    =====   ======  ====    ======  ====
+
+
+__nesc_unnamed4252 . . . . . . . . . .  * TAG *  -----  ENUM     -----  -----
+__nesc_unnamed4243 . . . . . . . . . .  * TAG *  -----  STRUCT   -----  6
+  __count. . . . . . . . . . . . . . .  MEMBER   -----  INT      0000H  2
+  __value. . . . . . . . . . . . . . .  MEMBER   -----  UNION    0002H  4
+int32_t. . . . . . . . . . . . . . . .  TYPEDEF  -----  LONG     -----  4
+__nesc_unnamed4271 . . . . . . . . . .  * TAG *  -----  ENUM     -----  -----
+CC2430_TIMER3_4_DIV_16 . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_RFSTATUS_FIFOP. . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+__nesc_unnamed4262 . . . . . . . . . .  * TAG *  -----  ENUM     -----  -----
+__nesc_unnamed4253 . . . . . . . . . .  * TAG *  -----  ENUM     -----  -----
+__nesc_unnamed4244 . . . . . . . . . .  * TAG *  -----  UNION    -----  4
+  __wch. . . . . . . . . . . . . . . .  MEMBER   -----  U_INT    0000H  2
+  __wchb . . . . . . . . . . . . . . .  MEMBER   -----  ARRAY    0000H  4
+__nesc_unnamed4272 . . . . . . . . . .  * TAG *  -----  ENUM     -----  -----
+T32khz . . . . . . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+cc2430_timerMAC_interval_t . . . . . .  * TAG *  -----  ENUM     -----  -----
+__nesc_unnamed4263 . . . . . . . . . .  * TAG *  -----  ENUM     -----  -----
+CC2430_RFIM_CCA. . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+__nesc_unnamed4254 . . . . . . . . . .  * TAG *  -----  ENUM     -----  -----
+__nesc_unnamed4245 . . . . . . . . . .  * TAG *  -----  UNION    -----  150
+  _reent . . . . . . . . . . . . . . .  MEMBER   -----  STRUCT   0000H  150
+  _unused. . . . . . . . . . . . . . .  MEMBER   -----  STRUCT   0000H  150
+int16_t. . . . . . . . . . . . . . . .  TYPEDEF  -----  INT      -----  2
+HplMcs51GeneralIOC__P10__toggle. . . .  STATIC   CODE   PROC     0000H  -----
+__nesc_unnamed4264 . . . . . . . . . .  * TAG *  -----  ENUM     -----  -----
+__nesc_unnamed4255 . . . . . . . . . .  * TAG *  -----  ENUM     -----  -----
+EBUSY. . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+__nesc_unnamed4246 . . . . . . . . . .  * TAG *  -----  STRUCT   -----  150
+  _unused_rand . . . . . . . . . . . .  MEMBER   -----  U_INT    0000H  2
+  _strtok_last . . . . . . . . . . . .  MEMBER   -----  PTR      0002H  3
+  _asctime_buf . . . . . . . . . . . .  MEMBER   -----  ARRAY    0005H  26
+  _localtime_buf . . . . . . . . . . .  MEMBER   -----  STRUCT   001FH  18
+  _gamma_signgam . . . . . . . . . . .  MEMBER   -----  INT      0031H  2
+  _rand_next . . . . . . . . . . . . .  MEMBER   -----  PTR      0033H  3
+  _r48 . . . . . . . . . . . . . . . .  MEMBER   -----  STRUCT   0036H  14
+  _mblen_state . . . . . . . . . . . .  MEMBER   -----  STRUCT   0044H  6
+  _mbtowc_state. . . . . . . . . . . .  MEMBER   -----  STRUCT   004AH  6
+  _wctomb_state. . . . . . . . . . . .  MEMBER   -----  STRUCT   0050H  6
+  _l64a_buf. . . . . . . . . . . . . .  MEMBER   -----  ARRAY    0056H  8
+  _signal_buf. . . . . . . . . . . . .  MEMBER   -----  ARRAY    005EH  24
+  _getdate_err . . . . . . . . . . . .  MEMBER   -----  INT      0076H  2
+  _mbrlen_state. . . . . . . . . . . .  MEMBER   -----  STRUCT   0078H  6
+  _mbrtowc_state . . . . . . . . . . .  MEMBER   -----  STRUCT   007EH  6
+  _mbsrtowcs_state . . . . . . . . . .  MEMBER   -----  STRUCT   0084H  6
+  _wcrtomb_state . . . . . . . . . . .  MEMBER   -----  STRUCT   008AH  6
+  _wcsrtombs_state . . . . . . . . . .  MEMBER   -----  STRUCT   0090H  6
+LedsP__Leds__led0On. . . . . . . . . .  STATIC   CODE   PROC     0000H  -----
+CC2430_TIMER3_4_DIV_64 . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+__nesc_unnamed4265 . . . . . . . . . .  * TAG *  -----  ENUM     -----  -----
+__nesc_enable_interrupt. . . . . . . .  STATIC   CODE   PROC     0000H  -----
+__nesc_unnamed4256 . . . . . . . . . .  * TAG *  -----  ENUM     -----  -----
+__nesc_unnamed4247 . . . . . . . . . .  * TAG *  -----  STRUCT   -----  150
+  _nextf . . . . . . . . . . . . . . .  MEMBER   -----  ARRAY    0000H  90
+  _nmalloc . . . . . . . . . . . . . .  MEMBER   -----  ARRAY    005AH  60
+LedsP__Leds__led1On. . . . . . . . . .  STATIC   CODE   PROC     0000H  -----
+CC2430_WDCTL_INT_MASK. . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+__nesc_unnamed4266 . . . . . . . . . .  * TAG *  -----  ENUM     -----  -----
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 40  
+
+NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
+====                                    =====   ======  ====    ======  ====
+
+
+__nesc_unnamed4257 . . . . . . . . . .  * TAG *  -----  ENUM     -----  -----
+__nesc_unnamed4248 . . . . . . . . . .  * TAG *  -----  STRUCT   -----  4
+  quot . . . . . . . . . . . . . . . .  MEMBER   -----  INT      0000H  2
+  rem. . . . . . . . . . . . . . . . .  MEMBER   -----  INT      0002H  2
+HplMcs51GeneralIOC__P13__toggle. . . .  STATIC   CODE   PROC     0000H  -----
+LedsP__Leds__led2On. . . . . . . . . .  STATIC   CODE   PROC     0000H  -----
+CC2430_T1CCTLx_CAP . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+__nesc_unnamed4267 . . . . . . . . . .  * TAG *  -----  ENUM     -----  -----
+__nesc_unnamed4258 . . . . . . . . . .  * TAG *  -----  ENUM     -----  -----
+__nesc_unnamed4249 . . . . . . . . . .  * TAG *  -----  STRUCT   -----  8
+  quot . . . . . . . . . . . . . . . .  MEMBER   -----  LONG     0000H  4
+  rem. . . . . . . . . . . . . . . . .  MEMBER   -----  LONG     0004H  4
+CC2430_TIMERMAC_MODE_IDLE. . . . . . .  E_CONST  -----  U_CHAR   -----  1
+__nesc_unnamed4268 . . . . . . . . . .  * TAG *  -----  ENUM     -----  -----
+__nesc_unnamed4259 . . . . . . . . . .  * TAG *  -----  ENUM     -----  -----
+uint_fast32_t. . . . . . . . . . . . .  TYPEDEF  -----  U_INT    -----  2
+__nesc_unnamed4269 . . . . . . . . . .  * TAG *  -----  ENUM     -----  -----
+CC2430_RFIF_TXDONE . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+_glue. . . . . . . . . . . . . . . . .  * TAG *  -----  STRUCT   -----  8
+  _next. . . . . . . . . . . . . . . .  MEMBER   -----  PTR      0000H  3
+  _niobs . . . . . . . . . . . . . . .  MEMBER   -----  INT      0003H  2
+  _iobs. . . . . . . . . . . . . . . .  MEMBER   -----  PTR      0005H  3
+BlinkNoTimerTaskC__delay__runTask. . .  STATIC   CODE   PROC     0000H  -----
+  i. . . . . . . . . . . . . . . . . .  * REG *  DATA   U_INT    0006H  2
+  j. . . . . . . . . . . . . . . . . .  * REG *  DATA   U_INT    0004H  2
+LEDS_LED0. . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_TIMERWDT_MODE_TIMER . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_TIMIF_OVFIM . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+uint_fast16_t. . . . . . . . . . . . .  TYPEDEF  -----  U_INT    -----  2
+ReverseGPIOP__0__In__toggle. . . . . .  STATIC   CODE   PROC     0000H  -----
+SchedulerBasicP__Scheduler__runNextTask STATIC   CODE   PROC     0000H  -----
+  __nesc_temp. . . . . . . . . . . . .  AUTO     XDATA  U_CHAR   0000H  1
+  nextTask . . . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0007H  1
+LEDS_LED1. . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_TIMIF_T3OVFIF . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_TIMERWDT_32768. . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+P1_0 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0090H  1
+ReverseGPIOP__1__In__toggle. . . . . .  STATIC   CODE   PROC     0000H  -----
+LEDS_LED2. . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_TIMIF_T4OVFIF . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_CLKCON_CLKSPD . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+size_t . . . . . . . . . . . . . . . .  TYPEDEF  -----  U_INT    -----  2
+ReverseGPIOP__0__Out__toggle . . . . .  STATIC   CODE   PROC     0000H  -----
+  __nesc_atomic. . . . . . . . . . . .  AUTO     XDATA  U_CHAR   0000H  1
+LEDS_LED3. . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_T1_OVFIF. . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_MDMCTRL0H_CCA_HYST. . . . . . .  E_CONST  -----  U_CHAR   -----  1
+RealMainP__Scheduler__runNextTask. . .  STATIC   CODE   PROC     0000H  -----
+  result . . . . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0007H  1
+ReverseGPIOP__1__Out__toggle . . . . .  STATIC   CODE   PROC     0000H  -----
+  __nesc_atomic. . . . . . . . . . . .  AUTO     XDATA  U_CHAR   0000H  1
+LEDS_LED4. . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_T34CTL_CLR. . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+P1_3 . . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      0093H  1
+LEDS_LED5. . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+SchedulerBasicP__m_tail. . . . . . . .  PUBLIC   XDATA  U_CHAR   0000H  1
+LEDS_LED6. . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 41  
+
+NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
+====                                    =====   ======  ====    ======  ====
+
+
+CC2430_T34CTL_DIV. . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_SLEEP_XOSC_STB. . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_RFIM_TXDONE . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+LEDS_LED7. . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+nxle_uint32_t. . . . . . . . . . . . .  TYPEDEF  -----  STRUCT   -----  4
+  _data. . . . . . . . . . . . . . . .  MEMBER   -----  ARRAY    0000H  4
+nx_uint8_t . . . . . . . . . . . . . .  TYPEDEF  -----  STRUCT   -----  1
+  _data. . . . . . . . . . . . . . . .  MEMBER   -----  ARRAY    0000H  1
+CC2430_RFIF_SFD. . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+int_fast32_t . . . . . . . . . . . . .  TYPEDEF  -----  INT      -----  2
+CC2430_T1CCTLx_CMP . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_T1CTL_IF_MASK . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+div_t. . . . . . . . . . . . . . . . .  TYPEDEF  -----  STRUCT   -----  4
+  quot . . . . . . . . . . . . . . . .  MEMBER   -----  INT      0000H  2
+  rem. . . . . . . . . . . . . . . . .  MEMBER   -----  INT      0002H  2
+wint_t . . . . . . . . . . . . . . . .  TYPEDEF  -----  U_INT    -----  2
+nxle_uint16_t. . . . . . . . . . . . .  TYPEDEF  -----  STRUCT   -----  2
+  _data. . . . . . . . . . . . . . . .  MEMBER   -----  ARRAY    0000H  2
+int_fast16_t . . . . . . . . . . . . .  TYPEDEF  -----  INT      -----  2
+__nesc_nxbase_nxle_uint8_t . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+SchedulerBasicP__McuSleep__sleep . . .  STATIC   CODE   PROC     0000H  -----
+SUCCESS. . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+nxle_uint64_t. . . . . . . . . . . . .  TYPEDEF  -----  STRUCT   -----  8
+  _data. . . . . . . . . . . . . . . .  MEMBER   -----  ARRAY    0000H  8
+CC2430_TIMER3_4_MODE_DOWN. . . . . . .  E_CONST  -----  U_CHAR   -----  1
+cc2430_tick_spd_t. . . . . . . . . . .  * TAG *  -----  ENUM     -----  -----
+CC2430_RFPWR_RREG_RADIO_PD . . . . . .  E_CONST  -----  U_CHAR   -----  1
+FAIL . . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_TIMERWDT_512. . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_MDMCTRL0H_FRAME_FILT. . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_RFIM_SFD. . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_IRCON_P0IF. . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_TIMER1_MODE_MODULO. . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_IEN2_WDTIE. . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+__nesc_atomic_t. . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+EOFF . . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+__tm . . . . . . . . . . . . . . . . .  * TAG *  -----  STRUCT   -----  18
+  __tm_sec . . . . . . . . . . . . . .  MEMBER   -----  INT      0000H  2
+  __tm_min . . . . . . . . . . . . . .  MEMBER   -----  INT      0002H  2
+  __tm_hour. . . . . . . . . . . . . .  MEMBER   -----  INT      0004H  2
+  __tm_mday. . . . . . . . . . . . . .  MEMBER   -----  INT      0006H  2
+  __tm_mon . . . . . . . . . . . . . .  MEMBER   -----  INT      0008H  2
+  __tm_year. . . . . . . . . . . . . .  MEMBER   -----  INT      000AH  2
+  __tm_wday. . . . . . . . . . . . . .  MEMBER   -----  INT      000CH  2
+  __tm_yday. . . . . . . . . . . . . .  MEMBER   -----  INT      000EH  2
+  __tm_isdst . . . . . . . . . . . . .  MEMBER   -----  INT      0010H  2
+nxle_int32_t . . . . . . . . . . . . .  TYPEDEF  -----  STRUCT   -----  4
+  _data. . . . . . . . . . . . . . . .  MEMBER   -----  ARRAY    0000H  4
+nx_int8_t. . . . . . . . . . . . . . .  TYPEDEF  -----  STRUCT   -----  1
+  _data. . . . . . . . . . . . . . . .  MEMBER   -----  ARRAY    0000H  1
+CC2430_T1CTL_MODE. . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+nxle_int16_t . . . . . . . . . . . . .  TYPEDEF  -----  STRUCT   -----  2
+  _data. . . . . . . . . . . . . . . .  MEMBER   -----  ARRAY    0000H  2
+CC2430_T34CTL_DIV_MASK . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+cc2430_timer1_mode_t . . . . . . . . .  * TAG *  -----  ENUM     -----  -----
+CC2430_IRCON_T1IF. . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_WDCTL_EN. . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 42  
+
+NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
+====                                    =====   ======  ====    ======  ====
+
+
+CC2430_IRCON_T2IF. . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_IEN0_EA . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+__nesc_nxbase_nxle_int8_t. . . . . . .  TYPEDEF  -----  CHAR     -----  1
+SchedulerBasicP____nesc_unnamed4273. .  * TAG *  -----  ENUM     -----  -----
+CC2430_TIMER1_DIV_128. . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_IRCON_T3IF. . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+nxle_int64_t . . . . . . . . . . . . .  TYPEDEF  -----  STRUCT   -----  8
+  _data. . . . . . . . . . . . . . . .  MEMBER   -----  ARRAY    0000H  8
+main . . . . . . . . . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+  __nesc_atomic. . . . . . . . . . . .  AUTO     XDATA  U_CHAR   0000H  1
+McuSleepC__McuSleep__sleep . . . . . .  STATIC   CODE   PROC     0000H  -----
+CC2430_IRCON_T4IF. . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+__ULong. . . . . . . . . . . . . . . .  TYPEDEF  -----  U_LONG   -----  4
+LedsP__Led0__toggle. . . . . . . . . .  STATIC   CODE   PROC     0000H  -----
+LedsP__Init__init. . . . . . . . . . .  STATIC   CODE   PROC     0000H  -----
+BlinkNoTimerTaskC__Boot__booted. . . .  STATIC   CODE   PROC     0000H  -----
+RealMainP__SoftwareInit__default__init  STATIC   CODE   PROC     0000H  -----
+CC2430_RFPWR_RREG_DELAY. . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+LedsP__Led1__toggle. . . . . . . . . .  STATIC   CODE   PROC     0000H  -----
+CC2430_TMAC_CMPIF. . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_TIMER1_MODE_OFF . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+_mbstate_t . . . . . . . . . . . . . .  TYPEDEF  -----  STRUCT   -----  6
+  __count. . . . . . . . . . . . . . .  MEMBER   -----  INT      0000H  2
+  __value. . . . . . . . . . . . . . .  MEMBER   -----  UNION    0002H  4
+LedsP__Led2__toggle. . . . . . . . . .  STATIC   CODE   PROC     0000H  -----
+CC2430_RREG_DELAY_500. . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+SchedulerBasicP__m_next. . . . . . . .  PUBLIC   XDATA  ARRAY    0001H  2
+CC2430_MDMCTRL0H_PAN_COORDINATOR . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_RREG_DELAY_250. . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+NoPinC__0__GeneralIO__makeOutput . . .  STATIC   CODE   PROC     0000H  -----
+CC2430_TIMER1_MODE_UPDOWN. . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_RREG_DELAY_125. . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_RFIF_CSP_WT . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_TICKF_DIV_32. . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+bool . . . . . . . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+CC2430_T2CNF_SYNC. . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_TMAC_PERIF. . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_T1CTL_MODE_MASK . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_TICKF_DIV_16. . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_MDMCTRL0L_AUTOACK . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_RFIF_FIFOP. . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_T1CCTLx_CPSEL . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_IEN2_P1IE . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_IEN0_RFERRIE. . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_T34CTL_WDTIF. . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_IEN2_P2IE . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+LedsP__Leds__led0Toggle. . . . . . . .  STATIC   CODE   PROC     0000H  -----
+CC2430_TICKF_DIV_64. . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_SLEEP_MODE. . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+ENOACK . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+LedsP__Leds__led1Toggle. . . . . . . .  STATIC   CODE   PROC     0000H  -----
+CC2430_CLKCON_OSC. . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_RFIM_CSP_WT . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+LedsP__Leds__led2Toggle. . . . . . . .  STATIC   CODE   PROC     0000H  -----
+CC2430_T34CTL_OVFIM. . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+_SchedulerBasicP__TaskBasic__postTask.  STATIC   CODE   PROC     0000H  -----
+  id . . . . . . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0006H  1
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 43  
+
+NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
+====                                    =====   ======  ====    ======  ====
+
+
+  __nesc_temp. . . . . . . . . . . . .  AUTO     XDATA  U_CHAR   0001H  1
+  __nesc_atomic. . . . . . . . . . . .  AUTO     XDATA  U_CHAR   0000H  1
+CC2430_TIMER3_4_MODE_MODULO. . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_RFPWR_RREG_DELAY_MASK . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_SLEEP_OSC32K_CALDIS . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_RFSTATUS_FIFO . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_RFIM_FIFOP. . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+SchedulerBasicP__Scheduler__init . . .  STATIC   CODE   PROC     0000H  -----
+CC2430_WDCTL_MODE. . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+NoPinC__0__GeneralIO__clr. . . . . . .  STATIC   CODE   PROC     0000H  -----
+CC2430_MDMCTRL0L_AUTOCRC . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+HplMcs51GeneralIOC__P10__makeOutput. .  STATIC   CODE   PROC     0000H  -----
+cc2430_timer3_4_mode_t . . . . . . . .  * TAG *  -----  ENUM     -----  -----
+CC2430_RFPWR_ADI_RADIO_PD. . . . . . .  E_CONST  -----  U_CHAR   -----  1
+RealMainP__Scheduler__init . . . . . .  STATIC   CODE   PROC     0000H  -----
+CC2430_TIMER1_DIV_1. . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_TIMER3_4_DIV_128. . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CLKCON . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00C6H  1
+HplMcs51GeneralIOC__P13__makeOutput. .  STATIC   CODE   PROC     0000H  -----
+_LOCK_T. . . . . . . . . . . . . . . .  TYPEDEF  -----  VOID_PTR -----  3
+CC2430_TMAC_OFCMPIF. . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+__sFILE64. . . . . . . . . . . . . . .  * TAG *  -----  STRUCT   -----  68
+  _p . . . . . . . . . . . . . . . . .  MEMBER   -----  PTR      0000H  3
+  _r . . . . . . . . . . . . . . . . .  MEMBER   -----  INT      0003H  2
+  _w . . . . . . . . . . . . . . . . .  MEMBER   -----  INT      0005H  2
+  _flags . . . . . . . . . . . . . . .  MEMBER   -----  INT      0007H  2
+  _file. . . . . . . . . . . . . . . .  MEMBER   -----  INT      0009H  2
+  _bf. . . . . . . . . . . . . . . . .  MEMBER   -----  STRUCT   000BH  5
+  _lbfsize . . . . . . . . . . . . . .  MEMBER   -----  INT      0010H  2
+  __data . . . . . . . . . . . . . . .  MEMBER   -----  PTR      0012H  3
+  _cookie. . . . . . . . . . . . . . .  MEMBER   -----  PTR      0015H  3
+  _read. . . . . . . . . . . . . . . .  MEMBER   -----  PTR      0018H  3
+  _write . . . . . . . . . . . . . . .  MEMBER   -----  PTR      001BH  3
+  _seek. . . . . . . . . . . . . . . .  MEMBER   -----  PTR      001EH  3
+  _close . . . . . . . . . . . . . . .  MEMBER   -----  PTR      0021H  3
+  _ub. . . . . . . . . . . . . . . . .  MEMBER   -----  STRUCT   0024H  5
+  _up. . . . . . . . . . . . . . . . .  MEMBER   -----  PTR      0029H  3
+  _ur. . . . . . . . . . . . . . . . .  MEMBER   -----  INT      002CH  2
+  _ubuf. . . . . . . . . . . . . . . .  MEMBER   -----  ARRAY    002EH  3
+  _nbuf. . . . . . . . . . . . . . . .  MEMBER   -----  ARRAY    0031H  1
+  _lb. . . . . . . . . . . . . . . . .  MEMBER   -----  STRUCT   0032H  5
+  _blksize . . . . . . . . . . . . . .  MEMBER   -----  INT      0037H  2
+  _flags2. . . . . . . . . . . . . . .  MEMBER   -----  INT      0039H  2
+  _offset. . . . . . . . . . . . . . .  MEMBER   -----  PTR      003BH  3
+  _seek64. . . . . . . . . . . . . . .  MEMBER   -----  PTR      003EH  3
+  _lock. . . . . . . . . . . . . . . .  MEMBER   -----  VOID_PTR 0041H  3
+BlinkNoTimerTaskC__Leds__led0On. . . .  STATIC   CODE   PROC     0000H  -----
+_Bigint. . . . . . . . . . . . . . . .  * TAG *  -----  STRUCT   -----  15
+  _next. . . . . . . . . . . . . . . .  MEMBER   -----  PTR      0000H  3
+  _k . . . . . . . . . . . . . . . . .  MEMBER   -----  INT      0003H  2
+  _maxwds. . . . . . . . . . . . . . .  MEMBER   -----  INT      0005H  2
+  _sign. . . . . . . . . . . . . . . .  MEMBER   -----  INT      0007H  2
+  _wds . . . . . . . . . . . . . . . .  MEMBER   -----  INT      0009H  2
+  _x . . . . . . . . . . . . . . . . .  MEMBER   -----  ARRAY    000BH  4
+ReverseGPIOP__0__In__makeOutput. . . .  STATIC   CODE   PROC     0000H  -----
+BlinkNoTimerTaskC__Leds__led1On. . . .  STATIC   CODE   PROC     0000H  -----
+CC2430_T2PEROF2_CMPIM. . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 44  
+
+NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
+====                                    =====   ======  ====    ======  ====
+
+
+CC2430_SLEEP_MODE_MASK . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+P1_DIR . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00FEH  1
+CC2430_IRCON2_WDTIF. . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+EINVAL . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+TRUE . . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+ReverseGPIOP__1__In__makeOutput. . . .  STATIC   CODE   PROC     0000H  -----
+BlinkNoTimerTaskC__Leds__led2On. . . .  STATIC   CODE   PROC     0000H  -----
+CC2430_T34CTL_START. . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_TIMER1_DIV_8. . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+ReverseGPIOP__0__Out__makeOutput . . .  STATIC   CODE   PROC     0000H  -----
+CC2430_TIMER3_4_MODE_UPDOWN. . . . . .  E_CONST  -----  U_CHAR   -----  1
+ENOMEM . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+_SchedulerBasicP__TaskBasic__runTask .  STATIC   CODE   PROC     0000H  -----
+  arg_0x7ef72230 . . . . . . . . . . .  AUTO     XDATA  U_CHAR   0000H  1
+NoPinC__0__GeneralIO__set. . . . . . .  STATIC   CODE   PROC     0000H  -----
+ReverseGPIOP__1__Out__makeOutput . . .  STATIC   CODE   PROC     0000H  -----
+cc2430_timer1_prescaler_t. . . . . . .  * TAG *  -----  ENUM     -----  -----
+CC2430_MDMCTRL0H_ADDR_DECODE . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_RREG_DELAY_0. . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+nx_uint32_t. . . . . . . . . . . . . .  TYPEDEF  -----  STRUCT   -----  4
+  _data. . . . . . . . . . . . . . . .  MEMBER   -----  ARRAY    0000H  4
+cc2430_timerMAC_mode_t . . . . . . . .  * TAG *  -----  ENUM     -----  -----
+HplMcs51GeneralIOC__P10__clr . . . . .  STATIC   CODE   PROC     0000H  -----
+CC2430_IRCON_STIF. . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+_flock_t . . . . . . . . . . . . . . .  TYPEDEF  -----  VOID_PTR -----  3
+nx_uint16_t. . . . . . . . . . . . . .  TYPEDEF  -----  STRUCT   -----  2
+  _data. . . . . . . . . . . . . . . .  MEMBER   -----  ARRAY    0000H  2
+CC2430_T1CTL_CH0IF . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_T2PEROF2_PERIM. . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_T1CTL_CH1IF . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_IEN2_RFIE . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+__nesc_nxbase_nxle_uint32_t. . . . . .  TYPEDEF  -----  U_LONG   -----  4
+__nesc_nxbase_nx_uint8_t . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+ptrdiff_t. . . . . . . . . . . . . . .  TYPEDEF  -----  INT      -----  2
+HplMcs51GeneralIOC__P13__clr . . . . .  STATIC   CODE   PROC     0000H  -----
+CC2430_T1CTL_CH2IF . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_RFIF_CSP_STOP . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+nx_uint64_t. . . . . . . . . . . . . .  TYPEDEF  -----  STRUCT   -----  8
+  _data. . . . . . . . . . . . . . . .  MEMBER   -----  ARRAY    0000H  8
+EALREADY . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+__nesc_nxbase_nxle_uint16_t. . . . . .  TYPEDEF  -----  U_INT    -----  2
+imaxdiv_t. . . . . . . . . . . . . . .  TYPEDEF  -----  STRUCT   -----  6
+  quot . . . . . . . . . . . . . . . .  MEMBER   -----  PTR      0000H  3
+  rem. . . . . . . . . . . . . . . . .  MEMBER   -----  PTR      0003H  3
+cc2430_timer1_if_t . . . . . . . . . .  * TAG *  -----  ENUM     -----  -----
+uint_least8_t. . . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+ReverseGPIOP__0__In__clr . . . . . . .  STATIC   CODE   PROC     0000H  -----
+ReverseGPIOP__1__In__clr . . . . . . .  STATIC   CODE   PROC     0000H  -----
+SchedulerBasicP__NO_TASK . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+TMilli . . . . . . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+CC2430_T1CCTLx_IM. . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+nx_int32_t . . . . . . . . . . . . . .  TYPEDEF  -----  STRUCT   -----  4
+  _data. . . . . . . . . . . . . . . .  MEMBER   -----  ARRAY    0000H  4
+ReverseGPIOP__0__Out__clr. . . . . . .  STATIC   CODE   PROC     0000H  -----
+uint8_t. . . . . . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+ReverseGPIOP__1__Out__clr. . . . . . .  STATIC   CODE   PROC     0000H  -----
+CC2430_RFIM_CSP_STOP . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 45  
+
+NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
+====                                    =====   ======  ====    ======  ====
+
+
+nx_int16_t . . . . . . . . . . . . . .  TYPEDEF  -----  STRUCT   -----  2
+  _data. . . . . . . . . . . . . . . .  MEMBER   -----  ARRAY    0000H  2
+_SchedulerBasicP__isWaiting. . . . . .  STATIC   CODE   PROC     0000H  -----
+  id . . . . . . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0007H  1
+HplMcs51GeneralIOC__P10__set . . . . .  STATIC   CODE   PROC     0000H  -----
+TMicro . . . . . . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+CC2430_TIMER3_4_DIV_1. . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_TIMER3_4_DIV_2. . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_IRCON2_P1IF . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+__nesc_nxbase_nxle_int32_t . . . . . .  TYPEDEF  -----  LONG     -----  4
+__nesc_nxbase_nx_int8_t. . . . . . . .  TYPEDEF  -----  CHAR     -----  1
+CC2430_SLEEP_POWERMODE_0 . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_IRCON2_P2IF . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+nx_int64_t . . . . . . . . . . . . . .  TYPEDEF  -----  STRUCT   -----  8
+  _data. . . . . . . . . . . . . . . .  MEMBER   -----  ARRAY    0000H  8
+HplMcs51GeneralIOC__P13__set . . . . .  STATIC   CODE   PROC     0000H  -----
+SchedulerBasicP__Scheduler__taskLoop .  STATIC   CODE   PROC     0000H  -----
+  __nesc_atomic. . . . . . . . . . . .  AUTO     XDATA  U_CHAR   0001H  1
+  nextTask . . . . . . . . . . . . . .  AUTO     XDATA  U_CHAR   0000H  1
+CC2430_TIMER3_4_DIV_4. . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_SLEEP_POWERMODE_1 . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+__sFILE. . . . . . . . . . . . . . . .  * TAG *  -----  STRUCT   -----  62
+  _p . . . . . . . . . . . . . . . . .  MEMBER   -----  PTR      0000H  3
+  _r . . . . . . . . . . . . . . . . .  MEMBER   -----  INT      0003H  2
+  _w . . . . . . . . . . . . . . . . .  MEMBER   -----  INT      0005H  2
+  _flags . . . . . . . . . . . . . . .  MEMBER   -----  INT      0007H  2
+  _file. . . . . . . . . . . . . . . .  MEMBER   -----  INT      0009H  2
+  _bf. . . . . . . . . . . . . . . . .  MEMBER   -----  STRUCT   000BH  5
+  _lbfsize . . . . . . . . . . . . . .  MEMBER   -----  INT      0010H  2
+  _cookie. . . . . . . . . . . . . . .  MEMBER   -----  PTR      0012H  3
+  _read. . . . . . . . . . . . . . . .  MEMBER   -----  PTR      0015H  3
+  _write . . . . . . . . . . . . . . .  MEMBER   -----  PTR      0018H  3
+  _seek. . . . . . . . . . . . . . . .  MEMBER   -----  PTR      001BH  3
+  _close . . . . . . . . . . . . . . .  MEMBER   -----  PTR      001EH  3
+  _ub. . . . . . . . . . . . . . . . .  MEMBER   -----  STRUCT   0021H  5
+  _up. . . . . . . . . . . . . . . . .  MEMBER   -----  PTR      0026H  3
+  _ur. . . . . . . . . . . . . . . . .  MEMBER   -----  INT      0029H  2
+  _ubuf. . . . . . . . . . . . . . . .  MEMBER   -----  ARRAY    002BH  3
+  _nbuf. . . . . . . . . . . . . . . .  MEMBER   -----  ARRAY    002EH  1
+  _lb. . . . . . . . . . . . . . . . .  MEMBER   -----  STRUCT   002FH  5
+  _blksize . . . . . . . . . . . . . .  MEMBER   -----  INT      0034H  2
+  _offset. . . . . . . . . . . . . . .  MEMBER   -----  INT      0036H  2
+  __data . . . . . . . . . . . . . . .  MEMBER   -----  PTR      0038H  3
+  _lock. . . . . . . . . . . . . . . .  MEMBER   -----  VOID_PTR 003BH  3
+__nesc_nxbase_nxle_int16_t . . . . . .  TYPEDEF  -----  INT      -----  2
+cc2430_timerMAC_T2PEROF2_t . . . . . .  * TAG *  -----  ENUM     -----  -----
+CC2430_SLEEP_POWERMODE_2 . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_IEN0_STIE . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+BlinkNoTimerTaskC__toggle. . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_SLEEP_POWERMODE_3 . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_RREG_DELAY_1000 . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+_iconv_t . . . . . . . . . . . . . . .  TYPEDEF  -----  VOID_PTR -----  3
+int_least8_t . . . . . . . . . . . . .  TYPEDEF  -----  CHAR     -----  1
+RealMainP__Scheduler__taskLoop . . . .  STATIC   CODE   PROC     0000H  -----
+CC2430_T2PEROF2_OFCMPIM. . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_RREG_DELAY_2000 . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+ReverseGPIOP__0__In__set . . . . . . .  STATIC   CODE   PROC     0000H  -----
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 46  
+
+NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
+====                                    =====   ======  ====    ======  ====
+
+
+LedsP__Led0__makeOutput. . . . . . . .  STATIC   CODE   PROC     0000H  -----
+CC2430_TIMER3_4_DIV_8. . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_T34CTL_MODE . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+ReverseGPIOP__1__In__set . . . . . . .  STATIC   CODE   PROC     0000H  -----
+LedsP__Led1__makeOutput. . . . . . . .  STATIC   CODE   PROC     0000H  -----
+CC2430_RFSTATUS_CCA. . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_MDMCTRL0H_RESERVED_FRAME_MODE .  E_CONST  -----  U_CHAR   -----  1
+_fpos64_t. . . . . . . . . . . . . . .  TYPEDEF  -----  PTR      -----  3
+int8_t . . . . . . . . . . . . . . . .  TYPEDEF  -----  CHAR     -----  1
+LedsP__Led2__makeOutput. . . . . . . .  STATIC   CODE   PROC     0000H  -----
+ReverseGPIOP__0__Out__set. . . . . . .  STATIC   CODE   PROC     0000H  -----
+cc2430_timer3_4_prescaler_t. . . . . .  * TAG *  -----  ENUM     -----  -----
+CC2430_TIMERWDT_8192 . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+BlinkNoTimerTaskC____nesc_unnamed4274.  * TAG *  -----  ENUM     -----  -----
+ReverseGPIOP__1__Out__set. . . . . . .  STATIC   CODE   PROC     0000H  -----
+_off64_t . . . . . . . . . . . . . . .  TYPEDEF  -----  PTR      -----  3
+BlinkNoTimerTaskC____nesc_unnamed4275.  * TAG *  -----  ENUM     -----  -----
+CC2430_RFSTATUS_TX_ACTIVE. . . . . . .  E_CONST  -----  U_CHAR   -----  1
+ERETRY . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_T1CCTLx_MODE. . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+__nesc_atomic_start. . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+  tmp. . . . . . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0007H  1
+CC2430_IEN0_URX0IE . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_T1CTL_DIV . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_IEN0_URX1IE . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+uintmax_t. . . . . . . . . . . . . . .  TYPEDEF  -----  PTR      -----  3
+CC2430_TIMIF_T3CH0IF . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+__FILE . . . . . . . . . . . . . . . .  TYPEDEF  -----  STRUCT   -----  68
+  _p . . . . . . . . . . . . . . . . .  MEMBER   -----  PTR      0000H  3
+  _r . . . . . . . . . . . . . . . . .  MEMBER   -----  INT      0003H  2
+  _w . . . . . . . . . . . . . . . . .  MEMBER   -----  INT      0005H  2
+  _flags . . . . . . . . . . . . . . .  MEMBER   -----  INT      0007H  2
+  _file. . . . . . . . . . . . . . . .  MEMBER   -----  INT      0009H  2
+  _bf. . . . . . . . . . . . . . . . .  MEMBER   -----  STRUCT   000BH  5
+  _lbfsize . . . . . . . . . . . . . .  MEMBER   -----  INT      0010H  2
+  __data . . . . . . . . . . . . . . .  MEMBER   -----  PTR      0012H  3
+  _cookie. . . . . . . . . . . . . . .  MEMBER   -----  PTR      0015H  3
+  _read. . . . . . . . . . . . . . . .  MEMBER   -----  PTR      0018H  3
+  _write . . . . . . . . . . . . . . .  MEMBER   -----  PTR      001BH  3
+  _seek. . . . . . . . . . . . . . . .  MEMBER   -----  PTR      001EH  3
+  _close . . . . . . . . . . . . . . .  MEMBER   -----  PTR      0021H  3
+  _ub. . . . . . . . . . . . . . . . .  MEMBER   -----  STRUCT   0024H  5
+  _up. . . . . . . . . . . . . . . . .  MEMBER   -----  PTR      0029H  3
+  _ur. . . . . . . . . . . . . . . . .  MEMBER   -----  INT      002CH  2
+  _ubuf. . . . . . . . . . . . . . . .  MEMBER   -----  ARRAY    002EH  3
+  _nbuf. . . . . . . . . . . . . . . .  MEMBER   -----  ARRAY    0031H  1
+  _lb. . . . . . . . . . . . . . . . .  MEMBER   -----  STRUCT   0032H  5
+  _blksize . . . . . . . . . . . . . .  MEMBER   -----  INT      0037H  2
+  _flags2. . . . . . . . . . . . . . .  MEMBER   -----  INT      0039H  2
+  _offset. . . . . . . . . . . . . . .  MEMBER   -----  PTR      003BH  3
+  _seek64. . . . . . . . . . . . . . .  MEMBER   -----  PTR      003EH  3
+  _lock. . . . . . . . . . . . . . . .  MEMBER   -----  VOID_PTR 0041H  3
+uint_fast8_t . . . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
+CC2430_TIMIF_T3CH1IF . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_TIMIF_T4CH0IF . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_T2CNF_CMPIF . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+BlinkNoTimerTaskC__delay . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 47  
+
+NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
+====                                    =====   ======  ====    ======  ====
+
+
+CC2430_TIMIF_T4CH1IF . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_T1_CH0IF. . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_IEN2_UTX0IE . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+cc2430_timerWDT_mode_t . . . . . . . .  * TAG *  -----  ENUM     -----  -----
+CC2430_T1_CH1IF. . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_CLKCON_TICKSPD. . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_IEN2_UTX1IE . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+LedsP__Led0__clr . . . . . . . . . . .  STATIC   CODE   PROC     0000H  -----
+CC2430_TIMERMAC_MODE_RUN . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_T1_CH2IF. . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_TICKF_DIV_128 . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+ERESERVE . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+LedsP__Led1__clr . . . . . . . . . . .  STATIC   CODE   PROC     0000H  -----
+CC2430_CLKCON_OSC32K . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+___nesc_atomic_end . . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+  oldSreg. . . . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0007H  1
+_ssize_t . . . . . . . . . . . . . . .  TYPEDEF  -----  INT      -----  2
+LedsP__Led2__clr . . . . . . . . . . .  STATIC   CODE   PROC     0000H  -----
+CC2430_T34CTL_MODE_MASK. . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_T2CNF_RUN . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_T2CNF_CMSEL . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_SLEEP_OSC_PD. . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_RFIM_RREG_PD. . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+BlinkNoTimerTaskC__Leds__led0Toggle. .  STATIC   CODE   PROC     0000H  -----
+PlatformP__Init__init. . . . . . . . .  STATIC   CODE   PROC     0000H  -----
+  new_clkcon . . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0007H  1
+CC2430_T2CNF_PERIF . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+BlinkNoTimerTaskC____nesc_sillytask_to  TYPEDEF  -----  ARRAY    -----  -----
+BlinkNoTimerTaskC__Leds__led1Toggle. .  STATIC   CODE   PROC     0000H  -----
+CC2430_RFIF_RREG_ON. . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+nxle_uint8_t . . . . . . . . . . . . .  TYPEDEF  -----  STRUCT   -----  1
+  _data. . . . . . . . . . . . . . . .  MEMBER   -----  ARRAY    0000H  1
+intmax_t . . . . . . . . . . . . . . .  TYPEDEF  -----  PTR      -----  3
+BlinkNoTimerTaskC__Leds__led2Toggle. .  STATIC   CODE   PROC     0000H  -----
+_on_exit_args. . . . . . . . . . . . .  * TAG *  -----  STRUCT   -----  200
+  _fnargs. . . . . . . . . . . . . . .  MEMBER   -----  ARRAY    0000H  96
+  _dso_handle. . . . . . . . . . . . .  MEMBER   -----  ARRAY    0060H  96
+  _fntypes . . . . . . . . . . . . . .  MEMBER   -----  U_LONG   00C0H  4
+  _is_cxa. . . . . . . . . . . . . . .  MEMBER   -----  U_LONG   00C4H  4
+int_fast8_t. . . . . . . . . . . . . .  TYPEDEF  -----  CHAR     -----  1
+FALSE. . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+wchar_t. . . . . . . . . . . . . . . .  TYPEDEF  -----  U_INT    -----  2
+cc2430_timerMAC_if_t . . . . . . . . .  * TAG *  -----  ENUM     -----  -----
+CC2430_T1CTL_DIV_MASK. . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_RFIF_CSP_INT. . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+ECANCEL. . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+_SchedulerBasicP__TaskBasic__default__  STATIC   CODE   PROC     0000H  -----
+  id . . . . . . . . . . . . . . . . .  AUTO     XDATA  U_CHAR   0000H  1
+_fpos_t. . . . . . . . . . . . . . . .  TYPEDEF  -----  LONG     -----  4
+LedsP__Led0__set . . . . . . . . . . .  STATIC   CODE   PROC     0000H  -----
+CC2430_TIMERWDT_64 . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_TIMER1_DIV_32 . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_RFSTATUS_SFD. . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+uintptr_t. . . . . . . . . . . . . . .  TYPEDEF  -----  U_INT    -----  2
+LedsP__Led1__set . . . . . . . . . . .  STATIC   CODE   PROC     0000H  -----
+CC2430_TIMER1_MODE_FREE. . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_SLEEP_DIV . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 48  
+
+NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
+====                                    =====   ======  ====    ======  ====
+
+
+_off_t . . . . . . . . . . . . . . . .  TYPEDEF  -----  LONG     -----  4
+LedsP__Led2__set . . . . . . . . . . .  STATIC   CODE   PROC     0000H  -----
+CC2430_CLKCON_TICKSPD_MASK . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_IRCON_DMAIF . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+__sbuf . . . . . . . . . . . . . . . .  * TAG *  -----  STRUCT   -----  5
+  _base. . . . . . . . . . . . . . . .  MEMBER   -----  PTR      0000H  3
+  _size. . . . . . . . . . . . . . . .  MEMBER   -----  INT      0003H  2
+lldiv_t. . . . . . . . . . . . . . . .  TYPEDEF  -----  STRUCT   -----  6
+  quot . . . . . . . . . . . . . . . .  MEMBER   -----  PTR      0000H  3
+  rem. . . . . . . . . . . . . . . . .  MEMBER   -----  PTR      0003H  3
+_atexit. . . . . . . . . . . . . . . .  * TAG *  -----  STRUCT   -----  301
+  _next. . . . . . . . . . . . . . . .  MEMBER   -----  PTR      0000H  3
+  _ind . . . . . . . . . . . . . . . .  MEMBER   -----  INT      0003H  2
+  _fns . . . . . . . . . . . . . . . .  MEMBER   -----  ARRAY    0005H  96
+  _on_exit_args. . . . . . . . . . . .  MEMBER   -----  STRUCT   0065H  200
+PlatformP__LedsInit__init. . . . . . .  STATIC   CODE   PROC     0000H  -----
+  result . . . . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0007H  1
+CC2430_WDCTL_CLR . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+_rand48. . . . . . . . . . . . . . . .  * TAG *  -----  STRUCT   -----  14
+  _seed. . . . . . . . . . . . . . . .  MEMBER   -----  ARRAY    0000H  6
+  _mult. . . . . . . . . . . . . . . .  MEMBER   -----  ARRAY    0006H  6
+  _add . . . . . . . . . . . . . . . .  MEMBER   -----  U_INT    000CH  2
+nxle_int8_t. . . . . . . . . . . . . .  TYPEDEF  -----  STRUCT   -----  1
+  _data. . . . . . . . . . . . . . . .  MEMBER   -----  ARRAY    0000H  1
+_SchedulerBasicP__pushTask . . . . . .  STATIC   CODE   PROC     0000H  -----
+  id . . . . . . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0006H  1
+CC2430_RFIM_CSP_INT. . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+BlinkNoTimerTaskC____nesc_sillytask_de  TYPEDEF  -----  ARRAY    -----  2
+BlinkNoTimerTaskC__toggle__postTask. .  STATIC   CODE   PROC     0000H  -----
+  result . . . . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0007H  1
+SchedulerBasicP__NUM_TASKS . . . . . .  E_CONST  -----  U_CHAR   -----  1
+nx_bool. . . . . . . . . . . . . . . .  TYPEDEF  -----  STRUCT   -----  1
+  _data. . . . . . . . . . . . . . . .  MEMBER   -----  ARRAY    0000H  1
+__nesc_nxbase_nx_uint32_t. . . . . . .  TYPEDEF  -----  U_LONG   -----  4
+RealMainP__Boot__booted. . . . . . . .  STATIC   CODE   PROC     0000H  -----
+CC2430_IEN0_ADCIE. . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+RealMainP__PlatformInit__init. . . . .  STATIC   CODE   PROC     0000H  -----
+  result . . . . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0007H  1
+CC2430_T2CNF_OFCMPIF . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_T1CTL_OVFIF . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+__nesc_nxbase_nx_uint16_t. . . . . . .  TYPEDEF  -----  U_INT    -----  2
+__nesc_disable_interrupt . . . . . . .  STATIC   CODE   PROC     0000H  -----
+CC2430_RREG_DELAY_31 . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_TICKF_DIV_1 . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+intptr_t . . . . . . . . . . . . . . .  TYPEDEF  -----  INT      -----  2
+uint_least32_t . . . . . . . . . . . .  TYPEDEF  -----  U_LONG   -----  4
+CC2430_TICKF_DIV_2 . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+SLEEP. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00BEH  1
+ELAST. . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_SLEEP_HFRC_STB. . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+uint_least16_t . . . . . . . . . . . .  TYPEDEF  -----  U_INT    -----  2
+NoPinC__0__GeneralIO__toggle . . . . .  STATIC   CODE   PROC     0000H  -----
+CC2430_TIMERWDT_MODE_WDT . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+cc2430_timerMAC_T2CNF_t. . . . . . . .  * TAG *  -----  ENUM     -----  -----
+CC2430_TICKF_DIV_4 . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+uint32_t . . . . . . . . . . . . . . .  TYPEDEF  -----  U_LONG   -----  4
+SchedulerBasicP__m_head. . . . . . . .  PUBLIC   XDATA  U_CHAR   0003H  1
+C51 COMPILER V8.09   APP                                                                   09/19/2014 10:42:03 PAGE 49  
+
+NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
+====                                    =====   ======  ====    ======  ====
+
+
+RealMainP__SoftwareInit__init. . . . .  STATIC   CODE   PROC     0000H  -----
+  result . . . . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0007H  1
+CC2430_WDCTL_INT . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+CC2430_RREG_DELAY_63 . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    685    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =      4      11
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  1 WARNING(S),  0 ERROR(S)
