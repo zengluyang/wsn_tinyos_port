@@ -1,0 +1,27 @@
+{
+	"folders":
+	[
+		{
+			"path": "./"
+		}
+	],
+		"build_systems": [
+		{
+			"name": "Make cc2430em",
+			"env" : 
+			{
+				"TOSROOT":"/opt/tinyos-2.x",
+				"MCS51_COMPILER":"keil",
+				"TOSDIR":"/opt/tinyos-2.x/tos",
+				"MAKERULES":"/opt/tinyos-2.x/support/make/Makerules",
+				"CONTRIBROOT":"/opt/tinyos-2.x-contrib",
+				"TOSMAKE_PATH":"/opt/tinyos-2.x-contrib/diku/sensinode/support/make /opt/tinyos-2.x-contrib/diku/mcs51/support/make /opt/tinyos-2.x-contrib/diku/freescale/support/make",
+				"":"",
+				"":""
+
+			},
+			"shell": "true",
+			"cmd": ["make","cc2430em"]
+		}
+	]
+}

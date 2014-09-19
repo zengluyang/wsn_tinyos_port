@@ -1,4 +1,4 @@
-LX51 LINKER/LOCATER V4.17                                                               09/19/2014  10:52:07  PAGE 1
+LX51 LINKER/LOCATER V4.17                                                               09/19/2014  21:48:16  PAGE 1
 
 
 LX51 LINKER/LOCATER V4.17, INVOKED BY:
@@ -67,7 +67,7 @@ START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
 0002D0H   0002DFH   000010H   BYTE   UNIT     CODE           ?PR?REVERSEGPIOP__0__OUT__TOGGLE?APP
 0002E0H   0002EAH   00000BH   BYTE   UNIT     CODE           ?PR?ECHOP__BOOT__BOOTED?APP
 0002EBH   0002F4H   00000AH   BYTE   UNIT     CODE           ?PR?_SCHEDULERBASICP__TASKBASIC__RUNTASK?APP
-LX51 LINKER/LOCATER V4.17                                                             09/19/2014  10:52:07  PAGE 2
+LX51 LINKER/LOCATER V4.17                                                             09/19/2014  21:48:16  PAGE 2
 
 
 0002F5H   0002FDH   000009H   BYTE   UNIT     CODE           ?PR?MCUSLEEPC__MCUSLEEP__SLEEP?APP
@@ -135,7 +135,7 @@ START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
 00E000H   00E006H   000007H   BYTE   UNIT     XDATA          _XDATA_GROUP_
 00E007H   00E00AH   000004H   BYTE   UNIT     XDATA          ?XD?APP
 
-LX51 LINKER/LOCATER V4.17                                                             09/19/2014  10:52:07  PAGE 3
+LX51 LINKER/LOCATER V4.17                                                             09/19/2014  21:48:16  PAGE 3
 
 
 
@@ -203,7 +203,7 @@ NOPINC__0__GENERALIO__MAKEOUTPUT/APP          ----- -----
 
 LEDSP__LED2__MAKEOUTPUT/APP                   ----- -----
   +--> ?PR?REVERSEGPIOP__1__OUT__MAKEOUTPUT?APP
-LX51 LINKER/LOCATER V4.17                                                             09/19/2014  10:52:07  PAGE 4
+LX51 LINKER/LOCATER V4.17                                                             09/19/2014  21:48:16  PAGE 4
 
 
 
@@ -271,7 +271,7 @@ REALMAINP__SOFTWAREINIT__INIT/APP             ----- -----
 HALCC2430SIMPLEUARTP__INIT__INIT/APP          ----- -----
 
 ___NESC_ATOMIC_END/APP                        ----- -----
-LX51 LINKER/LOCATER V4.17                                                             09/19/2014  10:52:07  PAGE 5
+LX51 LINKER/LOCATER V4.17                                                             09/19/2014  21:48:16  PAGE 5
 
 
 
@@ -339,7 +339,7 @@ _ECHOP__UART0__GET/APP                        ----- -----
 ECHOP__LEDS__LED0TOGGLE/APP                   ----- -----
   +--> ?PR?LEDSP__LEDS__LED0TOGGLE?APP
 
-LX51 LINKER/LOCATER V4.17                                                             09/19/2014  10:52:07  PAGE 6
+LX51 LINKER/LOCATER V4.17                                                             09/19/2014  21:48:16  PAGE 6
 
 
 LEDSP__LEDS__LED0TOGGLE/APP                   ----- -----
@@ -407,7 +407,7 @@ __VECTOR_7/APP                                E006H E006H
   +--> ?PR?__NESC_ATOMIC_START?APP
   +--> ?PR?___NESC_ATOMIC_END?APP
   +--> ?PR?HALCC2430SIMPLEUARTP__UART0__PUTD...
-LX51 LINKER/LOCATER V4.17                                                             09/19/2014  10:52:07  PAGE 7
+LX51 LINKER/LOCATER V4.17                                                             09/19/2014  21:48:16  PAGE 7
 
 
 
@@ -475,7 +475,7 @@ SYMBOL TABLE OF MODULE:  APP (?C_STARTUP)
       01000044H   LINE      CODE     ---       #185
       01000047H   LINE      CODE     ---       #196
 
-LX51 LINKER/LOCATER V4.17                                                             09/19/2014  10:52:07  PAGE 8
+LX51 LINKER/LOCATER V4.17                                                             09/19/2014  21:48:16  PAGE 8
 
 
       ---         MODULE    ---      ---       APP

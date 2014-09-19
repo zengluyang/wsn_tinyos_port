@@ -1,4 +1,4 @@
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 1   
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 1   
 
 
 C51 COMPILER V8.09, COMPILATION OF MODULE APP
@@ -62,7 +62,7 @@ line level    source
   53          //#line 17
   54          /*struct __nesc_attr_nts {
   55          }  ;*/
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 2   
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 2   
 
   56          //# 47 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/keil_stdint.h" 3
   57          typedef signed char int8_t;
@@ -126,7 +126,7 @@ line level    source
  115          typedef unsigned int uint_fast16_t;
  116          typedef unsigned int uint_fast32_t;
  117          //#line 105
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 3   
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 3   
 
  118          typedef int intptr_t;
  119          
@@ -190,7 +190,7 @@ line level    source
  162          typedef struct { unsigned char _data[8]; } /*__attribute__((packed))*/ nxle_uint64_t;/*typedef uint64_t __
              -nesc_nxbase_nxle_uint64_t  ;*/
  163          //# 13 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/string.h"
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 4   
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 4   
 
  164          extern void *memset(void *s, char val, int n);
  165          //# 14 "/usr/include/sys/lock.h" 3
@@ -254,7 +254,7 @@ line level    source
  223          
  224          
  225          struct _on_exit_args {
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 5   
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 5   
 
  226            void *_fnargs[32];
  227            void *_dso_handle[32];
@@ -318,7 +318,7 @@ line level    source
  285          
  286          
  287          
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 6   
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 6   
 
  288          
  289            char *_cookie;
@@ -382,7 +382,7 @@ line level    source
  347          
  348          
  349            unsigned char _ubuf[3];
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 7   
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 7   
 
  350            unsigned char _nbuf[1];
  351          
@@ -446,7 +446,7 @@ line level    source
  409          
  410            int _cvtlen;
  411            char *_cvtbuf;
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 8   
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 8   
 
  412          
  413            union __nesc_unnamed4245 {
@@ -510,7 +510,7 @@ line level    source
  471          
  472          
  473          
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 9   
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 9   
 
  474          struct _reent;
  475          //# 32 "/usr/include/stdlib.h" 3
@@ -574,7 +574,7 @@ line level    source
  533          //#line 44
  534          /*struct __nesc_attr_atleastonce {
  535          };*/
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 10  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 10  
 
  536          //#line 45
  537          /*struct __nesc_attr_exactlyonce {
@@ -638,7 +638,7 @@ line level    source
  595            CC2430_IRCON_T4IF = 0x4, 
  596            CC2430_IRCON_T3IF = 0x3, 
  597            CC2430_IRCON_T2IF = 0x2, 
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 11  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 11  
 
  598            CC2430_IRCON_T1IF = 0x1, 
  599            CC2430_IRCON_DMAIF = 0x0
@@ -702,7 +702,7 @@ line level    source
  657          
  658          sfr U0UCR = 0xC4;
  659          sfr U0GCR = 0xC5;
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 12  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 12  
 
  660          sfr CLKCON = 0xC6;
  661          //#line 334
@@ -766,7 +766,7 @@ line level    source
  719          //# 102 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/mcs51hardware.h"
  720          typedef uint8_t __nesc_atomic_t;
  721          
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 13  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 13  
 
  722          static   /*inline*/   void __nesc_disable_interrupt();
  723          static   /*inline*/   void __nesc_enable_interrupt();
@@ -830,7 +830,7 @@ line level    source
  781          enum __nesc_unnamed4267 {
  782            CC2430_T1CTL_CH2IF = 0x7, 
  783            CC2430_T1CTL_CH1IF = 0x6, 
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 14  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 14  
 
  784            CC2430_T1CTL_CH0IF = 0x5, 
  785            CC2430_T1CTL_OVFIF = 0x4, 
@@ -894,7 +894,7 @@ line level    source
  843          
  844          
  845          
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 15  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 15  
 
  846          
  847          
@@ -958,7 +958,7 @@ line level    source
  905          
  906          
  907          
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 16  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 16  
 
  908          
  909          enum cc2430_timer3_4_mode_t {
@@ -1022,7 +1022,7 @@ line level    source
  967          //# 42 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/Timer.h"
  968          typedef uint8_t TMilli;
  969          typedef uint8_t T32khz;
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 17  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 17  
 
  970          typedef uint8_t TMicro;
  971          //# 32 "/opt/tinyos-2.x/tos/types/Leds.h"
@@ -1086,7 +1086,7 @@ line level    source
 1029          static void HplMcs51GeneralIOC__P13__clr(void );
 1030          static void HplMcs51GeneralIOC__P10__toggle(void );
 1031          
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 18  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 18  
 
 1032          
 1033          
@@ -1150,7 +1150,7 @@ line level    source
 1091          
 1092            SchedulerBasicP__NUM_TASKS = 1U, 
 1093            SchedulerBasicP__NO_TASK = 255
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 19  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 19  
 
 1094          };
 1095          
@@ -1214,7 +1214,7 @@ line level    source
 1153            EchoP__print = 0U
 1154          };
 1155          //#line 64
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 20  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 20  
 
 1156          typedef int EchoP____nesc_sillytask_print[];
 1157          //#line 50
@@ -1278,7 +1278,7 @@ line level    source
 1215          //#line 88
 1216          static  /*inline*/  void LedsP__Leds__led1Toggle(void );
 1217          //#line 103
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 21  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 21  
 
 1218          static  /*inline*/  void LedsP__Leds__led2Toggle(void );
 1219          //# 92 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
@@ -1342,7 +1342,7 @@ line level    source
 1277          
 1278          static void HalCC2430SimpleUartP__uart0__putDone(void );
 1279          //# 50 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/cc2430/usart/HalCC2430SimpleUartP.nc"
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 22  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 22  
 
 1280          static  /*inline*/  error_t HalCC2430SimpleUartP__Init__init(void );
 1281          //#line 130
@@ -1406,7 +1406,7 @@ line level    source
 1339          //#line 30
 1340          //# 59 "/opt/tinyos-2.x-contrib/diku/common/lib/ReverseGPIOP.nc"
 1341          static   /*inline*/   void /*PlatformLedsC.Led2_rev*/ReverseGPIOP__1__Out__set(void )
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 23  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 23  
 
 1342          //#line 59
 1343          {
@@ -1470,7 +1470,7 @@ line level    source
 1401          {
 1402   1      //#line 95
 1403   1        P1_DIR |= 1 << 3;
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 24  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 24  
 
 1404   1      }
 1405          
@@ -1534,7 +1534,7 @@ line level    source
 1463          
 1464          //# 35 "/opt/tinyos-2.x/tos/interfaces/GeneralIO.nc"
 1465           /*inline*/  static void LedsP__Led0__makeOutput(void ){
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 25  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 25  
 
 1466   1      //#line 35
 1467   1        /*PlatformLedsC.Led0_rev*/ReverseGPIOP__0__Out__makeOutput();
@@ -1598,7 +1598,7 @@ line level    source
 1525   1      
 1526   1      
 1527   1      
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 26  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 26  
 
 1528   1      
 1529   1      
@@ -1654,23 +1654,23 @@ line level    source
 1579   1      
 1580   1      
 1581   1      
-1582   1        U0GCR = 230400 == 2400 ? 6 + ((CLKCON & (1 << CC2430_CLKCON_OSC)) >> CC2430_CLKCON_OSC) : 230400 == 4800
-             - ? 7 + ((CLKCON & (1 << CC2430_CLKCON_OSC)) >> CC2430_CLKCON_OSC) : 230400 == 9600 ? 8 + ((CLKCON & (1 << CC2430_CLKCON_
-             -OSC)) >> CC2430_CLKCON_OSC) : 230400 == 14400 ? 8 + ((CLKCON & (1 << CC2430_CLKCON_OSC)) >> CC2430_CLKCON_OSC) : 230400 
-             -== 19200 ? 9 + ((CLKCON & (1 << CC2430_CLKCON_OSC)) >> CC2430_CLKCON_OSC) : 230400 == 28800 ? 9 + ((CLKCON & (1 << CC243
-             -0_CLKCON_OSC)) >> CC2430_CLKCON_OSC) : 230400 == 38400 ? 10 + ((CLKCON & (1 << CC2430_CLKCON_OSC)) >> CC2430_CLKCON_OSC)
-             - : 230400 == 57600 ? 10 + ((CLKCON & (1 << CC2430_CLKCON_OSC)) >> CC2430_CLKCON_OSC) : 230400 == 76800 ? 11 + ((CLKCON &
-             - (1 << CC2430_CLKCON_OSC)) >> CC2430_CLKCON_OSC) : 230400 == 115200 ? 11 + ((CLKCON & (1 << CC2430_CLKCON_OSC)) >> CC243
-             -0_CLKCON_OSC) : 230400 == 153600 ? 12 + ((CLKCON & (1 << CC2430_CLKCON_OSC)) >> CC2430_CLKCON_OSC) : 230400 == 230400 ? 
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 27  
+1582   1        U0GCR = 57600 == 2400 ? 6 + ((CLKCON & (1 << CC2430_CLKCON_OSC)) >> CC2430_CLKCON_OSC) : 57600 == 4800 ?
+             - 7 + ((CLKCON & (1 << CC2430_CLKCON_OSC)) >> CC2430_CLKCON_OSC) : 57600 == 9600 ? 8 + ((CLKCON & (1 << CC2430_CLKCON_OSC
+             -)) >> CC2430_CLKCON_OSC) : 57600 == 14400 ? 8 + ((CLKCON & (1 << CC2430_CLKCON_OSC)) >> CC2430_CLKCON_OSC) : 57600 == 19
+             -200 ? 9 + ((CLKCON & (1 << CC2430_CLKCON_OSC)) >> CC2430_CLKCON_OSC) : 57600 == 28800 ? 9 + ((CLKCON & (1 << CC2430_CLKC
+             -ON_OSC)) >> CC2430_CLKCON_OSC) : 57600 == 38400 ? 10 + ((CLKCON & (1 << CC2430_CLKCON_OSC)) >> CC2430_CLKCON_OSC) : 5760
+             -0 == 57600 ? 10 + ((CLKCON & (1 << CC2430_CLKCON_OSC)) >> CC2430_CLKCON_OSC) : 57600 == 76800 ? 11 + ((CLKCON & (1 << CC
+             -2430_CLKCON_OSC)) >> CC2430_CLKCON_OSC) : 57600 == 115200 ? 11 + ((CLKCON & (1 << CC2430_CLKCON_OSC)) >> CC2430_CLKCON_O
+             -SC) : 57600 == 153600 ? 12 + ((CLKCON & (1 << CC2430_CLKCON_OSC)) >> CC2430_CLKCON_OSC) : 57600 == 230400 ? 12 + ((CLKCO
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 27  
 
-             -12 + ((CLKCON & (1 << CC2430_CLKCON_OSC)) >> CC2430_CLKCON_OSC) : 230400 == 307200 ? 13 + ((CLKCON & (1 << CC2430_CLKCON
-             -_OSC)) >> CC2430_CLKCON_OSC) : 0;
+             -N & (1 << CC2430_CLKCON_OSC)) >> CC2430_CLKCON_OSC) : 57600 == 307200 ? 13 + ((CLKCON & (1 << CC2430_CLKCON_OSC)) >> CC2
+             -430_CLKCON_OSC) : 0;
 1583   1      
 1584   1      
-1585   1        U0BAUD = 230400 == 2400 ? 59 : 230400 == 4800 ? 59 : 230400 == 9600 ? 59 : 230400 == 14400 ? 216 : 23040
-             -0 == 19200 ? 59 : 230400 == 28800 ? 216 : 230400 == 38400 ? 59 : 230400 == 57600 ? 216 : 230400 == 76800 ? 59 : 230400 =
-             -= 115200 ? 216 : 230400 == 153600 ? 59 : 230400 == 230400 ? 216 : 230400 == 307200 ? 59 : 0;
+1585   1        U0BAUD = 57600 == 2400 ? 59 : 57600 == 4800 ? 59 : 57600 == 9600 ? 59 : 57600 == 14400 ? 216 : 57600 == 
+             -19200 ? 59 : 57600 == 28800 ? 216 : 57600 == 38400 ? 59 : 57600 == 57600 ? 216 : 57600 == 76800 ? 59 : 57600 == 115200 ?
+             - 216 : 57600 == 153600 ? 59 : 57600 == 230400 ? 216 : 57600 == 307200 ? 59 : 0;
 1586   1      
 1587   1        U0CSR |= 0x80u | 0x40u;
 1588   1        U0UCR |= 0x2u | 0x80u;
@@ -1726,7 +1726,7 @@ line level    source
 1638   1      }
 1639          //#line 41
 1640          //# 92 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 28  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 28  
 
 1641          static   /*inline*/   void HplMcs51GeneralIOC__P10__set(void )
 1642          //#line 92
@@ -1790,7 +1790,7 @@ line level    source
 1700   1      }
 1701          //#line 49
 1702          //# 64 "EchoP.nc"
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 29  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 29  
 
 1703          static  /*inline*/  void EchoP__print__runTask(void )
 1704          //#line 64
@@ -1854,7 +1854,7 @@ line level    source
 1761   1      
 1762   1      
 1763   1        SLEEP = (SLEEP & ~CC2430_SLEEP_MODE_MASK) | CC2430_SLEEP_POWERMODE_0;
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 30  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 30  
 
 1764   1      
 1765   1        __nesc_disable_interrupt();
@@ -1918,7 +1918,7 @@ line level    source
 1823          //#line 61
 1824          //# 86 "/opt/tinyos-2.x/tos/system/SchedulerBasicP.nc"
 1825          static  /*inline*/  bool SchedulerBasicP__isWaiting(uint8_t id)
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 31  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 31  
 
 1826          {
 1827   1        return SchedulerBasicP__m_next[id] != SchedulerBasicP__NO_TASK || SchedulerBasicP__m_tail == id;
@@ -1982,7 +1982,7 @@ line level    source
 1885   1      
 1886   1      //#line 56
 1887   1        return result;
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 32  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 32  
 
 1888   1      //#line 56
 1889   1      }
@@ -2046,7 +2046,7 @@ line level    source
 1947   1      }
 1948          //#line 89
 1949          //# 25 "/opt/tinyos-2.x/tos/system/NoPinC.nc"
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 33  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 33  
 
 1950          static  /*inline*/  void /*PlatformLedsC.NoPinC*/NoPinC__0__GeneralIO__toggle(void )
 1951          //#line 25
@@ -2110,7 +2110,7 @@ line level    source
 2009   2      //#line 60
 2010   2          __nesc_atomic_end(__nesc_atomic); }
 2011   1      }
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 34  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 34  
 
 2012          
 2013          //# 31 "/opt/tinyos-2.x/tos/interfaces/GeneralIO.nc"
@@ -2174,7 +2174,7 @@ line level    source
 2071            int main(void )
 2072          //#line 52
 2073          {
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 35  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 35  
 
 2074   1        { __nesc_atomic_t __nesc_atomic = __nesc_atomic_start();
 2075   2          {
@@ -2238,7 +2238,7 @@ line level    source
 2133   4                FALSE;
 2134   4      
 2135   4      //#line 131
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 36  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 36  
 
 2136   4                return __nesc_temp;
 2137   4              }
@@ -2282,7 +2282,7 @@ line level    source
 2175   2          }
 2176   1      }
 2177          
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 37  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 37  
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -2345,7 +2345,7 @@ int_least16_t. . . . . . . . . . . . .  TYPEDEF  -----  INT      -----  2
 __nesc_unnamed4270 . . . . . . . . . .  * TAG *  -----  ENUM     -----  -----
 CC2430_TIMER3_4_MODE_FREE. . . . . . .  E_CONST  -----  U_CHAR   -----  1
 __nesc_unnamed4261 . . . . . . . . . .  * TAG *  -----  ENUM     -----  -----
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 38  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 38  
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -2408,7 +2408,7 @@ __nesc_unnamed4247 . . . . . . . . . .  * TAG *  -----  STRUCT   -----  150
 CC2430_WDCTL_INT_MASK. . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 __nesc_unnamed4266 . . . . . . . . . .  * TAG *  -----  ENUM     -----  -----
 __nesc_unnamed4257 . . . . . . . . . .  * TAG *  -----  ENUM     -----  -----
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 39  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 39  
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -2471,7 +2471,7 @@ LEDS_LED5. . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 SchedulerBasicP__m_tail. . . . . . . .  PUBLIC   XDATA  U_CHAR   0000H  1
 LEDS_LED6. . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 CC2430_T34CTL_DIV. . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 40  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 40  
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -2534,7 +2534,7 @@ nx_int8_t. . . . . . . . . . . . . . .  TYPEDEF  -----  STRUCT   -----  1
 CC2430_T1CTL_MODE. . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 U0BAUD . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00C2H  1
 nxle_int16_t . . . . . . . . . . . . .  TYPEDEF  -----  STRUCT   -----  2
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 41  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 41  
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -2597,7 +2597,7 @@ LedsP__Leds__led0Toggle. . . . . . . .  STATIC   CODE   PROC     0000H  -----
 CC2430_TICKF_DIV_64. . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 CC2430_SLEEP_MODE. . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 ENOACK . . . . . . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 42  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 42  
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -2660,7 +2660,7 @@ __sFILE64. . . . . . . . . . . . . . .  * TAG *  -----  STRUCT   -----  68
 URX0IF . . . . . . . . . . . . . . . .  ABSBIT   -----  BIT      008BH  1
 _Bigint. . . . . . . . . . . . . . . .  * TAG *  -----  STRUCT   -----  15
   _next. . . . . . . . . . . . . . . .  MEMBER   -----  PTR      0000H  3
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 43  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 43  
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -2723,7 +2723,7 @@ cc2430_timer1_if_t . . . . . . . . . .  * TAG *  -----  ENUM     -----  -----
 uint_least8_t. . . . . . . . . . . . .  TYPEDEF  -----  U_CHAR   -----  1
 ReverseGPIOP__0__In__clr . . . . . . .  STATIC   CODE   PROC     0000H  -----
 ReverseGPIOP__1__In__clr . . . . . . .  STATIC   CODE   PROC     0000H  -----
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 44  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 44  
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -2786,7 +2786,7 @@ EchoP____nesc_sillytask_print. . . . .  TYPEDEF  -----  ARRAY    -----  -----
 cc2430_timerMAC_T2PEROF2_t . . . . . .  * TAG *  -----  ENUM     -----  -----
 CC2430_SLEEP_POWERMODE_2 . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 CC2430_IEN0_STIE . . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 45  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 45  
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -2849,7 +2849,7 @@ __FILE . . . . . . . . . . . . . . . .  TYPEDEF  -----  STRUCT   -----  68
   _offset. . . . . . . . . . . . . . .  MEMBER   -----  PTR      003BH  3
   _seek64. . . . . . . . . . . . . . .  MEMBER   -----  PTR      003EH  3
   _lock. . . . . . . . . . . . . . . .  MEMBER   -----  VOID_PTR 0041H  3
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 46  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 46  
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -2912,7 +2912,7 @@ _SchedulerBasicP__TaskBasic__default__  STATIC   CODE   PROC     0000H  -----
   id . . . . . . . . . . . . . . . . .  AUTO     XDATA  U_CHAR   0000H  1
 U0CSR. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   0086H  1
 _fpos_t. . . . . . . . . . . . . . . .  TYPEDEF  -----  LONG     -----  4
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 47  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 47  
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
@@ -2975,7 +2975,7 @@ intptr_t . . . . . . . . . . . . . . .  TYPEDEF  -----  INT      -----  2
 uint_least32_t . . . . . . . . . . . .  TYPEDEF  -----  U_LONG   -----  4
 CC2430_TICKF_DIV_2 . . . . . . . . . .  E_CONST  -----  U_CHAR   -----  1
 SLEEP. . . . . . . . . . . . . . . . .  SFR      DATA   U_CHAR   00BEH  1
-C51 COMPILER V8.09   APP                                                                   09/19/2014 10:52:07 PAGE 48  
+C51 COMPILER V8.09   APP                                                                   09/19/2014 21:48:16 PAGE 48  
 
 NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
 ====                                    =====   ======  ====    ======  ====
