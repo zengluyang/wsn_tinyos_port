@@ -65,6 +65,8 @@ module HplMcs51GeneralIOC {
   provides interface GeneralIO as P15;
   provides interface GeneralIO as P16;
   provides interface GeneralIO as P17;
+
+  provides interface GeneralIO as P20;
 }
 implementation {
 #define MAKE_NEW_PIN(name, pin, pin_dir, pin_dir_bit) \
@@ -97,4 +99,6 @@ implementation {
   MAKE_NEW_PIN(P15, P1_5, P1_DIR, 5);
   MAKE_NEW_PIN(P16, P1_6, P1_DIR, 6);
   MAKE_NEW_PIN(P17, P1_7, P1_DIR, 7);
+  
+  MAKE_NEW_PIN(P20, P2_0, P2_DIR, 0);
 }

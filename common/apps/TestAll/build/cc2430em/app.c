@@ -560,11 +560,10 @@ typedef uint8_t error_t  ;
 static  /*inline*/  error_t ecombine(error_t r1, error_t r2)  ;
 //# 160 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/io8051.h"
 sbit EA = 0xAF;
-//#line 194
-sbit P1_0 = 0x90;
-
-
+//#line 197
 sbit P1_3 = 0x93;
+//#line 210
+sbit P2_0 = 0xA0;
 //# 67 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/cc2430/ioCC2430.h"
 enum __nesc_unnamed4253 {
   CC2430_IEN0_EA = 0x7, 
@@ -725,7 +724,7 @@ sfr ADCCFG = 0xF2;
 
 
 sfr P1_DIR = 0xFE;
-
+sfr P2_DIR = 0xFF;
 
 
 sfr P0_ALT = 0xF3;
@@ -1470,14 +1469,14 @@ static void HplMcs51GeneralIOC__P13__makeOutput(void );
 //#line 29
 static void HplMcs51GeneralIOC__P13__set(void );
 static void HplMcs51GeneralIOC__P13__clr(void );
-static void HplMcs51GeneralIOC__P10__toggle(void );
+static void HplMcs51GeneralIOC__P20__toggle(void );
 
 
 
-static void HplMcs51GeneralIOC__P10__makeOutput(void );
+static void HplMcs51GeneralIOC__P20__makeOutput(void );
 //#line 29
-static void HplMcs51GeneralIOC__P10__set(void );
-static void HplMcs51GeneralIOC__P10__clr(void );
+static void HplMcs51GeneralIOC__P20__set(void );
+static void HplMcs51GeneralIOC__P20__clr(void );
 static void /*PlatformLedsC.Led0_rev*/ReverseGPIOP__0__Out__toggle(void );
 
 
@@ -1541,6 +1540,8 @@ static error_t SimpleMacM__SimpleMac__setChannel(uint8_t channel);
 static error_t SimpleMacM__SimpleMac__sendPacket(packet_t *packet);
 //#line 61
 static error_t SimpleMacM__SimpleMac__rxEnable(void );
+//#line 55
+static error_t SimpleMacM__SimpleMac__setTransmitPower(uint8_t power);
 //# 51 "/opt/tinyos-2.x/tos/interfaces/Init.nc"
 static error_t SimpleMacM__Init__init(void );
 //# 64 "/opt/tinyos-2.x/tos/interfaces/TaskBasic.nc"
@@ -1605,6 +1606,8 @@ static error_t HalCC2430RadioP__HALCC2420__setChannel(uint8_t channel);
 static error_t HalCC2430RadioP__HALCC2420__sendPacket(uint8_t *packet);
 //#line 62
 static error_t HalCC2430RadioP__HALCC2420__rxEnable(void );
+//#line 56
+static error_t HalCC2430RadioP__HALCC2420__setTransmitPower(uint8_t power);
 //# 64 "/opt/tinyos-2.x/tos/interfaces/TaskBasic.nc"
 static void HalCC2430RadioP__flushBufferTask__runTask(void );
 //# 108 "/opt/tinyos-2.x-contrib/diku/common/lib/stdout/StdOut.nc"
@@ -1638,17 +1641,17 @@ static error_t HalFlashP__Init__init(void );
 //# 66 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/cc2430/adc/AdcControl.nc"
 static void AdcP__AdcControl__enable(
 //# 42 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/cc2430/adc/AdcP.nc"
-uint8_t arg_0x7e700818, 
+uint8_t arg_0x7e6f3818, 
 //# 66 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/cc2430/adc/AdcControl.nc"
 uint8_t reference, uint8_t resolution, uint8_t input);
 //# 55 "/opt/tinyos-2.x/tos/interfaces/Read.nc"
 static error_t AdcP__Read__read(
 //# 43 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/cc2430/adc/AdcP.nc"
-uint8_t arg_0x7e6f8030);
+uint8_t arg_0x7e6ea030);
 //# 63 "/opt/tinyos-2.x/tos/interfaces/Read.nc"
 static void AdcP__Read__default__readDone(
 //# 43 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/cc2430/adc/AdcP.nc"
-uint8_t arg_0x7e6f8030, 
+uint8_t arg_0x7e6ea030, 
 //# 63 "/opt/tinyos-2.x/tos/interfaces/Read.nc"
 error_t result, AdcP__Read__val_t val);
 //# 51 "/opt/tinyos-2.x/tos/interfaces/Init.nc"
@@ -1746,6 +1749,8 @@ static error_t TestAppP__SimpleMac__setChannel(uint8_t channel);
 static error_t TestAppP__SimpleMac__sendPacket(packet_t *packet);
 //#line 61
 static error_t TestAppP__SimpleMac__rxEnable(void );
+//#line 55
+static error_t TestAppP__SimpleMac__setTransmitPower(uint8_t power);
 //# 56 "/opt/tinyos-2.x/tos/interfaces/TaskBasic.nc"
 static error_t TestAppP__consoleTask__postTask(void );
 //# 74 "/opt/tinyos-2.x/tos/interfaces/StdControl.nc"
@@ -1932,21 +1937,24 @@ static  /*inline*/  void LedsP__Leds__led2On(void );
 
 
 static  /*inline*/  void LedsP__Leds__led2Off(void );
-//# 92 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
-static   /*inline*/   void HplMcs51GeneralIOC__P10__set(void );
-//#line 92
-static   /*inline*/   void HplMcs51GeneralIOC__P10__clr(void );
-//#line 92
-static  /*inline*/  void HplMcs51GeneralIOC__P10__toggle(void );
-//#line 92
-static   /*inline*/   void HplMcs51GeneralIOC__P10__makeOutput(void );
-
-
+//# 97 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
 static   /*inline*/   void HplMcs51GeneralIOC__P13__set(void );
-//#line 95
+//#line 97
 static   /*inline*/   void HplMcs51GeneralIOC__P13__clr(void );
-//#line 95
+//#line 97
 static   /*inline*/   void HplMcs51GeneralIOC__P13__makeOutput(void );
+
+
+
+
+
+static   /*inline*/   void HplMcs51GeneralIOC__P20__set(void );
+//#line 103
+static   /*inline*/   void HplMcs51GeneralIOC__P20__clr(void );
+//#line 103
+static  /*inline*/  void HplMcs51GeneralIOC__P20__toggle(void );
+//#line 103
+static   /*inline*/   void HplMcs51GeneralIOC__P20__makeOutput(void );
 //# 31 "/opt/tinyos-2.x/tos/interfaces/GeneralIO.nc"
 static void /*PlatformLedsC.Led0_rev*/ReverseGPIOP__0__In__toggle(void );
 
@@ -2069,6 +2077,8 @@ static error_t SimpleMacM__HALCC2420__setChannel(uint8_t channel);
 static error_t SimpleMacM__HALCC2420__sendPacket(uint8_t *packet);
 //#line 62
 static error_t SimpleMacM__HALCC2420__rxEnable(void );
+//#line 56
+static error_t SimpleMacM__HALCC2420__setTransmitPower(uint8_t power);
 //# 56 "/opt/tinyos-2.x/tos/interfaces/TaskBasic.nc"
 static error_t SimpleMacM__signalSendPacketDone__postTask(void );
 //# 45 "/opt/tinyos-2.x-contrib/diku/common/lib/simplemac/SimpleMacM.nc"
@@ -2149,7 +2159,23 @@ static  /*inline*/  void SimpleMacM__HALCC2420__sendPacketDone(uint8_t *packet, 
 
 
 static  /*inline*/  error_t SimpleMacM__SimpleMac__setChannel(uint8_t channel);
-//#line 160
+
+
+
+
+
+
+
+
+static  /*inline*/  error_t SimpleMacM__SimpleMac__setTransmitPower(uint8_t power);
+
+
+
+
+
+
+
+
 static  /*inline*/  error_t SimpleMacM__SimpleMac__rxEnable(void );
 
 
@@ -2374,7 +2400,7 @@ static  /*inline*/  void HalCC2430RadioP__CC2430ExternalOscillator(void );
 static void HalCC2430RadioP__CC2430RxEnable(void );
 static  /*inline*/  void HalCC2430RadioP__CC2430RxDisable(void );
 static void HalCC2430RadioP__CC2430ChannelSet(uint8_t channel);
-static  /*inline*/  void HalCC2430RadioP__CC2430PALevelSet(uint8_t new_power);
+static void HalCC2430RadioP__CC2430PALevelSet(uint8_t new_power);
 static  /*inline*/  void HalCC2430RadioP__CC2430ControlSet(void );
 static void HalCC2430RadioP__CC2430TxWait(void );
 static void HalCC2430RadioP__wait(uint16_t u);
@@ -2419,6 +2445,8 @@ uint8_t HalCC2430RadioP__currentChannel;
 static error_t HalCC2430RadioP__HALCC2420__setChannel(uint8_t channel);
 //#line 325
 static  /*inline*/  void HalCC2430RadioP__setChannelTask__runTask(void );
+//#line 343
+static  /*inline*/  error_t HalCC2430RadioP__HALCC2420__setTransmitPower(uint8_t power);
 //#line 357
 static  /*inline*/  error_t HalCC2430RadioP__HALCC2420__rxEnable(void );
 
@@ -2499,7 +2527,7 @@ static  /*inline*/  void HalCC2430RadioP__CC2430RxDisable(void );
 //#line 773
 static void HalCC2430RadioP__CC2430ChannelSet(uint8_t channel);
 //#line 789
-static  /*inline*/  void HalCC2430RadioP__CC2430PALevelSet(uint8_t new_power);
+static void HalCC2430RadioP__CC2430PALevelSet(uint8_t new_power);
 //#line 804
 static  /*inline*/  void HalCC2430RadioP__CC2430ControlSet(void );
 //#line 828
@@ -2585,7 +2613,7 @@ static  /*inline*/  error_t HalFlashP__HalFlash__erase(uint8_t *address);
 //# 63 "/opt/tinyos-2.x/tos/interfaces/Read.nc"
 static void AdcP__Read__readDone(
 //# 43 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/cc2430/adc/AdcP.nc"
-uint8_t arg_0x7e6f8030, 
+uint8_t arg_0x7e6ea030, 
 //# 63 "/opt/tinyos-2.x/tos/interfaces/Read.nc"
 error_t result, AdcP__Read__val_t val);
 //# 56 "/opt/tinyos-2.x/tos/interfaces/TaskBasic.nc"
@@ -2663,11 +2691,11 @@ static  /*inline*/  void SchedulerBasicP__Scheduler__init(void )
 //#line 46
 }
 //#line 46
-//# 95 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
+//# 97 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
 static   /*inline*/   void HplMcs51GeneralIOC__P13__clr(void )
-//#line 95
+//#line 97
 {
-//#line 95
+//#line 97
   P1_3 = 0;
 }
 
@@ -2706,18 +2734,18 @@ static  /*inline*/  void /*PlatformLedsC.NoPinC*/NoPinC__0__GeneralIO__set(void 
 //#line 29
 }
 //#line 29
-//# 92 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
-static   /*inline*/   void HplMcs51GeneralIOC__P10__clr(void )
-//#line 92
+//# 103 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
+static   /*inline*/   void HplMcs51GeneralIOC__P20__clr(void )
+//#line 103
 {
-//#line 92
-  P1_0 = 0;
+//#line 103
+  P2_0 = 0;
 }
 
 //# 30 "/opt/tinyos-2.x/tos/interfaces/GeneralIO.nc"
  /*inline*/  static void /*PlatformLedsC.Led0_rev*/ReverseGPIOP__0__In__clr(void ){
 //#line 30
-  HplMcs51GeneralIOC__P10__clr();
+  HplMcs51GeneralIOC__P20__clr();
 //#line 30
 }
 //#line 30
@@ -2736,11 +2764,11 @@ static   /*inline*/   void /*PlatformLedsC.Led0_rev*/ReverseGPIOP__0__Out__set(v
 //#line 29
 }
 //#line 29
-//# 95 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
+//# 97 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
 static   /*inline*/   void HplMcs51GeneralIOC__P13__makeOutput(void )
-//#line 95
+//#line 97
 {
-//#line 95
+//#line 97
   P1_DIR |= 1 << 3;
 }
 
@@ -2779,18 +2807,18 @@ static  /*inline*/  void /*PlatformLedsC.NoPinC*/NoPinC__0__GeneralIO__makeOutpu
 //#line 35
 }
 //#line 35
-//# 92 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
-static   /*inline*/   void HplMcs51GeneralIOC__P10__makeOutput(void )
-//#line 92
+//# 103 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
+static   /*inline*/   void HplMcs51GeneralIOC__P20__makeOutput(void )
+//#line 103
 {
-//#line 92
-  P1_DIR |= 1 << 0;
+//#line 103
+  P2_DIR |= 1 << 0;
 }
 
 //# 35 "/opt/tinyos-2.x/tos/interfaces/GeneralIO.nc"
  /*inline*/  static void /*PlatformLedsC.Led0_rev*/ReverseGPIOP__0__In__makeOutput(void ){
 //#line 35
-  HplMcs51GeneralIOC__P10__makeOutput();
+  HplMcs51GeneralIOC__P20__makeOutput();
 //#line 35
 }
 //#line 35
@@ -3063,9 +3091,9 @@ static  /*inline*/  void AdcP__Read__default__readDone(uint8_t id, error_t resul
 }
 
 //# 63 "/opt/tinyos-2.x/tos/interfaces/Read.nc"
- /*inline*/  static void AdcP__Read__readDone(uint8_t arg_0x7e6f8030, error_t result, AdcP__Read__val_t val){
+ /*inline*/  static void AdcP__Read__readDone(uint8_t arg_0x7e6ea030, error_t result, AdcP__Read__val_t val){
 //#line 63
-  switch (arg_0x7e6f8030) {
+  switch (arg_0x7e6ea030) {
 //#line 63
     case /*TestAppC.AdcC*/AdcC__0__ID:
 //#line 63
@@ -3075,7 +3103,7 @@ static  /*inline*/  void AdcP__Read__default__readDone(uint8_t id, error_t resul
 //#line 63
     default:
 //#line 63
-      AdcP__Read__default__readDone(arg_0x7e6f8030, result, val);
+      AdcP__Read__default__readDone(arg_0x7e6ea030, result, val);
 //#line 63
       break;
 //#line 63
@@ -3774,22 +3802,7 @@ static  /*inline*/  void HalCC2430RadioP__CC2430RFDisable(void )
   * (uint8_t xdata *)0xDF17 |= 1 << CC2430_RFPWR_RREG_RADIO_PD;
 }
 
-//#line 789
-static  /*inline*/  void HalCC2430RadioP__CC2430PALevelSet(uint8_t new_power)
-{
-  uint16_t power;
-
-  power = new_power * 0x1F;
-  power /= 100;
-
-  * (uint16_t xdata *)0xDF0A = (* (uint16_t xdata *)0xDF0A & ~0x1F) | (power & 0x1F);
-}
-
-
-
-
-
-
+//#line 804
 static  /*inline*/  void HalCC2430RadioP__CC2430ControlSet(void )
 {
 
@@ -4358,11 +4371,11 @@ static  /*inline*/  void StdOutM__StdOut__dumpHex(uint8_t ptr[], uint8_t countar
 //#line 56
 }
 //#line 56
-//# 95 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
+//# 97 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
 static   /*inline*/   void HplMcs51GeneralIOC__P13__set(void )
-//#line 95
+//#line 97
 {
-//#line 95
+//#line 97
   P1_3 = 1;
 }
 
@@ -4435,18 +4448,18 @@ static  /*inline*/  void LedsP__Leds__led1On(void )
 //#line 61
 }
 //#line 61
-//# 92 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
-static   /*inline*/   void HplMcs51GeneralIOC__P10__set(void )
-//#line 92
+//# 103 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
+static   /*inline*/   void HplMcs51GeneralIOC__P20__set(void )
+//#line 103
 {
-//#line 92
-  P1_0 = 1;
+//#line 103
+  P2_0 = 1;
 }
 
 //# 29 "/opt/tinyos-2.x/tos/interfaces/GeneralIO.nc"
  /*inline*/  static void /*PlatformLedsC.Led0_rev*/ReverseGPIOP__0__In__set(void ){
 //#line 29
-  HplMcs51GeneralIOC__P10__set();
+  HplMcs51GeneralIOC__P20__set();
 //#line 29
 }
 //#line 29
@@ -4899,7 +4912,7 @@ static  /*inline*/  error_t HalFlashP__Init__init(void )
 {
 
   HalFlashP__eraseFunction = (void (*)(void ))HalFlashP__eraseFunctionBuffer;
-  HalFlashP__writeFunction = (void (*)(uint8_t *arg_0x7e7117e8, uint16_t arg_0x7e711998))HalFlashP__writeFunctionBuffer;
+  HalFlashP__writeFunction = (void (*)(uint8_t *arg_0x7e7037e8, uint16_t arg_0x7e703998))HalFlashP__writeFunctionBuffer;
 
   return SUCCESS;
 }
@@ -4984,6 +4997,55 @@ static  /*inline*/  void AdcP__AdcControl__enable(uint8_t id, uint8_t reference,
 //#line 66
 }
 //#line 66
+//# 343 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/cc2430/radio/HalCC2430RadioP.nc"
+static  /*inline*/  error_t HalCC2430RadioP__HALCC2420__setTransmitPower(uint8_t power)
+{
+  if (power > 100) {
+    return FAIL;
+    }
+  else {
+//#line 348
+    HalCC2430RadioP__CC2430PALevelSet(power);
+    }
+  return SUCCESS;
+}
+
+//# 56 "/opt/tinyos-2.x-contrib/diku/common/lib/simplemac/HALCC2420.nc"
+ /*inline*/  static error_t SimpleMacM__HALCC2420__setTransmitPower(uint8_t power){
+//#line 56
+  unsigned char result;
+//#line 56
+
+//#line 56
+  result = HalCC2430RadioP__HALCC2420__setTransmitPower(power);
+//#line 56
+
+//#line 56
+  return result;
+//#line 56
+}
+//#line 56
+//# 151 "/opt/tinyos-2.x-contrib/diku/common/lib/simplemac/SimpleMacM.nc"
+static  /*inline*/  error_t SimpleMacM__SimpleMac__setTransmitPower(uint8_t power)
+{
+  return SimpleMacM__HALCC2420__setTransmitPower(power);
+}
+
+//# 55 "/opt/tinyos-2.x-contrib/diku/common/lib/simplemac/SimpleMac.nc"
+ /*inline*/  static error_t TestAppP__SimpleMac__setTransmitPower(uint8_t power){
+//#line 55
+  unsigned char result;
+//#line 55
+
+//#line 55
+  result = SimpleMacM__SimpleMac__setTransmitPower(power);
+//#line 55
+
+//#line 55
+  return result;
+//#line 55
+}
+//#line 55
 //# 130 "TestAppP.nc"
 static  /*inline*/  void TestAppP__Boot__booted(void )
 //#line 130
@@ -4995,7 +5057,7 @@ static  /*inline*/  void TestAppP__Boot__booted(void )
 
   TestAppP__channel = 11;
   TestAppP__SimpleMac__setChannel(TestAppP__channel);
-
+  TestAppP__SimpleMac__setTransmitPower(100);
   TestAppP__StdOut__print("Channel : ");
   TestAppP__StdOut__printBase10uint8(TestAppP__channel);
   TestAppP__StdOut__print("\n\r");
@@ -5119,22 +5181,22 @@ static  /*inline*/  void SchedulerBasicP__Scheduler__taskLoop(void )
 //#line 56
 }
 //#line 56
-//# 92 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
-static  /*inline*/  void HplMcs51GeneralIOC__P10__toggle(void )
-//#line 92
+//# 103 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
+static  /*inline*/  void HplMcs51GeneralIOC__P20__toggle(void )
+//#line 103
 {
   /* atomic removed: atomic calls only */
-//#line 92
+//#line 103
   {
-//#line 92
-    P1_0 = ~P1_0;
+//#line 103
+    P2_0 = ~P2_0;
   }
 }
 
 //# 31 "/opt/tinyos-2.x/tos/interfaces/GeneralIO.nc"
  /*inline*/  static void /*PlatformLedsC.Led0_rev*/ReverseGPIOP__0__In__toggle(void ){
 //#line 31
-  HplMcs51GeneralIOC__P10__toggle();
+  HplMcs51GeneralIOC__P20__toggle();
 //#line 31
 }
 //#line 31
@@ -5820,6 +5882,19 @@ static void HalCC2430RadioP__CC2430ChannelSet(uint8_t channel)
   freq |= 0x4000;
 
   * (uint16_t xdata *)0xDF10 = freq;
+}
+
+
+
+
+static void HalCC2430RadioP__CC2430PALevelSet(uint8_t new_power)
+{
+  uint16_t power;
+
+  power = new_power * 0x1F;
+  power /= 100;
+
+  * (uint16_t xdata *)0xDF0A = (* (uint16_t xdata *)0xDF0A & ~0x1F) | (power & 0x1F);
 }
 
 //# 85 "/opt/tinyos-2.x-contrib/diku/common/lib/simplemac/SimpleMacM.nc"

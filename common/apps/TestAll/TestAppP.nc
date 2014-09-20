@@ -135,7 +135,7 @@ implementation {
 
     channel = 11;
     call SimpleMac.setChannel(channel);
-
+    call SimpleMac.setTransmitPower(100);
     call StdOut.print("Channel : ");
     call StdOut.printBase10uint8(channel);
     call StdOut.print("\n\r");
@@ -269,10 +269,14 @@ implementation {
                         ledOn = FALSE;
                         call StdOut.print("Led off\n\r");
                         call Leds.led0Off();
+                        call Leds.led1Off();
+                        call Leds.led2Off();
                       } else {
                         ledOn = TRUE;
                         call StdOut.print("Led on\n\r");
                         call Leds.led0On();
+                        call Leds.led1On();
+                        call Leds.led2On();
                       }
                       break;
 

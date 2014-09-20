@@ -8,23 +8,47 @@
 	"buffers":
 	[
 		{
-			"file": "TestAll.sublime-project",
-			"settings":
-			{
-				"buffer_size": 156,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "TestAppC.nc",
 			"settings":
 			{
 				"buffer_size": 2445,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "TestAppP.nc",
+			"settings":
+			{
+				"buffer_size": 11786,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/cygwin/opt/tinyos-2.x-contrib/diku/env",
+			"settings":
+			{
+				"buffer_size": 681,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Makefile",
+			"settings":
+			{
+				"buffer_size": 226,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "build/cc2430em/app.c",
+			"settings":
+			{
+				"buffer_size": 142338,
+				"line_ending": "Unix"
+			}
 		}
 	],
-	"build_system": "Make cc2430em",
+	"build_system": "",
 	"command_palette":
 	{
 		"height": 0.0,
@@ -48,9 +72,9 @@
 	},
 	"file_history":
 	[
+		"/C/cygwin/opt/tinyos-2.x-contrib/diku/common/apps/TestAll/TestAll.sublime-project",
 		"/C/cygwin/opt/tinyos-2.x-contrib/diku/common/apps/TestAll/TestAppC.nc",
-		"/C/cygwin/opt/tinyos-2.x-contrib/diku/common/apps/TestAll/TestAll.sublime-workspace",
-		"/C/cygwin/opt/tinyos-2.x-contrib/diku/common/apps/TestAll/TestAll.sublime-project"
+		"/C/cygwin/opt/tinyos-2.x-contrib/diku/common/apps/TestAll/TestAll.sublime-workspace"
 	],
 	"find":
 	{
@@ -68,6 +92,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Off"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -85,38 +110,11 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "TestAll.sublime-project",
-					"settings":
-					{
-						"buffer_size": 156,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								156,
-								156
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "TestAppC.nc",
 					"settings":
 					{
@@ -127,8 +125,8 @@
 						"selection":
 						[
 							[
-								1386,
-								1386
+								1899,
+								1904
 							]
 						],
 						"settings":
@@ -138,7 +136,115 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
+						"translation.y": 816.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "TestAppP.nc",
+					"settings":
+					{
+						"buffer_size": 11786,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7651,
+								7651
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4624.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/cygwin/opt/tinyos-2.x-contrib/diku/env",
+					"settings":
+					{
+						"buffer_size": 681,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								542,
+								542
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Makefile",
+					"settings":
+					{
+						"buffer_size": 226,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								226,
+								226
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Makefile/Makefile.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "build/cc2430em/app.c",
+					"settings":
+					{
+						"buffer_size": 142338,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9537,
+								9537
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 8908.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -179,7 +285,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 106.0
+		"height": 468.0
 	},
 	"replace":
 	{
@@ -191,6 +297,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"test",
+				"TestAppP.nc"
+			]
 		],
 		"width": 0.0
 	},
@@ -206,6 +316,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 244.0,
+	"side_bar_width": 190.0,
 	"status_bar_visible": true
 }

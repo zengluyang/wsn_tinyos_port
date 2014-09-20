@@ -62,7 +62,7 @@ implementation
    * low...
    */
 
-  Led0_rev -> HplMcs51GeneralIOC.P10;
+  Led0_rev -> HplMcs51GeneralIOC.P20;
   Led2_rev -> HplMcs51GeneralIOC.P13;
 
   Led0 = Led0_rev.Out;

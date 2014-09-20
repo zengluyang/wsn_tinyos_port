@@ -542,11 +542,10 @@ enum __nesc_unnamed4252 {
 typedef uint8_t error_t  ;
 # 160 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/io8051.h"
 uint8_t volatile EA __attribute((sbitAT0xAF)) ;
-#line 194
-uint8_t volatile P1_0 __attribute((sbitAT0x90)) ;
-
-
+#line 197
 uint8_t volatile P1_3 __attribute((sbitAT0x93)) ;
+#line 210
+uint8_t volatile P2_0 __attribute((sbitAT0xA0)) ;
 # 67 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/cc2430/ioCC2430.h"
 enum __nesc_unnamed4253 {
   CC2430_IEN0_EA = 0x7, 
@@ -653,7 +652,7 @@ uint8_t volatile PERCFG __attribute((sfrAT0xF1)) ;
 
 
 uint8_t volatile P1_DIR __attribute((sfrAT0xFE)) ;
-
+uint8_t volatile P2_DIR __attribute((sfrAT0xFF)) ;
 
 
 uint8_t volatile P0_ALT __attribute((sfrAT0xF3)) ;
@@ -1013,14 +1012,14 @@ static void HplMcs51GeneralIOC$P13$toggle(void );
 static void HplMcs51GeneralIOC$P13$makeOutput(void );
 #line 30
 static void HplMcs51GeneralIOC$P13$clr(void );
-static void HplMcs51GeneralIOC$P10$toggle(void );
+static void HplMcs51GeneralIOC$P20$toggle(void );
 
 
 
-static void HplMcs51GeneralIOC$P10$makeOutput(void );
+static void HplMcs51GeneralIOC$P20$makeOutput(void );
 #line 29
-static void HplMcs51GeneralIOC$P10$set(void );
-static void HplMcs51GeneralIOC$P10$clr(void );
+static void HplMcs51GeneralIOC$P20$set(void );
+static void HplMcs51GeneralIOC$P20$clr(void );
 static void /*PlatformLedsC.Led0_rev*/ReverseGPIOP$0$Out$toggle(void );
 
 
@@ -1202,21 +1201,24 @@ static inline void LedsP$Leds$led0Toggle(void );
 static inline void LedsP$Leds$led1Toggle(void );
 #line 103
 static inline void LedsP$Leds$led2Toggle(void );
-# 92 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
-static __inline void HplMcs51GeneralIOC$P10$set(void );
-#line 92
-static __inline void HplMcs51GeneralIOC$P10$clr(void );
-#line 92
-static inline void HplMcs51GeneralIOC$P10$toggle(void );
-#line 92
-static __inline void HplMcs51GeneralIOC$P10$makeOutput(void );
-
-
+# 97 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
 static __inline void HplMcs51GeneralIOC$P13$clr(void );
-#line 95
+#line 97
 static inline void HplMcs51GeneralIOC$P13$toggle(void );
-#line 95
+#line 97
 static __inline void HplMcs51GeneralIOC$P13$makeOutput(void );
+
+
+
+
+
+static __inline void HplMcs51GeneralIOC$P20$set(void );
+#line 103
+static __inline void HplMcs51GeneralIOC$P20$clr(void );
+#line 103
+static inline void HplMcs51GeneralIOC$P20$toggle(void );
+#line 103
+static __inline void HplMcs51GeneralIOC$P20$makeOutput(void );
 # 31 "/opt/tinyos-2.x/tos/interfaces/GeneralIO.nc"
 static void /*PlatformLedsC.Led0_rev*/ReverseGPIOP$0$In$toggle(void );
 
@@ -1308,11 +1310,11 @@ inline static void RealMainP$Scheduler$init(void ){
 #line 46
 }
 #line 46
-# 95 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
+# 97 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
 static __inline void HplMcs51GeneralIOC$P13$clr(void )
-#line 95
+#line 97
 {
-#line 95
+#line 97
   P1_3 = 0;
 }
 
@@ -1351,18 +1353,18 @@ inline static void LedsP$Led1$set(void ){
 #line 29
 }
 #line 29
-# 92 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
-static __inline void HplMcs51GeneralIOC$P10$clr(void )
-#line 92
+# 103 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
+static __inline void HplMcs51GeneralIOC$P20$clr(void )
+#line 103
 {
-#line 92
-  P1_0 = 0;
+#line 103
+  P2_0 = 0;
 }
 
 # 30 "/opt/tinyos-2.x/tos/interfaces/GeneralIO.nc"
 inline static void /*PlatformLedsC.Led0_rev*/ReverseGPIOP$0$In$clr(void ){
 #line 30
-  HplMcs51GeneralIOC$P10$clr();
+  HplMcs51GeneralIOC$P20$clr();
 #line 30
 }
 #line 30
@@ -1381,11 +1383,11 @@ inline static void LedsP$Led0$set(void ){
 #line 29
 }
 #line 29
-# 95 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
+# 97 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
 static __inline void HplMcs51GeneralIOC$P13$makeOutput(void )
-#line 95
+#line 97
 {
-#line 95
+#line 97
   P1_DIR |= 1 << 3;
 }
 
@@ -1424,18 +1426,18 @@ inline static void LedsP$Led1$makeOutput(void ){
 #line 35
 }
 #line 35
-# 92 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
-static __inline void HplMcs51GeneralIOC$P10$makeOutput(void )
-#line 92
+# 103 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
+static __inline void HplMcs51GeneralIOC$P20$makeOutput(void )
+#line 103
 {
-#line 92
-  P1_DIR |= 1 << 0;
+#line 103
+  P2_DIR |= 1 << 0;
 }
 
 # 35 "/opt/tinyos-2.x/tos/interfaces/GeneralIO.nc"
 inline static void /*PlatformLedsC.Led0_rev*/ReverseGPIOP$0$In$makeOutput(void ){
 #line 35
-  HplMcs51GeneralIOC$P10$makeOutput();
+  HplMcs51GeneralIOC$P20$makeOutput();
 #line 35
 }
 #line 35
@@ -1623,18 +1625,18 @@ inline static error_t EchoP$uart0$put(uint8_t data){
 #line 41
 }
 #line 41
-# 92 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
-static __inline void HplMcs51GeneralIOC$P10$set(void )
-#line 92
+# 103 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
+static __inline void HplMcs51GeneralIOC$P20$set(void )
+#line 103
 {
-#line 92
-  P1_0 = 1;
+#line 103
+  P2_0 = 1;
 }
 
 # 29 "/opt/tinyos-2.x/tos/interfaces/GeneralIO.nc"
 inline static void /*PlatformLedsC.Led0_rev*/ReverseGPIOP$0$In$set(void ){
 #line 29
-  HplMcs51GeneralIOC$P10$set();
+  HplMcs51GeneralIOC$P20$set();
 #line 29
 }
 #line 29
@@ -1874,14 +1876,14 @@ inline static error_t EchoP$print$postTask(void ){
 #line 56
 }
 #line 56
-# 95 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
+# 97 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
 static inline void HplMcs51GeneralIOC$P13$toggle(void )
-#line 95
+#line 97
 {
   /* atomic removed: atomic calls only */
-#line 95
+#line 97
   {
-#line 95
+#line 97
     P1_3 = ~P1_3;
   }
 }
@@ -1962,22 +1964,22 @@ inline static void EchoP$Leds$led1Toggle(void ){
 #line 72
 }
 #line 72
-# 92 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
-static inline void HplMcs51GeneralIOC$P10$toggle(void )
-#line 92
+# 103 "/opt/tinyos-2.x-contrib/diku/mcs51/tos/chips/mcs51/pins/HplMcs51GeneralIOC.nc"
+static inline void HplMcs51GeneralIOC$P20$toggle(void )
+#line 103
 {
   /* atomic removed: atomic calls only */
-#line 92
+#line 103
   {
-#line 92
-    P1_0 = ~P1_0;
+#line 103
+    P2_0 = ~P2_0;
   }
 }
 
 # 31 "/opt/tinyos-2.x/tos/interfaces/GeneralIO.nc"
 inline static void /*PlatformLedsC.Led0_rev*/ReverseGPIOP$0$In$toggle(void ){
 #line 31
-  HplMcs51GeneralIOC$P10$toggle();
+  HplMcs51GeneralIOC$P20$toggle();
 #line 31
 }
 #line 31
